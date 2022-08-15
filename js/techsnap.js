@@ -176,7 +176,7 @@ async function serveSnap(snapNo) {
 
 	}
 
-	await updateSnap(await getSnap(snapNo + ".txt"));
+	await updateSnap(await getSnap("../techsnaps/" + snapNo + ".txt"));
 
 
 	setTimeout(function() {
@@ -196,7 +196,7 @@ function takeSnap(number) {
 	toChange[4].classList.remove("hide");
 	toChange[0].remove();
 
-	setTimeout(function() {
+	etTimeout(function() {
 		document.querySelector(".panel .card.id" + number + " .carousel .story").remove();
 		document.querySelector(".panel .card.id" + number).classList.remove("id" + number);
 	}, 200);

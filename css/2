@@ -257,7 +257,7 @@ body[cross] * {
 	right: 0;
 	top: 100%;
 	height: 30px;
-	background: orange;
+	ackground: orange;
 	animation: explode 1s ease-in-out 1;
 }
 
