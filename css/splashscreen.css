@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+html {
+	background: black;
+	height: 100%;
+	overflow: hidden;
+	transition: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#toggle-themes {
+	opacity: 0;
+	animation: toggle-appear 0s linear forwards;
+	animation-delay: 1.8s;
+}
+
+@keyframes toggle-appear {
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+.glitch {
+	position: relative;
+	overflow: hidden;
+	background: black;
+	z-index: 5000;
+}
+
+.glitch > h1 {
+	font-family: 'Syne Mono', monospace;
+	font-size: 20rem;
+	color: white;
+	z-index: 5000;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	animation: fast-typography 0.25s linear;
+}
+
+.glitch .one {
+	animation-delay: 0.4s;
+	animation-duration: 0.45s;
+}
+
+.glitch .two {
+	animation-delay: 0.9s;
+	animation-duration: 0.25;
+}
+
+.glitch .three {
+	animation-delay: 1.2s;
+	animation-duration: 0.2s;
+}
+
+.glitch .four {
+	animation-delay: 1.4s;
+	animation-duration: 0.2s;
+}
+
+.glitch .five {
+	animation-delay: 1.6s;
+	animation-duration: 0.03s;
+}
+
+@keyframes fast-typography {
+
+	0%, 90% {
+		opacity: 1;
+		top: 40%;
+	}
+
+	100% {
+		top: 55%;
+	}
+
+}
+
+.glitch .layers {
+	position: absolute;
+	opacity: 0;
+	z-index: 5100;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	animation: start-delay 0s linear forwards;
+	animation-delay: 1.4s;
+}
+
+@keyframes start-delay {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+.glitch .layers .layer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*background-image: url(https://images.unsplash.com/photo-1610337673044-720471f83677?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1544&q=80);*/
+	background-image: url("../media/glitch-screen.jpg");
+	background-position: 0 0;
+}
+
+.glitch .layers .layer:nth-child(1) {
+	transform: translateX(-15%);
+	animation: glitch-anim-1 2s infinite linear alternate;
+	animation-delay: 1s;
+}
+
+.glitch .layers .layer:nth-child(2) {
+	transform: translateX(10%) translateY(4%);
+	animation: glitch-anim-2 2.3s -.8s infinite linear alternate;
+	animation-delay: 1s;
+}
+
+.glitch .layers .layer:nth-child(3) {
+	transform: translateX(3%);
+	animation: glitch-anim-flash 1s infinite linear;
+	animation-delay: 0.7s;
+}
+
+@keyframes glitch-anim-1 {
+
+	0% {
+		clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+	}
+
+	10% {
+		clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+	}
+
+	20% {
+		clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+	}
+
+	30% {
+		clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+	}
+
+	40% {
+		clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+	}
+
+	50% {
+		clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+	}
+
+	60% {
+		clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+	}
+
+	70% {
+		clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+	}
+
+	80% {
+		clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+	}
+
+	90% {
+		clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+	}
+
+	100% {
+		clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+	}
+
+}
+
+@keyframes glitch-anim-2 {
+
+	0% {
+		clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+	}
+
+	15% {
+		clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+	}
+
+	25% {
+		clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+	}
+
+	30% {
+		clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+	}
+
+	45% {
+		clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+	}
+
+	50% {
+		clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+	}
+
+	65% {
+		clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+	}
+
+	75% {
+		clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+	}
+	
+	80% {
+		clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+	}
+
+	95% {
+		clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+	}
+
+	100% {
+		clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+	}
+
+}
+
+@keyframes glitch-anim-flash {
+
+	0% {
+		opacity: .25;
+	}
+
+	30%, 100% {
+		opacity: 0;
+	}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - TechSnap</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/techsnap.css">
+	</head>
+
+
+	<body class="body">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="index.html">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="index.html#about">About Me</a>
+					<a href="food.html">Food</a>
+					<a href="techsnap.html">TechSnap</a>
+					<a href="blog.html">Blog</a>
+					<a href="assets.html">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="index.html">Home</a>
+						<a href="index.html#about">About Me</a>
+						<a href="food.html">Food</a>
+						<a href="techsnap.html">TechSnap</a>
+						<a href="blog.html">Blog</a>
+						<a href="assets.html">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+
+		<section class="intro">
+
+			<h1>tech<span onclick="fireworksToggle()">Snap</span></h1>
+			<p>TechSnap! Your snap of tech whenever I feel like writing one! Here, I'll take the latest news; Twitter, YouTube, News sites - wherever I happen to see it first. I'll summarise what the news itself is, and give some comments, opinions, and analysis in a digestable mind-dump format. Hopefully, there'll be a couple a day (on average). Yes, I know, I truly am the pioneer of online news distribution <span class="fas fa-person-hiking"></span>. Send any comments, ideas, feedback, or questions to <a href="mailto:techsnap@sourishsharma.com">techsnap@sourishsharma.com</a>.</p>
+
+		</section>
+
+
+		<section class="panel">
+
+			<div class="card">
+
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">16</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title" onclick="serveSnap(1)">1 olor tempore optio minus ex impedit magni? Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title">2Dolor tempore ex impedit magni? Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title">3Dolor deserunt tempore optio minus ex impedit magni? Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title">4Dolor Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">15</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title" onclick="serveSnap(0)">1 olor tempore optio minus ex impedit magni? Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title">2Dolor tempore ex impedit magni? Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title">3Dolor deserunt tempore optio minus ex impedit magni? Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+					<div class="snap">
+						<h2 class="snap-title">4Dolor Illo ducimus pariatur?</h2>
+						<p class="time">15:14</p>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">14</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">13</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">12</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">11</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">10</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">9</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">8</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">7</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">6</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">5</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">4</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+			<div class="card">
+				<button class="left" onclick="left()"><div class="fas fa-caret-left"></div></button>
+				<div class="carousel">
+					<div class="title active">
+						<h1 class="day">3</h1>
+						<h1 class="month">JUN</h1>
+						<h1 class="year">22</h1>
+					</div>
+				</div>
+				<button class="right" onclick="right()"><div class="fas fa-caret-right"></div></button>
+			</div>
+
+		</section>
+
+
+
+
+
+		<div class="hover-check"></div>
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2022 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://www.github.com/" target="_blank"><h2>Audit the source code / Visit the GitHub site</h2></a>
+					<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/techsnap.js"></script>
+
+	</body>
+</html>

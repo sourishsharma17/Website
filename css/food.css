@@ -1,0 +1,192 @@
+html {
+	transition: none;
+}
+
+.images {
+	max-width: 145rem;
+	padding: 0rem 1rem;
+	margin: 10rem auto;
+	min-height: 100vh;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.images > .food-item {
+	opacity: 0;
+	height: 40rem;
+	flex-grow: 1;
+	position: relative;
+	bottom: -3rem;
+	border-radius: 1.5rem;
+	transition: bottom 0.8s ease-out, opacity 0.8s ease-out;
+	background: var(--primary);
+	overflow: hidden;
+}
+
+.images .show {
+	opacity: 1;
+	bottom: 0rem;
+}
+
+.images .name {
+   	position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    color: #ddd;
+    border-radius: 1.5rem;
+    opacity: 0;
+	text-transform: capitalize;
+	text-align: center;
+}   
+
+.images .name:hover {
+	cursor: pointer;
+	opacity: 1;
+	box-shadow: var(--box-shadow),
+	0rem -150rem 150rem -150rem black inset;
+}
+
+.images .name h2 {
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 1rem;
+	font-size: 3rem;
+}
+
+.images .food-item img {
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	border-radius: 1.5rem;
+	transition: box-shadow 0.2s ease-out, opacity: 0.2s ease-out;
+	pointer-events: none;
+}
+
+.colour-overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--primary);
+	z-index: 1599;
+	animation: fader-colour 0.2s ease-out forwards;
+}
+
+@keyframes fader-colour {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0.95;
+	}
+
+}
+
+.enlarge {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1610;
+	animation: fader-normal 0.3s ease-out;
+	object-fit: contain;
+	max-height: 80%;
+	max-width: 80%;
+}
+
+.cross {
+	position: fixed;
+	right: 7rem;
+	top: 5rem;
+	font-size: 6rem;
+	color: var(--text);
+	z-index: 1700;
+	opacity: 0;
+	animation: fader-normal 0.5s ease-in forwards;
+	animation-delay: 0.5s;
+}
+
+.cross:hover {
+	color: var(--secondary);
+}
+
+@keyframes fader-normal {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+}
+
+.fade-out {
+	animation: out-fader 0.2s ease-in forwards;
+}
+
+.fade-out-colour {
+	opacity: 0.95;
+	animation: out-fader 0.18s ease-in forwards;
+	animation-delay: 0.02s;
+}
+
+@keyframes out-fader {
+
+	100% {
+		opacity: 0;
+	}
+
+}
+
+@media (hover: none) {
+
+	.images .name {
+		opacity: 1;
+		cursor: pointer;
+		box-shadow: var(--box-shadow),
+		0rem -150rem 150rem -150rem black inset;
+	}   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

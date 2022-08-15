@@ -1,0 +1,310 @@
+.post {
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.post .blob {
+	position: absolute;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.post .container {
+	z-index: 10;
+	opacity: 0.95;
+	font-size: 2rem;
+	max-width: min(80ch, 90vw);
+	margin: 5rem auto 0rem auto;
+	background: var(--primary);
+	box-shadow: var(--box-shadow);
+	padding: 2rem 3rem;
+	border-radius: 1.5rem;
+	margin-bottom: 10rem;
+}
+
+.post .container .top {
+	margin-bottom: 6.5rem;
+}
+
+.post .container .top > h1 {
+	font-size: 4rem;
+	color: var(--text);
+}
+
+.post .container .top .info {
+	margin-top: 1rem;
+	display: flex;
+}
+
+.post .container .top .info > div {
+	flex-shrink: 1;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	color: var(--text);
+	opacity: 0.9;
+}
+
+.post .container .top .info .read {
+	width: 33%;
+}
+
+.post .container .top .info .dates {
+	width: 67%;
+	text-align: right;
+	justify-content: right;
+	gap: 3rem;
+}
+
+.post .container .top .info .dates > div > * {
+	display: inline;
+}
+
+.post .container .content img {
+	padding: 1rem;
+	margin-top: -2.5rem;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.post .container .content p {
+	font-size: 2rem;
+	line-height: 1.8;
+	padding-bottom: 5rem;
+	/* ^^^ TO CHANGE??? ^^^ */
+	color: var(--text);
+}
+
+.post .container .content p:last-child {
+	padding-bottom: 0.5rem;
+}
+
+.post .container .content ol {
+	font-size: 2rem;
+	line-height: 1.8;
+	color: var(--text);
+	margin-top: -1rem;
+	padding: 0rem 5rem 4rem 5rem;
+}
+
+.post .container .content ol > li {
+	margin-bottom: 1.25rem;
+	padding-left: 1rem;
+}
+
+.post .container .content ol > li:last-child {
+	margin-bottom: 0rem;
+}
+
+.post .container .content ol.list0 > ::marker {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	font-size: 1.5rem;
+	content: "\f111";
+	color: var(--secondary);
+}
+
+.post .container .content p.caption {
+	font-size: 1.5rem;
+	padding: 0rem 2rem 3.5rem 2rem;
+	opacity: 0.8;
+	line-height: 1.4;
+}
+
+.post .container .content p.introduction {
+	padding-top: 1rem;
+	text-align: justify;
+}
+
+.post .container .content h2 {
+	color: var(--text);
+	font-size: 3.5rem;
+	padding: 3rem 0rem 1rem 0rem;
+}
+
+.post .container .content a {
+	text-decoration: underline 2px;
+	text-underline-offset: 2px;
+	color: inherit;
+	transition: color 0.1s linear;
+}
+
+.post .container .content a:hover {
+	color: var(--secondary);
+}
+
+.post .scroll-top {
+	position: fixed;
+	right: 20px;
+	font-size: 4rem;
+	opacity: 0;
+}
+
+.post .scroll-top .fa-plane-up {
+	cursor: pointer;
+	color: var(--text);
+}
+
+.post .scroll-top .fa-plane-up:hover {
+	color: var(--secondary);
+}
+
+.post .scroll-top.seen {
+	bottom: 20px;
+	z-index: 100;
+	opacity: 1;
+	animation: plane-in 0.5s ease-out;
+}
+
+.post .scroll-top.unseen {
+	bottom: 0px;
+	z-index: -10;
+	opacity: 0;
+	animation: plane-in 0.5s ease-in reverse;
+}
+
+.post .scroll-top.swoosh {
+	animation: plane-out 0.5s linear;
+}
+
+@keyframes plane-in {
+
+	0% {
+		opacity: 0;
+		bottom: 0px;
+	}
+
+	100% {
+		opacity: 1;
+		bottom: 20px;
+	}
+
+}
+
+@keyframes plane-out {
+
+	0% {
+		right: 20px;
+		opacity: 1;
+		bottom: 20px;
+	}
+
+	30% {
+		right: 20px;
+		opacity: 1;
+		bottom: 0px;
+	}
+
+	35% {
+		right: 50px;
+	}
+
+	40% {
+		right: 10px;
+	}
+
+	45% {
+		right: 20px;
+	}
+
+	50% {
+		right: 80px;
+	}
+
+	55% {
+		right: 50px;
+	}
+
+	100% {
+		right: 20px;
+		opacity: 0;
+		bottom: 100%;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.post .container {
+		margin-top: 5vw;
+	}
+
+	.post .container .top > h1 {
+		font-size: 3.5rem;
+	}
+
+	.post .container .content img {
+		padding: 1rem 0rem;
+	}
+
+	.post .container .content p {
+		font-size: 1.75rem;
+	}
+
+	.post .container .content ol {
+		font-size: 1.75rem;
+		padding: 0rem 2rem 4rem 2rem;
+	}
+
+	.post .container .content ol.list0 > ::marker {
+		font-size: 1.25rem;
+	}
+
+	.post .container .content p.caption {
+		font-size: 1.25rem;
+	}
+
+	.post .container .content h2 {
+		font-size: 3rem;
+	}
+
+	.post .container .top .info .edit {
+		display: none;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

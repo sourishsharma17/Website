@@ -1,0 +1,33 @@
+let toggleThemes = document.querySelector("#toggle-themes");
+
+let scrolled = true;
+let landing = document.querySelector(".landing");
+let header = document.querySelector("header");
+landing.style.minHeight = "calc(100vh - " + header.offsetHeight + "px )";
+
+
+toggleThemes.onclick = () => {
+	toggleThemes.classList.toggle("fa-sun");
+	if (toggleThemes.classList.contains("fa-sun")) {
+		document.body.classList.add("dark-mode");
+	} else {
+		document.body.classList.remove("dark-mode");
+	}
+};
+
+window.onscroll = function() {justScrolled()};
+
+var navbar = document.querySelector(".navbar");
+var intFrameHeight = window.innerHeight;
+let navbarBackground = document.querySelector(".navbar-background");
+
+function justScrolled() {
+	scrolled = false;
+	if (window.pageYOffset >= (0.3*intFrameHeight)) {
+		navbar.style.top = "0";
+		navbarBackground.style.top = "0";
+	} else {
+		navbar.style.top = "-20rem";
+		navbarBackground.style.top = "-50rem";
+	}
+}
