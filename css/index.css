@@ -260,6 +260,7 @@ html {
 }
 
 .landing-text .landing-name {
+	z-index: 2;
 	font-size: 18rem;
 	color: var(--secondary);
 	position: relative;
