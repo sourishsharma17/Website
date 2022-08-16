@@ -135,7 +135,7 @@ body {
 .glitch .layers .layer:nth-child(3) {
 	transform: translateX(3%);
 	animation: glitch-anim-flash 1s infinite linear;
-	animation-delay: 0.7s;
+	animation-delay: 0.65s;
 }
 
 @keyframes glitch-anim-1 {

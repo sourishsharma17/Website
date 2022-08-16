@@ -3,12 +3,65 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sourish Sharma - 404</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+			}
+		</script>
 		<link rel="shortcut icon" type="image/x-icon" href="E/media/logo.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
 		<link rel="stylesheet" href="../404/common.css">
 		<link rel="stylesheet" href="../css/404.css">
 	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 
 	<body>
 
@@ -18,7 +71,7 @@
 			<div class="content">
 				<h1 class="e404"><span>404</span>404<span>404</span></h1>
 				<p class="info">THE PAGE CANNOT BE FOUND</p>
-				<a class="home" href="http://sourishsharma.com/">home</a>
+				<a class="home" href="https://sourishsharma.com/">home</a>
 			</div>
 
 

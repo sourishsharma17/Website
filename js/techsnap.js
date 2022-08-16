@@ -196,7 +196,7 @@ function takeSnap(number) {
 	toChange[4].classList.remove("hide");
 	toChange[0].remove();
 
-	etTimeout(function() {
+	setTimeout(function() {
 		document.querySelector(".panel .card.id" + number + " .carousel .story").remove();
 		document.querySelector(".panel .card.id" + number).classList.remove("id" + number);
 	}, 200);

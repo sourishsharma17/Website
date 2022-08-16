@@ -1,13 +1,13 @@
 <div class="story">
 
-<h1>Elit iste neque corporis provident</h1>
+<h1>Tim Apple trialling search ads in Maps</h1>
 <div class="main-content">
-<p>Sit amet iusto modi ea reiciendis quae iste Perferendis molestiae suscipit fugiat voluptatum labore? Earum pariatur nostrum doloremque laboriosam iste ipsum incidunt Libero consequuntur architecto laudantium dolores libero. Quis iure nobis ut itaque ullam Dolorem eveniet temporibus distinctio ratione hic? Quam nobis dolore quaerat laborum blanditiis Non amet numquam omnis?</p>
-<img src="../media/techsnap/test.jpg">
-<p>Ipsum libero repudiandae nobis provident eius. Veniam sequi elit iure optio tempore A quidem possimus dicta nostrum eveniet. Sit rerum.</p>
+<p>Apple is thinking of bringing ads to some of its first-party apps. So far, Mark Gurman (who has a very high track record) claims that Apple has been internally testing search ads in their Maps app. This would work similarly to sponsored results you'd get on Google - where the owner of something pays more to the company to get their product appearing higher. In the case of Maps, restaurant owners will be able to pay Apple to get their restaurant pop up first when people search for restaurants in the area. Apple already employees this idea in the App Store, so it won't be unheard of from them. As Apple tries to expand their software service business, is this the right way?</p>
+<img src="../media/techsnap/0a.png">
+<p>It would certainly disadvantage the smaller, more local businesses in an area who cannot afford to pay for high ranking-searches and therefore get overshadowed by the larger companies. This is not ethical from Apple, but at least it seems like they won't use collected user data to influence the results - something Apple themselves are stopping Meta from doing through their app transparency. However, it's also not the user-centric philosophy they claim to have; I don't want whoever pays the most to appear at the top, I want the place with the best reviews, the place that is closest to me, etc. As Apple wants to continue being king of global business, they have to expand beyond just their iPhones, which are variable sources of revenue compared to a steady sponsorship deal with thousands of businesses across the world. Apple's services sectors clearly aren't growing as fast as they want, so they probably feel forced into the advertising realm, not a good decision for consumers. At least, however, they'll do it the 'Apple' way, and won't be like Samsung or Xiaomi, and start having random ad pop-ups across their UI (for now...)!</p>
 </div>
 
 </div>
 ---
-TIME 16:34
-SOURCE https://www.bbc.co.uk/news
+TIME 13:11
+SOURCE https://www.engadget.com/apple-ads-report-211050181.html

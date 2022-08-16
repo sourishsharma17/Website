@@ -3,12 +3,65 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sourish Sharma - Blog</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+			}
+		</script>
 		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
 		<link rel="stylesheet" href="../css/common.css">
 		<link rel="stylesheet" href="../css/blog.css">
 	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 
 
 	<body class="body">
@@ -16,13 +69,13 @@
 		<header class="header">
 
 			<nav class="navbar-simple">
-				<a href="index">
+				<a href="/">
 					<div class="logo">
 						<img class="navlogo" src="../media/logos/logo.png" alt="">
 					</div>
 				</a>
 				<div class="links">
-					<a href="index#about">About Me</a>
+					<a href="/#about">About Me</a>
 					<a href="food">Food</a>
 					<a href="techsnap">TechSnap</a>
 					<a href="blog">Blog</a>
@@ -42,8 +95,8 @@
 						<img class="navlogo" src="../media/logos/logo.png" alt="">
 					</div>
 					<div class="links">
-						<a href="index">Home</a>
-						<a href="index#about">About Me</a>
+						<a href="/">Home</a>
+						<a href="/#about">About Me</a>
 						<a href="food">Food</a>
 						<a href="techsnap">TechSnap</a>
 						<a href="blog">Blog</a>

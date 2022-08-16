@@ -44,7 +44,9 @@ const draw = () => {
 	}
 };
 
-var matrix = setInterval(draw, 1800/(canvas.height/fontSize));
+function begin() {
+	window.matrix = setInterval(draw, 1800/(canvas.height/fontSize));
+}
 
 function clear() {
 	document.querySelector(".glitch").remove();

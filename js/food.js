@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", setup);
+window.addEventListener("load", setup);
 
 function setup() {
 

@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".preloader").remove();
+				document.body.classList.remove("loading-page");
+				begin();
+			}
+		</script>	
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/splashscreen.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link id="main-style" rel="stylesheet" href="../css/index.css">
+	</head>
+	<style>
+		.preloader {
+			height: 100%;
+			width: 100%;
+			background: black;
+			z-index: 50000;
+			position: relative;
+		}
 
-	<link rel="stylesheet" href="../css/splashscreen.css">
+		.preloader > h1 {
+			font-family: "Syne Mono", monospace !important;
+			font-size: 5rem;
+			color: white;
+			position: absolute;
+		}
+	</style>
+	<div class="preloader"><h1>LOADING...</h1></div>
 	<div class="glitch">
 		<div class="layers">
 			<div class="layer"></div>
@@ -15,34 +48,23 @@
 		<h1 class="five">;-)</h1>
 
 		<canvas class="matrix"></canvas>
-		<script src="../js/splashscreen.js"></script>
-		<!-- CHUCK ALL IN HEADER? -->	
 	</div>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>Sourish Sharma</title>
-		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
-		<link rel="stylesheet" href="../css/common.css">
-		<link id="main-style" rel="stylesheet" href="../css/index.css">
-	</head>
 
+	<body class="body loading-page">
 
-	<body class="body">
 		<div class="wrapper">
 
 			<header class="header">
 
 				<nav class="navbar-simple">
-					<a href="index">
+					<a href="/">
 						<div class="logo">
 							<img class="navlogo" src="../media/logos/logo.png" alt="">
 						</div>
 					</a>
 					<div class="links">
-						<a href="index#about">About Me</a>
+						<a href="#about">About Me</a>
 						<a href="food">Food</a>
 						<a href="techsnap">TechSnap</a>
 						<a href="blog">Blog</a>
@@ -50,6 +72,7 @@
 					</div>
 				</nav>
 
+				<script src="../js/splashscreen.js"></script>
 
 			</header>
 
@@ -311,7 +334,7 @@
 		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
 
 		<nav class="navbar">
-			<a href="index">
+			<a href="/">
 				<div class="logo">
 					<img class="navlogo" src="../media/logos/logo.png" alt="">
 				</div>
@@ -339,8 +362,8 @@
 					<img class="navlogo" src="../media/logos/logo.png" alt="">
 				</div>
 				<div class="links">
-					<a href="index">Home</a>
-					<a href="index#about" onclick="closeMobileNav()">About Me</a>
+					<a href="/">Home</a>
+					<a href="#about" onclick="closeMobileNav()">About Me</a>
 					<a href="food">Food</a>
 					<a href="techsnap">TechSnap</a>
 					<a href="blog">Blog</a>

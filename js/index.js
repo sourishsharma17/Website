@@ -13,6 +13,7 @@ let wrapper = document.querySelector(".wrapper");
 wrapper.onscroll = function() {justScrolledW()};
 
 function justScrolledW() {
+	console.log(scrolled);
 	if (scrolled) {
 		document.querySelectorAll(".landing .scrolldown > span").forEach(thing => thing.animate([{opacity: 0}], {duration: 1000}));
 		setTimeout(function() {
