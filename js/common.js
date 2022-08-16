@@ -14,12 +14,6 @@ function themeToggle() {
 		return;
 	}
 
-	if (document.body.hasAttribute("dark-mode")) {
-		document.querySelector(".landing .landing-img .first-img").src = "../media/landing/portrait-light.png";
-	} else {
-		document.querySelector(".landing .landing-img .first-img").src = "../media/landing/portrait-dark.png";
-	}
-
 	icon.classList.toggle("fa-sun");
 	document.body.toggleAttribute("dark-mode");
 

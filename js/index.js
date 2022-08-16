@@ -249,6 +249,13 @@ function amoled() {
 	themeIcon.classList.toggle("fa-rocket");
 }
 
+function switchImage() {
+	if (document.body.hasAttribute("dark-mode")) {
+		document.querySelector(".landing .landing-img .first-img").src = "../media/landing/portrait-light.png";
+	} else {
+		document.querySelector(".landing .landing-img .first-img").src = "../media/landing/portrait-dark.png";
+	}
+}
 
 
 
