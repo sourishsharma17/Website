@@ -2,6 +2,18 @@ let toggleThemes = document.querySelector("#toggle-themes");
 let icon = document.querySelector("#toggle-themes .fas");
 let html = document.querySelector("html");
 
+
+if (document.cookie.split(";").some((item) => item.trim().startsWith("darkmode="))) {
+	if (document.cookie.split(";").some((item) => item.includes("darkmode=1"))) {
+		themeToggle();
+	} else {
+	}
+} else {
+	document.cookie = "darkmode=0; SameSite=None; Secure; max-age=1800";
+}
+
+
+
 function themeToggle() {
 
 	if (toggleThemes.hasAttribute("rocket-mode")) {
@@ -16,6 +28,11 @@ function themeToggle() {
 
 	icon.classList.toggle("fa-sun");
 	document.body.toggleAttribute("dark-mode");
+	if (document.body.hasAttribute("dark-mode")) {
+		document.cookie = "darkmode=1; SameSite=None; Secure; max-age=1800";
+	} else {
+		document.cookie = "darkmode=0; SameSite=None; Secure; max-age=1800";
+	}
 
 };
 
