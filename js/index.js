@@ -13,7 +13,6 @@ let wrapper = document.querySelector(".wrapper");
 wrapper.onscroll = function() {justScrolledW()};
 
 function justScrolledW() {
-	console.log(scrolled);
 	if (scrolled) {
 		document.querySelectorAll(".landing .scrolldown > span").forEach(thing => thing.animate([{opacity: 0}], {duration: 1000}));
 		setTimeout(function() {
@@ -73,6 +72,13 @@ let achievements = document.querySelectorAll(".achievements div");
 let hobbies = document.querySelectorAll(".hobbies div");
 let keyEvents = document.querySelectorAll(".key-events div");
 
+/*
+window.addEventListener("resize", fadePos);
+function fadePos() {
+	document.querySelector(".landing .landing-img #first-image-fade").style.bottom = getComputedStyle(document.querySelector(".landing .landing-img .first-img")).bottom;
+	console.log(getComputedStyle(document.querySelector(".landing .landing-img .first-img")).bottom);
+}
+*/
 
 window.addEventListener("resize", repos);
 window.addEventListener("load", repos);
@@ -249,6 +255,7 @@ function amoled() {
 	themeIcon.classList.toggle("fa-rocket");
 }
 
+/*
 window.addEventListener("load", (event) => {
 	if (document.body.hasAttribute("dark-mode")) {
 		document.querySelector(".landing .landing-img .first-img").src = "../media/landing/portrait-dark.png";
@@ -264,7 +271,19 @@ function switchImage() {
 		document.querySelector(".landing .landing-img .first-img").src = "../media/landing/portrait-dark.png";
 	}
 }
+*/
 
+window.addEventListener("load", (event) => {
+	if (document.body.hasAttribute("dark-mode")) {
+		document.querySelectorAll(".landing .landing-img .first-img")[0].toggleAttribute("hidden");
+	} else {
+		document.querySelectorAll(".landing .landing-img .first-img")[1].toggleAttribute("hidden");
+	}
+});
+
+function switchImage() {
+	document.querySelectorAll(".landing .landing-img .first-img").forEach(thing => thing.toggleAttribute("hidden"));
+}
 
 
 

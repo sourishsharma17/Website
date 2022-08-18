@@ -159,17 +159,19 @@ html {
 	position: relative;
 	background: var(--primary);
 	box-shadow: 0rem 2rem 1rem var(--primary);
+	max-width: 3000px;
+	margin: auto;
 }
 
 .landing .wrap {
 	position: absolute;
-	left: 50rem;
+	right: 20%;
+	top: 20rem;
 }	
 
 .landing-text {
 	position: relative;
 	text-align: left;	
-	padding-top: 20rem;
 }
 
 .landing-text .landing-welcome1 {
@@ -298,14 +300,24 @@ html {
 
 .landing .landing-img {
 	position: relative;
-	height: 75vh;
-	margin-top: 5vh;
 }
 
 
-.landing .first-img {
-	height: 100%;
+.landing .landing-img .first-img {
+	position: absolute;
+	top: 5vh;
+	bottom: 15vh;
+	height: calc(100% - 20vh);
+	opacity: 1;
+	transition: all 0.2s linear;
+	object-fit: contain;
+	max-width: 80%;
+
 	/*transform: rotateY(180deg);*/
+}
+
+.landing .landing-img .first-img[hidden] {
+	opacity: 0;
 }
 
 span.bubble {
@@ -338,7 +350,7 @@ span.bubble {
 
 #first-image-fade {
 	position: absolute;
-	bottom: 0;
+	bottom: 15vh;
 	left: -20px;
 	width: 100%;
 	background: rgba(0,0,0,0);
@@ -348,13 +360,50 @@ span.bubble {
 	transition: 0.2s linear;
 }
 
+@media (max-width: 1500px) {
+
+	.landing .landing-text .wrap {
+		right: auto;
+		left: 20%;
+		top: 20vh;
+	}	
+
+	.landing .landing-img .first-img {
+		left: 10%;
+		bottom: 10vh;
+		height: calc(100% - 15vh)
+	}
+
+	#first-image-fade {
+		bottom: 10vh;
+	}
+
+}
+
+@media (max-width: 1300px) {
+
+	.landing .landing-text .wrap {
+		top: 15vh;
+	}
+
+	.landing .landing-text .wrap .landing-welcome1, 
+	.landing .landing-text .wrap .landing-welcome2 {
+		font-size: 12rem;
+	}
+
+	.landing .landing-text .wrap .landing-name {
+		font-size: 16rem;
+	}
+
+}
+
 .landing .scrolldown {
 	position: absolute;
 	bottom: 5vh;
 	left: 50%;
 	transform: translate(-50%, 0%) rotate(45deg);
-	height: 70px;
-	width: 70px;
+	height: 7rem;
+	width: 7rem;
 }
 
 .landing .scrolldown > span {
@@ -616,8 +665,8 @@ span.bubble {
 }
 
 .about .hobbies .hc {
-   right: 20rem;
-   top: 300rem;
+	right: 20rem;
+	top: 300rem;
 }   
 
 .about .achievements {
@@ -713,20 +762,22 @@ span.bubble {
 	z-index: 20;
 	background: var(--primary);
 }
-	
+
 @media (max-width: 1920px) {
-	
+
+	/*
 	.landing .first-img {
 		position: absolute;
 		right: 0;
 		left: 0;
 		padding-right: 30rem;
 	}
-	
+
 	.landing .wrap {
 		right: auto;
 		left: 30rem;
 	}
+	*/
 
 	.about .hobbies > div {
 		max-width: 65rem;	
@@ -740,18 +791,20 @@ span.bubble {
 
 @media (max-width: 1366px) {
 
+	/*
 	.landing .first-img {
 		position: absolute;
 		right: 0;
 		left: 0;
 		padding-right: 20rem;
 	}
-	
+
 	.landing .wrap {
 		right: auto;
 		left: 20rem;
 	}
-	
+	*/
+
 	.about .hobbies > div {
 		max-width: 60rem;	
 	}
@@ -809,7 +862,7 @@ span.bubble {
 	.about .years h2:last-child {
 		transform: translate(15%, 0%);
 	}
-	
+
 	.about .hobbies > div {
 		width: max-content;
 		max-width: 40rem;	
@@ -831,48 +884,48 @@ span.bubble {
 
 
 /*
- 
-	.landing .landing-img #first-image-fade {
-		position: absolute;
-		left: 50%;
-		bottom: 15vh;
-		transform: translate(-50%, 0);
-		padding: 0rem;
-		margin: 0rem;
-		animation: intro-move-fader 1s ease-out forwards;
-		animation-delay: 1.5s;
-	}
 
-	.landing .landing-img {
-		width: 100vw;
-		height: 100vh;
-		background: var(--primary);
-		opacity: 1;
-		z-index: 1750;
-		position: fixed;
-		padding: 0;
-		margin: 0;
-		animation: intro-move-img 1s ease-out forwards;
-		animation-delay: 1.5s;
-	}
+.landing .landing-img #first-image-fade {
+position: absolute;
+left: 50%;
+bottom: 15vh;
+transform: translate(-50%, 0);
+padding: 0rem;
+margin: 0rem;
+animation: intro-move-fader 1s ease-out forwards;
+animation-delay: 1.5s;
+}
 
-	.header {
-		position: absolute;
-		top: -100rem;
-	}
+.landing .landing-img {
+width: 100vw;
+height: 100vh;
+background: var(--primary);
+opacity: 1;
+z-index: 1750;
+position: fixed;
+padding: 0;
+margin: 0;
+animation: intro-move-img 1s ease-out forwards;
+animation-delay: 1.5s;
+}
 
-	.landing .landing-img .first-img {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0rem;
-		margin: 0rem;
-		object-fit: contain;
-		max-height: 70vh;
-		max-width: 70vw;
-		animation: intro-move-image 1s ease-out forwards;
-		animation-delay: 1.5s;
+.header {
+position: absolute;
+top: -100rem;
+}
+
+.landing .landing-img .first-img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 0rem;
+margin: 0rem;
+object-fit: contain;
+max-height: 70vh;
+max-width: 70vw;
+animation: intro-move-image 1s ease-out forwards;
+animation-delay: 1.5s;
 	}
 
 	@keyframes intro-move-image {
@@ -929,27 +982,27 @@ span.bubble {
 
 
 
-.about .wrapper {
-height: 100vh;
-z-index: 100000;
-overflow-y: auto;
-overflow-x: hidden;
-perspective: 10px;
-position: relative;
-margin-left: calc(100% - 100vw);
-margin-right: calc(100% - 100vw);
-padding-left: calc(100vw - 100%);
-padding-right: calc(100vw - 100%);
-}
+	.about .wrapper {
+		height: 100vh;
+		z-index: 100000;
+		overflow-y: auto;
+		overflow-x: hidden;
+		perspective: 10px;
+		position: relative;
+		margin-left: calc(100% - 100vw);
+		margin-right: calc(100% - 100vw);
+		padding-left: calc(100vw - 100%);
+		padding-right: calc(100vw - 100%);
+	}
 
-.about .parallax-layer {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-}
- */
+	.about .parallax-layer {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+*/
 
 
 	/*
