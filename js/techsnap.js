@@ -226,8 +226,8 @@ function fullscreen(number) {
 	document.querySelector("body > .links").children[2].children[0].setAttribute("onclick", "minimise(" + number + ")");
 	document.querySelector("body > .links").children[2].children[0].setAttribute("tooltip", "minimise");
 
-	document.body.style.overflow = "hidden";
-	document.body.style.height = "100vh";
+	html.style.overflow = "hidden";
+	html.style.height = "100%";
 
 }
 
@@ -239,8 +239,8 @@ function minimise(number) {
 	document.querySelector("body > .story").remove();
 	document.querySelector("body > .links").remove();
 
-	document.body.style.overflow = "revert";
-	document.body.style.height = "revert";
+	html.style.overflow = "auto";
+	html.style.height = "auto";
 
 }
 
@@ -256,6 +256,8 @@ document.addEventListener("click", mousePos);
 function mousePos(event) {
 
 	if (fireworks) {
+
+		window.navigator.vibrate([80, 10, 50]);
 
 		var posX = event.clientX;
 		var posY = event.clientY;

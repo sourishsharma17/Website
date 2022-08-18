@@ -7,9 +7,6 @@ body[cross] * {
 	cursor: crosshair !important;
 }
 
-.intro h1 > span:hover {
-	color: var(--secondary);
-}
 
 .panel {
 	max-width: 145rem;
@@ -71,10 +68,6 @@ body[cross] * {
 
 }
 
-.panel .card:hover {
-	box-shadow: var(--box-shadow-inset);
-}
-
 .panel .card .carousel {
 	height: 100%;
 	width: 100%;
@@ -99,10 +92,6 @@ body[cross] * {
 	backface-visibility: hidden;
 }
 
-.panel .card:hover .carousel .title > h1 {
-	-webkit-text-fill-color: var(--text);
-}
-
 .panel .card .carousel .title h1 {
 	font-size: 7rem;
 	-webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -120,16 +109,6 @@ body[cross] * {
 	font-weight: 600;
 	-webkit-text-fill-color: rgba(0, 0, 0, 0);
 	-webkit-text-stroke: 1px var(--text);
-}
-
-.panel .card:hover .carousel .snap .snap-title {
-	-webkit-text-fill-color: var(--text);
-}
-
-.panel .card .carousel .snap .snap-title:hover {
-	color: var(--secondary);
-	-webkit-text-fill-color: var(--secondary);
-	-webkit-text-stroke: 1px var(--secondary);
 }
 
 .panel .card .carousel .snap .time {
@@ -177,14 +156,6 @@ body[cross] * {
 	z-index: 100;
 }
 
-.panel .card:hover > button {
-	opacity: 1;
-}
-
-.panel .card > button:hover {
-	color: var(--secondary);
-}
-
 .panel .card > button > div {
 	pointer-events: none;
 }
@@ -202,10 +173,6 @@ body[cross] * {
 	opacity: 1;
 }
 
-.panel .card .carousel.clicked .active:hover {
-	box-shadow: var(--box-shadow-inset);
-}
-
 .panel .card .indicators {
 	position: absolute;
 	left: 50%;
@@ -217,10 +184,6 @@ body[cross] * {
 	display: flex;
 	gap: 5px;
 	opacity: 0;
-}
-
-.panel .card:hover .indicators {
-	opacity: 1;
 }
 
 .panel .card .indicators > .indicator {
@@ -333,25 +296,9 @@ body[cross] * {
 	background: transparent;
 }
 
-.panel .card .carousel .story:hover::-webkit-scrollbar-thumb,
-.panel .card .links:hover ~ .carousel .story::-webkit-scrollbar-thumb {
-	background: var(--secondary);
-}
-
-.panel .card .carousel .story:hover::-webkit-scrollbar-thumb:hover {
-	background: var(--text);
-}
-
 .panel .card > .hide {
 	visibility: hidden;
 }	
-
-.panel .card .carousel .story:hover, 
-.panel .card .links:hover ~ .carousel .story {
-	scrollbar-width: thin;
-	scrollbar-width: none;
-	box-shadow: var(--box-shadow-inset);
-}
 
 .panel .card .carousel .story > h1 {
 	font-size: 2.5rem;
@@ -564,9 +511,70 @@ body > .links span::after {
 	transition: all 0.1s ease-in;
 }
 
-body > .links span:hover::after {
-	opacity: 1;
-	right: -1rem;
+@media (min-width: 601px) {
+
+	body > .links span:hover::after {
+		opacity: 1;
+		right: -1rem;
+	}
+
+	.intro h1 > span:hover {
+		color: var(--secondary);
+	}
+
+
+	.panel .card:hover {
+		box-shadow: var(--box-shadow-inset);
+	}
+
+	.panel .card:hover .carousel .title > h1 {
+		-webkit-text-fill-color: var(--text);
+	}
+
+	.panel .card:hover .carousel .snap .snap-title {
+		-webkit-text-fill-color: var(--text);
+	}
+
+	.panel .card .carousel .snap .snap-title:hover {
+		color: var(--secondary);
+		-webkit-text-fill-color: var(--secondary);
+		-webkit-text-stroke: 1px var(--secondary);
+	}
+
+	.panel .card:hover > button {
+		opacity: 1;
+	}
+
+	.panel .card > button:hover {
+		color: var(--secondary);
+	}
+
+	.panel .card .carousel.clicked .active:hover {
+		box-shadow: var(--box-shadow-inset);
+	}
+
+	.panel .card:hover .indicators {
+		opacity: 1;
+	}
+
+
+	.panel .card .carousel .story:hover::-webkit-scrollbar-thumb,
+	.panel .card .links:hover ~ .carousel .story::-webkit-scrollbar-thumb {
+		background: var(--secondary);
+	}
+
+	.panel .card .carousel .story:hover::-webkit-scrollbar-thumb:hover {
+		background: var(--text);
+	}
+
+
+	.panel .card .carousel .story:hover, 
+	.panel .card .links:hover ~ .carousel .story {
+		scrollbar-width: thin;
+		scrollbar-width: none;
+		box-shadow: var(--box-shadow-inset);
+	}
+
 }
 
 @media (max-width: 600px) {

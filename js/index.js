@@ -17,7 +17,7 @@ function justScrolledW() {
 		document.querySelectorAll(".landing .scrolldown > span").forEach(thing => thing.animate([{opacity: 0}], {duration: 1000}));
 		setTimeout(function() {
 			document.querySelectorAll(".landing .scrolldown > span").forEach(thing => thing.style.animation = "none");
-		}, 1000);
+		}, 990);
 	}
 	scrolled = false;
 	if (wrapper.scrollTop >= (0.5*intFrameHeight)) {

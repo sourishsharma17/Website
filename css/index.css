@@ -356,7 +356,7 @@ span.bubble {
 	background: rgba(0,0,0,0);
 	opacity: 1;
 	height: 25rem;
-	box-shadow: inset 0rem -8rem 5rem var(--primary);
+	box-shadow: inset 0rem -8rem 5rem var(--primary), inset 0rem -2rem 1rem var(--primary);
 	transition: all 0.2s linear;
 }
 
