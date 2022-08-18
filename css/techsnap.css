@@ -299,6 +299,7 @@ body[cross] * {
 
 .panel .card .carousel .story::-webkit-scrollbar {
 	width: 1.3rem;
+	width: 0rem;
 }
 
 .panel .card .links:not(:hover) ~ .carousel:not(:hover)::after {
@@ -332,7 +333,8 @@ body[cross] * {
 	background: transparent;
 }
 
-.panel .card .carousel .story:hover::-webkit-scrollbar-thumb {
+.panel .card .carousel .story:hover::-webkit-scrollbar-thumb,
+.panel .card .links:hover ~ .carousel .story::-webkit-scrollbar-thumb {
 	background: var(--secondary);
 }
 
@@ -346,7 +348,8 @@ body[cross] * {
 
 .panel .card .carousel .story:hover, 
 .panel .card .links:hover ~ .carousel .story {
-	scrollbar-width: auto;
+	scrollbar-width: thin;
+	scrollbar-width: none;
 	box-shadow: var(--box-shadow-inset);
 }
 
@@ -459,17 +462,16 @@ body > .story {
 	width: 80%;
 	min-width: 20ch;
 	max-width: 40ch;
-	margin: auto;
 	padding: 3rem 5rem;
 	text-align: center;
 	background: var(--primary);
 	scrollbar-width: none;
-	scrollbar-color: var(--secondary) transparent;
 	border-radius: 2rem;
 }
 
 body > .story::-webkit-scrollbar {
-	width: 2rem;
+	display: none;
+	width: 1.5rem;
 }
 
 body > .story::-webkit-scrollbar-track {
@@ -485,7 +487,6 @@ body > .story:hover::-webkit-scrollbar-thumb:hover {
 }
 
 body > .story:hover { 
-	scrollbar-width: auto;
 }
 
 body > .story > h1 {
@@ -600,7 +601,7 @@ body > .links span:hover::after {
 	}
 
 	.panel .card .carousel .story {
-		scrollbar-width: auto;
+		scrollbar-width: none;
 		box-shadow: var(--box-shadow-inset);
 	}
 

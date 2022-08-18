@@ -219,7 +219,7 @@ function fullscreen(number) {
 	document.body.appendChild(links.cloneNode(true));
 
 	var left = document.querySelector("body > .story").getBoundingClientRect().left;
-	document.querySelector("body > .links").style.left = left + "px";
+	document.querySelector("body > .links").style.left = "calc( " + left + "px + 0.25rem)";
 	document.querySelector("body > .links").children[2].remove();
 	document.querySelector("body > .links").children[2].children[0].classList.add("fa-compress");
 	document.querySelector("body > .links").children[2].children[0].classList.remove("fa-expand");
