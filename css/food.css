@@ -151,7 +151,7 @@ html {
 
 }
 
-@media (hover: none) {
+@media (max-width: 600px) {
 
 	.images .name {
 		opacity: 1;

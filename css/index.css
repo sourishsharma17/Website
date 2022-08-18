@@ -13,7 +13,7 @@ html {
 	height: 100vh;
 	perspective: 1px;
 	scroll-behavior: smooth;
-	scroll-padding-top: 30rem;
+	scroll-padding-top: 20vh;
 }
 
 .navbar-simple {
@@ -357,7 +357,7 @@ span.bubble {
 	opacity: 1;
 	height: 25rem;
 	box-shadow: inset 0rem -8rem 5rem var(--primary);
-	transition: 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 @media (max-width: 1500px) {

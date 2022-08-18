@@ -568,7 +568,7 @@ body > .links span:hover::after {
 	right: -1rem;
 }
 
-@media (hover: none) {
+@media (max-width: 600px) {
 
 	.hover-check {
 		color: red;

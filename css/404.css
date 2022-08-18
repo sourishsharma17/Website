@@ -32,7 +32,7 @@
 .error .e404 span:first-child {
 	animation: glitch 650ms infinite;
 	clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-	transform: translate(-0.025em, -0.0125em);
+	transform: translate(-0.015em, -0.0125em);
 	opacity: 0.8;
 }
 
