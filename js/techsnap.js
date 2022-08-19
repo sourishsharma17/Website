@@ -125,6 +125,7 @@ async function serveSnap(snapNo) {
 	node.parentNode.parentNode.classList.add("clicked");
 
 	node.parentNode.parentNode.parentNode.classList.add("id" + snapNo);
+
 	
 	links = `<div><span class="fas fa-clock-rotate-left" tooltip="00:00"></span></div>
 	<div><a href="" target="_blank"><span class="fas fa-up-right-from-square" tooltip="source"></span></a></div>
@@ -135,15 +136,17 @@ async function serveSnap(snapNo) {
 	temp.classList.add("links");
 	temp.classList.add("hide");
 	temp.innerHTML = links.trim();
-
 	node.parentNode.parentNode.parentNode.prepend(temp);
+
+	var temp1 = document.createElement("div");
+	temp1.classList.add("story");
+	document.querySelector(".panel .card.id" + snapNo + " .carousel.clicked").append(temp1);
 
 	var toChange = Array.from(node.parentNode.parentNode.parentNode.children);
 
 	toChange[1].classList.add("hide");
 	toChange[3].classList.add("hide");
 	toChange[4].classList.add("hide");
-	
 
 	//fetch('0.txt')
 	  //.then(response => response.text())
@@ -159,6 +162,7 @@ async function serveSnap(snapNo) {
 	async function updateSnap(text) {
 
 		text = text.split("---");
+		temp1.remove();
 		node.parentNode.parentNode.innerHTML += text[0];
 		text = text[1].split("\n");
 

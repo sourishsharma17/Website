@@ -159,6 +159,16 @@ html {
 
 }
 
+@media (max-width: 700px) {
+
+	.cross {
+		right: 3rem;
+		top: 2rem;
+		font-size: 6rem;
+	}
+
+}
+
 @media (max-width: 600px) {
 
 	.images .name {

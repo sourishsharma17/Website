@@ -147,10 +147,6 @@
 	color: var(--text);
 }
 
-.post .scroll-top .fa-plane-up:hover {
-	color: var(--secondary);
-}
-
 .post .scroll-top.seen {
 	bottom: 20px;
 	z-index: 100;
@@ -221,6 +217,14 @@
 		right: 20px;
 		opacity: 0;
 		bottom: 100%;
+	}
+
+}
+
+@media (min-width: 601px) {
+
+	.post .scroll-top .fa-plane-up:hover {
+		color: var(--secondary);
 	}
 
 }

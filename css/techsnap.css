@@ -23,7 +23,7 @@ body[cross] * {
 	position: relative;
 	overflow: hidden;
 	min-width: 30rem;
-	max-width: 50rem;;;
+	max-width: 50rem;
 	flex: 0 0 23%;
 	background: var(--background);
 	border-radius: 2rem;
@@ -623,6 +623,34 @@ body > .links span::after {
 
 	body > .links > div:first-child {
 		display: none;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.panel .card {
+		max-width: 90vw;
+		flex: 0 0 80%;
+	}
+
+	.panel .card > button {
+		font-size: 6rem;
+		padding: 0rem 2.5%;
+	}
+
+	.panel .card > button.right {
+		right: 0;
+		padding-right: 4%;
+	}
+
+	.panel .card > button.left {
+		left: 0;
+		padding-left: 4%;
+	}
+
+	.panel .card .carousel .snap .snap-title {
+		padding: 0rem calc(4.25rem + 5%);
 	}
 
 }
