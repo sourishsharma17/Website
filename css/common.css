@@ -27,6 +27,7 @@
 	border: none;
 	text-decoration: none;
 	transition: 0.2s linear;
+	-webkit-tap-highlight-color: transparent;
 }
 
 html {

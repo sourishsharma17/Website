@@ -71,6 +71,17 @@ function plane() {
 
 }
 
+var scrolling;
+
+window.addEventListener("scroll", function (event) {
+
+	window.clearTimeout(scrolling); 
+	scrolling = setTimeout(function() {
+		goingUp = false;
+	}, 30);
+
+}, false);
+
 function toTop() {
 
 	//html.style.overflow = "hidden";
@@ -81,6 +92,7 @@ function toTop() {
 	
 	setTimeout(function () {
 		document.documentElement.scrollTop = 0;
+		goingUp = true;
 		window.planeRight = setInterval(check, 10);
 	}, 150);
 
@@ -95,7 +107,7 @@ function toTop() {
 	*/
 
 	function check() {
-		if (document.documentElement.scrollTop == 0) {
+		if (document.documentElement.scrollTop == 0 || !goingUp) {
 			window.clearInterval(planeRight);
 			scroll.classList.remove("swoosh");
 			scroll.classList.remove("seen");
@@ -103,6 +115,8 @@ function toTop() {
 			//html.style.overflow = "auto";
 			//html.style.height = "revert";
 		}
+
+		
 	}
 
 }
