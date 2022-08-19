@@ -1,3 +1,7 @@
+header .navbar-simple {
+	margin: 1rem auto !important;
+}
+
 .post {
 	min-height: 100vh;
 	position: relative;
@@ -162,7 +166,7 @@
 }
 
 .post .scroll-top.swoosh {
-	animation: plane-out 0.5s linear;
+	animation: plane-out 0.5s linear forwards;
 }
 
 @keyframes plane-in {

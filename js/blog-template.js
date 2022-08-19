@@ -65,18 +65,39 @@ function plane() {
 }
 
 function toTop() {
+
+	//html.style.overflow = "hidden";
+	//html.style.height = "100vh";
+
 	//document.body.scrollTop = 0;
 	goingUp = true;
 	
 	setTimeout(function () {
 		document.documentElement.scrollTop = 0;
+		window.planeRight = setInterval(check, 10);
 	}, 150);
+
 	scroll.classList.add("swoosh");
+
+	/*
 	setTimeout(function() {
 		scroll.classList.remove("swoosh");
 		scroll.classList.remove("seen");
 		goingUp = false;
 	}, 500);
+	*/
+
+	function check() {
+		if (document.documentElement.scrollTop == 0) {
+			window.clearInterval(planeRight);
+			scroll.classList.remove("swoosh");
+			scroll.classList.remove("seen");
+			goingUp = false;
+			//html.style.overflow = "auto";
+			//html.style.height = "revert";
+		}
+	}
+
 }
 
 
