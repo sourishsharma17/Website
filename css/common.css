@@ -150,14 +150,24 @@ body[amoled] {
 	border: 0.4rem solid var(--primary);
 }
 
+body.loading-page::-webkit-scrollbar-thumb {
+	background: var(--primary);
+}
+
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--text);
 }
 
 @supports (scrollbar-color: red blue) {
+
+	html.loading-page {
+		scrollbar-color: var(--primary) var(--primary) !important;
+	}
+	
 	* {
 		scrollbar-color: var(--secondary) var(--primary);
 	}
+
 }
 
 .navbar-simple {

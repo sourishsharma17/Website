@@ -1,3 +1,10 @@
+window.scrollTo({top: screen.height/5, behavior: "instant"});
+function subtleScroll() {
+	document.documentElement.scrollTop = 0;
+}
+window.addEventListener("load", subtleScroll);
+
+
 //document.querySelector(".post .scroll-top.unseen").animation = "plane-out 0.5s ease-in";
 document.addEventListener("scroll", plane);
 

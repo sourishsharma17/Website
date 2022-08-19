@@ -2,7 +2,6 @@ let toggleThemes = document.querySelector("#toggle-themes");
 let icon = document.querySelector("#toggle-themes .fas");
 let html = document.querySelector("html");
 
-
 if (document.cookie.split(";").some((item) => item.trim().startsWith("darkmode="))) {
 	if (document.cookie.split(";").some((item) => item.includes("darkmode=1"))) {
 		themeToggle();

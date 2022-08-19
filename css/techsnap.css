@@ -318,9 +318,10 @@ body[cross] * {
 }
 
 .panel .card .carousel .story .main-content > img {
-	padding: 1.5rem 0.5rem 1rem 0.5rem;
+	margin: 1.5rem 0.5rem 1rem 0.5rem;
 	object-fit: contain;
-	width: 100%;
+	width: calc(100% - 1rem);
+	border-radius: 0.5rem;
 }
 
 .panel .card .links {
@@ -454,10 +455,11 @@ body > .story .main-content > p {
 }
 
 body > .story .main-content > img {
-	padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+	margin: 1.5rem 0.5rem 0.5rem 0.5rem;
 	object-fit: contain;
-	width: 100%;
+	width: calc(100% - 1rem);
 	height: auto;
+	border-radius: 1rem;
 }
 
 body > .links {
