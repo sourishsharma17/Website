@@ -538,10 +538,6 @@ span.bubble {
 		display: none;
 	}
 
-	.landing {
-		padding-top: 5vh;
-	}
-
 	.landing .landing-text.small {
 		background: var(--primary);
 		display: block;
@@ -604,11 +600,12 @@ span.bubble {
 	}
 
 	.landing {
+		min-height: 0px !important;
+		padding-top: 5vh;
 		display: flex;
 		flex-direction: column;
-		height: calc(100vh - 56px);
+		width: 100%;
 		margin: 0;
-		border: 5px solid black;
 	}
 
 	.landing .landing-img {
@@ -652,7 +649,7 @@ span.bubble {
 	}
 
 	.landing .scrolldown {
-		bottom: 3.25rem;
+		bottom: 1.5rem;
 		height: 3.5rem;
 		width: 3.5rem;
 		opacity: 0.8;
