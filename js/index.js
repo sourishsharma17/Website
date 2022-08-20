@@ -44,12 +44,11 @@ function justScrolled() {
 */
 
 let body = document.querySelector(".body");
-window.addEventListener('resize', () => {
-	if (screen.width < 600) {
-		document.querySelector(".landing").style.height = document.documentElement.clientHeight + "px";
-		document.querySelector(".preloader-mobile").style.height = document.documentElement.clientHeight + "px";
-	}
-});
+
+if (screen.width < 600) {
+	document.querySelector(".landing").style.height = window.innerHeight + "px";
+	document.querySelector(".preloader-mobile").style.height = window.innerHeight + "px";
+}
 
 function beginMobile() {
 	setTimeout(function() {
