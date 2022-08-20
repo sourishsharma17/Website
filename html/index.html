@@ -9,7 +9,13 @@
 				document.querySelector(".preloader").remove();
 				document.body.classList.remove("loading-page");
 				html.classList.remove("loading-page");
-				begin();
+				if (screen.width < 600) {
+					document.querySelector(".glitch").remove();
+					beginMobile();
+				} else {
+					document.querySelector(".preloader-mobile").remove();
+					begin();
+				}
 			}
 		</script>	
 		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
@@ -34,8 +40,60 @@
 			color: white;
 			position: absolute;
 		}
+
+		.preloarder-mobile {
+			display: none;
+		}
+
+		@media (max-width: 600px) {
+
+			.preloader {
+				display: none;
+			}
+
+			.preloader-mobile {
+				display: revert;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background: var(--primary);
+				background: black;
+				z-index: 10000;
+			}
+
+			.preloader-mobile img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				max-width: 15%;
+				object-fit: contain;
+			}
+
+			.preloader-mobile > p {
+				opacity: 1;
+				position: absolute;
+				bottom: 10%;
+				left: 50%; 
+				transform: translate(-50%, 0%);
+				color: var(--text);
+				font-size: 3rem;
+				transition: all 0.1s linear;
+			}
+
+			.preloader-mobile > div {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				background: var(--primary);
+			}
+
+		}
 	</style>
 	<div class="preloader"><h1>LOADING...</h1></div>
+	<div class="preloader-mobile"><div><img src="../media/logos/logo.png" alt=""></div><p>loading</p></div>
 	<div class="glitch">
 		<div class="layers">
 			<div class="layer"></div>

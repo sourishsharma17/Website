@@ -530,12 +530,12 @@ span.bubble {
 @media (max-width: 600px) {
 
 	.glitch,
-	.preloader,
 	.landing .landing-text.large {
 		display: none;
 	}
 
 	.landing .landing-text.small {
+		background: var(--primary);
 		display: block;
 		position: relative;
 		height: 50%;
@@ -549,7 +549,23 @@ span.bubble {
 		width: 100%;
 		top: -1rem;
 		text-align: center;
+		opacity: 0;
+		animation: slow-up1 0.5s 2s ease-out forwards;
 	}	
+
+	@keyframes slow-up1 {
+
+		0% {
+			opacity: 0;
+			top: 1rem;
+		}
+
+		100% {
+			opacity: 1;
+			top: -1rem;
+		}
+
+	}
 
 	.landing .landing-text.small .wrap .landing-welcome > span {
 		color: var(--secondary);
@@ -562,8 +578,21 @@ span.bubble {
 		transform: translate(-50%, 0%);
 		position: absolute;
 		top: 15rem;
-		opacity: 1;
+		opacity: 0;
 		transition: opacity 0.2s linear;
+		animation: slow-in 1s 2.3s ease-in forwards;
+	}
+
+	@keyframes slow-in {
+
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+
 	}
 
 	.landing {
@@ -582,15 +611,29 @@ span.bubble {
 
 	.landing .landing-img .first-img {
 		position: absolute;
-		top: 0;
 		left: 50%;
+		opacity: 0;
 		transform: translate(-50%, 0);
 		height: auto;
 		max-height: 100%;
 		max-width: 80%;
-		opacity: 1;
 		transition: all 0.2s linear;
 		object-fit: contain;
+		animation: slow-up 1s 1.45s ease-out forwards;
+	}
+
+	@keyframes slow-up {
+
+		0% {
+			top: 50px;
+			opacity: 0;
+		}
+
+		100% {
+			top: 0;
+			opacity: 1;
+		}
+
 	}
 
 	.landing .landing-img #first-image-fade {
@@ -609,7 +652,7 @@ span.bubble {
 	.landing .scrolldown > span {
 		background: var(--secondary);
 		box-shadow: revert;
-		animation: vis 4s 0s forwards, thrust 0.65s alternate infinite;
+		animation: vis 2s 2.8s forwards, thrust 0.65s alternate infinite;
 	}
 
 	@keyframes vis {
@@ -636,6 +679,86 @@ span.bubble {
 			right: 5px;
 		}
 
+	}
+
+	.preloader-mobile > p {
+		animation: fade-down 0.5s linear forwards;
+	}
+
+	@keyframes fade-down {
+
+		0% {
+			opacity: 1;
+			bottom: 10%;
+		}
+
+		100% {
+			opacity: 0;
+			bottom: 5%;
+		}
+
+	}
+
+	.preloader-mobile > div {
+		animation: box-in 0.5s 0.3s linear forwards, box-out 0.15s 1.2s ease-out forwards;
+	}
+
+	@keyframes box-in {
+
+		0% {
+			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		}
+
+		25% {
+			clip-path: polygon(35% calc(50% - 15vw), 100% 0%, 100% 100%, 0% 100%);
+		}
+
+		50% {
+			clip-path: polygon(35% calc(50% - 15vw), 65% calc(50% - 15vw), 100% 100%, 0% 100%);
+		}
+
+		75% {
+			clip-path: polygon(35% calc(50% - 15vw), 65% calc(50% - 15vw), 65% calc(50% + 15vw), 0% 100%);
+		}
+
+		100% {
+			clip-path: polygon(35% calc(50% - 15vw), 65% calc(50% - 15vw), 65% calc(50% + 15vw), 35% calc(50% + 15vw));
+		}
+
+	}
+
+	@keyframes box-out {
+
+		0% {
+			clip-path: polygon(35% calc(50% - 15vw), 65% calc(50% - 15vw), 65% calc(50% + 15vw), 35% calc(50% + 15vw));
+		}
+
+		100% {
+			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		}
+
+	}
+
+	.preloader-mobile img {
+		animation: wipe 0.2s 0.9s linear forwards;
+	}
+
+	@keyframes wipe {
+
+		0% {
+			opacity: 1;
+			left: 50%;
+		}
+
+		35% {
+			opacity: 0.5;
+		}
+		
+		100% {
+			opacity: 0;
+			left: 65%;
+		}
+		
 	}
 
 }

@@ -43,11 +43,19 @@ function justScrolled() {
 }
 */
 
+let body = document.querySelector(".body");
 if (screen.width < 600) {
-	document.querySelector(".landing").style.height = window.innerHeight - document.querySelector(".header").height + "px";
+	document.querySelector(".landing").style.height = window.innerHeight-56 + "px";
+	document.querySelector(".preloader-mobile").style.height = window.innerHeight + "px";
 }
 
-let body = document.querySelector(".body");
+function beginMobile() {
+
+	setTimeout(function() {
+		document.querySelector(".preloader-mobile").remove();
+	}, 1400);
+
+}
 
 document.addEventListener("mousemove", function(e) {
 	if (landing.matches(":hover") && scrolled) {
