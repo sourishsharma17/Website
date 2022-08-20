@@ -608,6 +608,7 @@ span.bubble {
 		flex-direction: column;
 		height: calc(100vh - 56px);
 		margin: 0;
+		border: 5px solid black;
 	}
 
 	.landing .landing-img {
