@@ -163,18 +163,18 @@ html {
 	margin: auto;
 }
 
-.landing .wrap {
+.landing .landing-text.large .wrap {
 	position: absolute;
 	right: 20%;
 	top: 20rem;
 }	
 
-.landing-text {
+.landing-text.large {
 	position: relative;
 	text-align: left;	
 }
 
-.landing-text .landing-welcome1 {
+.landing-text.large .landing-welcome1 {
 	font-size: 14rem;
 	line-height: 0.8;
 	color: var(--text);
@@ -183,8 +183,8 @@ html {
 	
 }
 
-.landing-text .landing-welcome1::before,
-.landing-text .landing-welcome1::after {
+.landing-text.large .landing-welcome1::before,
+.landing-text.large .landing-welcome1::after {
 	content: "";
 	position: absolute;
 	top: -10%;
@@ -194,13 +194,13 @@ html {
 	height: 130%;
 }
 
-.landing-text .landing-welcome1::before {
+.landing-text.large .landing-welcome1::before {
 	background: var(--primary);
 	animation: typewriter 0.6s steps(3) 2.8s forwards;
 	transition: 0.2s linear;
 }
 
-.landing-text .landing-welcome1::after {
+.landing-text.large .landing-welcome1::after {
 	width: 2rem;
 	transition: 0.2s linear;
 	background: var(--primary);
@@ -224,7 +224,7 @@ html {
 	}
 }
 
-.landing-text .landing-welcome2 {
+.landing-text.large .landing-welcome2 {
 	font-size: 14rem;
 	line-height: 0.8;
 	color: var(--text);
@@ -232,8 +232,8 @@ html {
 	position: relative;
 }
 
-.landing-text .landing-welcome2::before,
-.landing-text .landing-welcome2::after {
+.landing-text.large .landing-welcome2::before,
+.landing-text.large .landing-welcome2::after {
 	content: "";
 	position: absolute;
 	top: -10%;
@@ -243,13 +243,13 @@ html {
 	height: 130%;
 }
 
-.landing-text .landing-welcome2::before {
+.landing-text.large .landing-welcome2::before {
 	background: var(--primary);
 	animation: typewriter 0.4s steps(4) 5.55s forwards;
 	transition: 0.2s linear;
 }
 
-.landing-text .landing-welcome2::after {
+.landing-text.large .landing-welcome2::after {
 	width: 2rem;
 	transition: 0.2s linear;
 	background: var(--primary);
@@ -261,7 +261,7 @@ html {
 	blinkr 400ms ease-out 1 5.55s backwards;
 }
 
-.landing-text .landing-name {
+.landing-text.large .landing-name {
 	z-index: 2;
 	font-size: 18rem;
 	color: var(--secondary);
@@ -269,8 +269,8 @@ html {
 	width: max-content;
 }
 
-.landing-text .landing-name::before,
-.landing-text .landing-name::after {
+.landing-text.large .landing-name::before,
+.landing-text.large .landing-name::after {
 	content: "";
 	position: absolute;
 	right: 0;
@@ -280,13 +280,13 @@ html {
 	height: 70%;
 }
 
-.landing-text .landing-name::before {
+.landing-text.large .landing-name::before {
 	background: var(--primary);
 	animation: typewriter 0.7s steps(7) 5.925s forwards;
 	transition: 0.2s linear;
 }
 
-.landing-text .landing-name::after {
+.landing-text.large .landing-name::after {
 	width: 2rem;
 	transition: 0.2s linear;
 	background: var(--primary);
@@ -316,7 +316,7 @@ html {
 	/*transform: rotateY(180deg);*/
 }
 
-.landing .landing-img .first-img[hidden] {
+.landing [hidden] {
 	opacity: 0;
 }
 
@@ -362,7 +362,7 @@ span.bubble {
 
 @media (max-width: 1500px) {
 
-	.landing .landing-text .wrap {
+	.landing .landing-text.large .wrap {
 		right: auto;
 		left: 20%;
 		top: 20vh;
@@ -382,19 +382,92 @@ span.bubble {
 
 @media (max-width: 1300px) {
 
-	.landing .landing-text .wrap {
+	.landing .landing-text.large .wrap {
 		top: 15vh;
 	}
 
-	.landing .landing-text .wrap .landing-welcome1, 
-	.landing .landing-text .wrap .landing-welcome2 {
+	.landing .landing-text.large .wrap .landing-welcome1, 
+	.landing .landing-text.large .wrap .landing-welcome2 {
 		font-size: 12rem;
 	}
 
-	.landing .landing-text .wrap .landing-name {
+	.landing .landing-text.large .wrap .landing-name {
 		font-size: 16rem;
 	}
 
+}
+
+@media (max-width: 1000px) {
+
+	.landing .landing-text.large .wrap {
+		left: 10%;
+		top: 10vh;
+	}	
+
+	.landing .landing-text.large .wrap .landing-welcome1, 
+	.landing .landing-text.large .wrap .landing-welcome2 {
+		font-size: 11rem;
+	}
+
+	.landing .landing-text.large .wrap .landing-name {
+		font-size: 14rem;
+	}
+
+
+	.landing .landing-img .first-img {
+		left: auto;
+		right: 5vw;
+		bottom: 15vh;
+		top: auto;
+		height: calc(100% - 15vh)
+	}
+
+	#first-image-fade {
+		bottom: 15vh;
+	}
+
+}
+
+@media (max-width: 850px) {
+
+	.landing .landing-text.large .wrap {
+		top: 5vh;
+	}	
+
+	.landing .landing-text.large .wrap .landing-welcome1, 
+	.landing .landing-text.large .wrap .landing-welcome2 {
+		font-size: 9rem;
+	}
+
+	.landing .landing-text.large .wrap .landing-name {
+		font-size: 12rem;
+	}
+
+	#first-image-fade {
+		box-shadow: inset 0rem -6rem 4rem var(--primary), inset 0rem -1rem 0.5rem var(--primary);
+	}
+
+}
+
+@media (max-width: 700px) {
+
+	.landing .landing-text.large .wrap {
+		top: 5vh;
+	}	
+
+	.landing .landing-text.large .wrap .landing-welcome1, 
+	.landing .landing-text.large .wrap .landing-welcome2 {
+		font-size: 6rem;
+	}
+
+	.landing .landing-text.large .wrap .landing-name {
+		font-size: 10rem;
+	}
+
+}
+
+.landing .landing-text.small {
+	display: none;
 }
 
 .landing .scrolldown {
@@ -450,6 +523,119 @@ span.bubble {
 	100% {
 		bottom: 30px;
 		right: 30px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.glitch,
+	.preloader,
+	.landing .landing-text.large {
+		display: none;
+	}
+
+	.landing .landing-text.small {
+		display: block;
+		position: relative;
+		height: 50%;
+		width: 100%;
+	}
+
+	.landing .landing-text.small .wrap {
+		font-size: 5rem;
+		color: var(--text);
+		position: absolute;
+		width: 100%;
+		top: -1rem;
+		text-align: center;
+	}	
+
+	.landing .landing-text.small .wrap .landing-welcome > span {
+		color: var(--secondary);
+	}
+
+	.landing .landing-text.small .signature {
+		object-fit: contain;
+		max-width: 60%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		position: absolute;
+		top: 15rem;
+		opacity: 1;
+		transition: opacity 0.2s linear;
+	}
+
+	.landing {
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - 56px);
+		margin: 0;
+	}
+
+	.landing .landing-img {
+		display: block;
+		position: relative;
+		height: 50%;
+		width: 100%;
+	}
+
+	.landing .landing-img .first-img {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		height: auto;
+		max-height: 100%;
+		max-width: 80%;
+		opacity: 1;
+		transition: all 0.2s linear;
+		object-fit: contain;
+	}
+
+	.landing .landing-img #first-image-fade {
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+
+	.landing .scrolldown {
+		bottom: 3.25rem;
+		height: 3.5rem;
+		width: 3.5rem;
+		opacity: 0.8;
+	}
+
+	.landing .scrolldown > span {
+		background: var(--secondary);
+		box-shadow: revert;
+		animation: vis 4s 0s forwards, thrust 0.65s alternate infinite;
+	}
+
+	@keyframes vis {
+
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+
+	}
+
+	@keyframes thrust {
+
+		0% { 
+			bottom: 0;
+			right: 0;
+		}
+
+		100% {
+			bottom: 5px;
+			right: 5px;
+		}
+
 	}
 
 }
@@ -767,17 +953,17 @@ span.bubble {
 
 	/*
 	.landing .first-img {
-		position: absolute;
-		right: 0;
-		left: 0;
-		padding-right: 30rem;
+	position: absolute;
+	right: 0;
+	left: 0;
+	padding-right: 30rem;
 	}
 
 	.landing .wrap {
-		right: auto;
-		left: 30rem;
+	right: auto;
+	left: 30rem;
 	}
-	*/
+	 */
 
 	.about .hobbies > div {
 		max-width: 65rem;	
@@ -793,17 +979,17 @@ span.bubble {
 
 	/*
 	.landing .first-img {
-		position: absolute;
-		right: 0;
-		left: 0;
-		padding-right: 20rem;
+	position: absolute;
+	right: 0;
+	left: 0;
+	padding-right: 20rem;
 	}
 
 	.landing .wrap {
-		right: auto;
-		left: 20rem;
+	right: auto;
+	left: 20rem;
 	}
-	*/
+	 */
 
 	.about .hobbies > div {
 		max-width: 60rem;	
