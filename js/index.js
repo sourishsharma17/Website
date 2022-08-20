@@ -45,16 +45,14 @@ function justScrolled() {
 
 let body = document.querySelector(".body");
 if (screen.width < 600) {
-	document.querySelector(".landing").style.height = window.innerHeight-56 + "px";
+	document.querySelector(".landing").style.height = window.innerHeight + "px";
 	document.querySelector(".preloader-mobile").style.height = window.innerHeight + "px";
 }
 
 function beginMobile() {
-
 	setTimeout(function() {
 		document.querySelector(".preloader-mobile").remove();
 	}, 1400);
-
 }
 
 document.addEventListener("mousemove", function(e) {

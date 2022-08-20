@@ -529,9 +529,17 @@ span.bubble {
 
 @media (max-width: 600px) {
 
+	.header {
+		display: none;
+	}
+
 	.glitch,
 	.landing .landing-text.large {
 		display: none;
+	}
+
+	.landing {
+		padding-top: 5vh;
 	}
 
 	.landing .landing-text.small {
