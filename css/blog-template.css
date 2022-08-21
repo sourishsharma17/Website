@@ -140,14 +140,13 @@ header .navbar-simple {
 }
 
 .post .container .content code.inline {
-	background-color: rgba(1,1,1,0.1);
+	display: inline;
+	background-color: rgba(50%,50%,50%,0.1);
 	color: var(--text);
-	border-radius: 3px;
-	font-family: courier, monospace;
+	border-radius: 7px;
+	font-family: Consolas, monaco, monospace;
 	font-weight: 600;
-	padding: 2px 10px;
-	margin: auto;
-	line-height: 1.8;
+	padding: 2px 5px;
 }
 
 .post .scroll-top {

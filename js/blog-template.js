@@ -7,7 +7,7 @@ if (screen.width > 600) {
 		document.documentElement.scrollTop = 0;
 		setTimeout(function() {
 			activated = true;
-		}, 200)
+		}, 1000)
 	}
 	window.addEventListener("load", subtleScroll);
 }
