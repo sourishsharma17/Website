@@ -2634,7 +2634,7 @@ Prism.languages.py = Prism.languages.python;
 			'copy': 'copy',
 			'copy-error': 'Press Ctrl+C to copy',
 			'copy-success': 'done!',
-			'copy-timeout': 1500
+			'copy-timeout': 150
 		};
 
 		var prefix = 'data-prismjs-';
