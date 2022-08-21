@@ -1,8 +1,15 @@
 let blogs = document.querySelectorAll(".panel .grid .blog-post");
 window.addEventListener("load", blogOrder);
 window.addEventListener("resize", blogOrder);
+var prevWidth = 0;
 
 function blogOrder() {
+
+	if (screen.width == prevWidth) {
+		return;
+	}
+
+	prevWidth = screen.width;
 
 	let columnsB = document.querySelectorAll(".panel .grid .column");
 	let heights = [];

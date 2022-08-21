@@ -42,20 +42,6 @@ html {
 	text-align: center;
 }   
 
-.images .name:hover {
-	cursor: pointer;
-	opacity: 1;
-	box-shadow: var(--box-shadow),
-	0rem -150rem 150rem -150rem black inset, 0rem -150rem 150rem -150rem black inset;
-}
-
-@-moz-document url-prefix() {
-	.images .name:hover {
-		box-shadow: var(--box-shadow),
-		0rem -150rem 150rem -150rem black inset;
-	}
-}
-
 .images .name h2 {
 	color: #dfe6e9;
 	position: absolute;
@@ -159,6 +145,24 @@ html {
 
 }
 
+@media (min-width: 601px) {
+
+	.images .name:hover {
+		cursor: pointer;
+		opacity: 1;
+		box-shadow: var(--box-shadow),
+		0rem -150rem 150rem -150rem black inset, 0rem -150rem 150rem -150rem black inset;
+	}
+
+	@-moz-document url-prefix() {
+		.images .name:hover {
+			box-shadow: var(--box-shadow),
+			0rem -150rem 150rem -150rem black inset;
+		}
+	}
+
+}
+
 @media (max-width: 700px) {
 
 	.cross {
@@ -174,8 +178,7 @@ html {
 	.images .name {
 		opacity: 1;
 		cursor: pointer;
-		box-shadow: var(--box-shadow),
-		0rem -150rem 150rem -150rem black inset;
+		box-shadow: 0rem -15rem 15rem -8rem black inset, 0rem -150rem 150rem -150rem black inset;
 	}   
 
 }

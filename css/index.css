@@ -316,10 +316,6 @@ html {
 	/*transform: rotateY(180deg);*/
 }
 
-.landing [hidden] {
-	opacity: 0;
-}
-
 span.bubble {
 	height: 50px;
 	width: 50px;
@@ -445,6 +441,10 @@ span.bubble {
 
 	#first-image-fade {
 		box-shadow: inset 0rem -6rem 4rem var(--primary), inset 0rem -1rem 0.5rem var(--primary);
+	}
+
+	.wrapper {
+		scroll-padding-top: 10vh;
 	}
 
 }
@@ -581,7 +581,7 @@ span.bubble {
 		left: 50%;
 		transform: translate(-50%, 0%);
 		position: absolute;
-		top: 15rem;
+		top: 12vh;
 		opacity: 0;
 		transition: opacity 0.2s linear;
 		animation: slow-in 1s 2.3s ease-in forwards;
@@ -601,7 +601,7 @@ span.bubble {
 
 	.landing {
 		min-height: 0px !important;
-		padding-top: 5vh;
+		padding-top: 3vh;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -767,6 +767,10 @@ span.bubble {
 		
 	}
 
+}
+
+.landing *[hidden] {
+	opacity: 0 !important;
 }
 
 .about {

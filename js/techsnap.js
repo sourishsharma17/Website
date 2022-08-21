@@ -230,6 +230,8 @@ function fullscreen(number) {
 	document.querySelector("body > .links").children[2].children[0].setAttribute("onclick", "minimise(" + number + ")");
 	document.querySelector("body > .links").children[2].children[0].setAttribute("tooltip", "minimise");
 
+	//html.bind('touchmove', function(e){e.preventDefault()});
+
 	html.style.overflow = "hidden";
 	html.style.height = "100%";
 
@@ -243,6 +245,7 @@ function minimise(number) {
 	document.querySelector("body > .story").remove();
 	document.querySelector("body > .links").remove();
 
+	//html.unbind("touchmove");
 	html.style.overflow = "auto";
 	html.style.height = "auto";
 

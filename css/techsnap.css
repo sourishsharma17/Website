@@ -388,6 +388,7 @@ body > .blur-container {
 	z-index: 5000;
 	opacity: 1;
 	backdrop-filter: blur(5px);	
+	-webkit-backdrop-filter: blur(5px);	
 }
 
 body > .colour-container {
@@ -589,6 +590,10 @@ body > .links span::after {
 		box-shadow: var(--box-shadow-inset);
 	}
 
+	.panel .card.active .carousel .title > h1 {
+		-webkit-text-fill-color: var(--text);
+	}
+
 	.panel .card.active .carousel .snap .snap-title {
 		-webkit-text-fill-color: var(--text);
 	}
@@ -626,6 +631,10 @@ body > .links span::after {
 
 	body > .links > div:first-child {
 		display: none;
+	}
+
+	body > .story .main-content > p {
+		font-size: 1.9rem;
 	}
 
 }

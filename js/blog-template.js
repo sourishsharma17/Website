@@ -1,9 +1,16 @@
-window.scrollTo({top: screen.height/5, behavior: "instant"});
-function subtleScroll() {
-	document.documentElement.scrollTop = 0;
-}
-window.addEventListener("load", subtleScroll);
+var activated = true;
 
+if (screen.width > 600) {
+	var activated = false;
+	window.scrollTo({top: screen.height/5, behavior: "instant"});
+	function subtleScroll() {
+		document.documentElement.scrollTop = 0;
+		setTimeout(function() {
+			activated = true;
+		}, 200)
+	}
+	window.addEventListener("load", subtleScroll);
+}
 
 //document.querySelector(".post .scroll-top.unseen").animation = "plane-out 0.5s ease-in";
 document.addEventListener("scroll", plane);
@@ -26,6 +33,10 @@ for (var i = 0; i < rHeight/400; i ++ ) {
 
 	bWidth = rand(rWidth/10, rWidth/3);
 	bHeight = rand(rSHeight/10, rSHeight/2);
+	if  (rWidth <= 600) {
+		bWidth = rand(rWidth/8, rWidth/1.5);
+		bHeight = rand(bWidth/2, bWidth*2);
+	}
 	bLeft = rand(-1*(rWidth/3), rWidth*0.9);
 	bTop = rand(5, rHeight-(bHeight/2));
 	b1 = rand(30, 70);
@@ -53,15 +64,11 @@ for (var i = 0; i < rHeight/400; i ++ ) {
 	document.querySelector(".post").appendChild(blob);
 }
 
-
-
-
-
 function plane() {
 
 	var fromTop = document.documentElement.scrollTop;
-	
-	if (fromTop >= 250) {
+
+	if (fromTop >= 250 && activated) {
 		scroll.classList.remove("unseen");
 		scroll.classList.add("seen");
 	} else if (!goingUp && scroll.classList.contains("seen")) {
@@ -89,14 +96,15 @@ function toTop() {
 
 	//document.body.scrollTop = 0;
 	goingUp = true;
-	
+
+	scroll.classList.add("swoosh");
+
 	setTimeout(function () {
 		document.documentElement.scrollTop = 0;
 		goingUp = true;
 		window.planeRight = setInterval(check, 10);
 	}, 150);
 
-	scroll.classList.add("swoosh");
 
 	/*
 	setTimeout(function() {
@@ -116,7 +124,7 @@ function toTop() {
 			//html.style.height = "revert";
 		}
 
-		
+
 	}
 
 }

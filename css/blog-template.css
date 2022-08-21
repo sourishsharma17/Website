@@ -147,7 +147,6 @@ header .navbar-simple {
 	font-weight: 600;
 	padding: 2px 10px;
 	margin: auto;
-	height: 2rem;
 	line-height: 1.8;
 }
 
@@ -165,7 +164,7 @@ header .navbar-simple {
 
 .post .scroll-top.seen {
 	bottom: 20px;
-	z-index: 100;
+	z-index: 1000000;
 	opacity: 1;
 	animation: plane-in 0.5s ease-out;
 }

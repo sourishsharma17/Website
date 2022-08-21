@@ -9,6 +9,7 @@ var navbar = document.querySelector(".navbar");
 var intFrameHeight = window.innerHeight;
 let navbarBackground = document.querySelector(".navbar-background");
 let wrapper = document.querySelector(".wrapper");
+wrapper.style.height = window.innerHeight + "px";
 
 wrapper.onscroll = function() {justScrolledW()};
 
@@ -93,12 +94,19 @@ function fadePos() {
 
 window.addEventListener("resize", repos);
 window.addEventListener("load", repos);
+var prevWidth = 0;
 
 function repos() {
 
 	let width = screen.width;
 	//console.log(width);
 	//console.log(document.querySelector(".helium").offsetWidth);
+	
+	if (width == prevWidth) {
+		return;
+	}
+
+	prevWidth = width;
 
 	if (width <= 1200) {
 		let height = document.querySelector(".years").offsetHeight - 100;
@@ -252,6 +260,7 @@ function closeMobileNav() {
 	toggleThemes.toggleAttribute("mobile-menu-seen");
 	html.style.overflow = "auto";
 	html.style.height = "auto";
+	document.querySelector("#about").scrollIntoView();
 }
 
 function amoled() {
@@ -295,8 +304,9 @@ window.addEventListener("load", (event) => {
 });
 
 function switchImage() {
-	document.querySelectorAll(".landing .landing-img .first-img").forEach(thing => thing.toggleAttribute("hidden"));
-	document.querySelectorAll(".landing .landing-text.small .signature").forEach(thing => thing.toggleAttribute("hidden"));
+	document.querySelectorAll(".landing .landing-img .first-img").forEach(thing => {thing.style.animationDuration = "0s", thing.style.animationDelay = "0s", thing.toggleAttribute("hidden")});
+	document.querySelectorAll(".landing .landing-text.small .signature").forEach(thing => {thing.style.animationDuration = "0s", thing.style.animationDelay = "0s", thing.toggleAttribute("hidden")});
+	
 }
 
 
