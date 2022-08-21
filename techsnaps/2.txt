@@ -1,0 +1,14 @@
+<div class="story">
+
+<h1>Red Matter 2 launches on the Quest 2</h1>
+<div class="main-content">
+<p>The original Red Matter game for the Oculus Quest 2 was incredible - the visuals and experience was so good that it was a must buy for new questers to fully immserse themselves in VR and have their first ever experience be one of the best that exists on the Quest 2. And now, after weeks of hyping and impressive trailers, Red Matter 2, the sequel, is ready to purchase.</p>
+<img src="../media/techsnap/2a.jpg">
+<p>Red Matter 2 seems to have a greater focus on the lighting - but that's no bad thing. After all, they can't suddenly increase the resolution or playable frame rate when the Quest 2 hardware is arleady in the hands of 10 million people. So, whatever Vertical Robot (the studio behind the game) have done, it's magic. The lighting is awesome, with all sorts of shadows and reflections, even in the more obscure textures. The physics and development gone into this game show what the Quest 2 is capable of - for just a &#163;300- sorry, &#163;400 price-tag, you can get a headset capable of such complex graphics.<br><br>These new innovations bring more hope to standalone headsets, not just in the gaming realm, but also for any VR experience. I'm really looking forward to seeing what others can bring to the table, now that Red Matter 2 has showcased what can be done. And hopefully, the Metaverse won't look like a Paint3D drawing made by a 1-year-old, and The Zuck can take a better $10 billion selfie soon.</p>
+<img src="../media/techsnap/2b.jpg">
+</div>
+
+</div>
+---
+TIME 19:25
+SOURCE https://www.androidcentral.com/gaming/virtual-reality/red-matter-2-first-impressions

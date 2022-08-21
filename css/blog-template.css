@@ -110,6 +110,33 @@ header .navbar-simple {
 	color: var(--secondary);
 }
 
+.post .container .content ul {
+	font-size: 2rem;
+	line-height: 1.8;
+	color: var(--text);
+	margin-top: -1rem;
+	padding: 0rem 5rem 4rem 5rem;
+}
+
+.post .container .content ul > li {
+	margin-bottom: 1.25rem;
+	padding-left: 1rem;
+}
+
+.post .container .content ul > li:last-child {
+	margin-bottom: 0rem;
+}
+
+.post .container .content ul.list1 > ::marker {
+	content: url(https://api.iconify.design/fa6-regular:circle.svg);
+	color: var(--secondary);
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	font-size: 1.5rem;
+	content: "\f111";
+	color: var(--secondary);
+}
+
 .post .container .content p.caption {
 	font-size: 1.5rem;
 	padding: 0rem 2rem 3.5rem 2rem;
@@ -163,7 +190,7 @@ header .navbar-simple {
 
 .post .scroll-top.seen {
 	bottom: 20px;
-	z-index: 1000000;
+	z-index: 100;
 	opacity: 1;
 	animation: plane-in 0.5s ease-out;
 }
@@ -270,6 +297,14 @@ header .navbar-simple {
 		font-size: 1.25rem;
 	}
 
+	.post .container .content ul {
+		font-size: 1.75rem;
+		padding: 0rem 2rem 4rem 2rem;
+	}
+
+	.post .container .content ul.list1 > ::marker {
+		font-size: 1.25rem;
+	
 	.post .container .content p.caption {
 		font-size: 1.25rem;
 	}

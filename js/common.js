@@ -2,15 +2,21 @@ let toggleThemes = document.querySelector("#toggle-themes");
 let icon = document.querySelector("#toggle-themes .fas");
 let html = document.querySelector("html");
 
-if (document.cookie.split(";").some((item) => item.trim().startsWith("darkmode="))) {
-	if (document.cookie.split(";").some((item) => item.includes("darkmode=1"))) {
-		themeToggle();
+function cookies() {
+
+	if (document.cookie.split(";").some((item) => item.trim().startsWith("darkmode="))) {
+		document.cookie.split(";").some((item) => {item.includes("darkmode=") 
+			if ((item.includes("darkmode=1") && !document.body.hasAttribute("dark-mode")) || (item.includes("darkmode=0") && document.body.hasAttribute("dark-mode"))) {
+				themeToggle();
+			}
+		});
 	} else {
+		document.cookie = "darkmode=0; SameSite=None; Secure; max-age=1800";
 	}
-} else {
-	document.cookie = "darkmode=0; SameSite=None; Secure; max-age=1800";
+
 }
 
+cookies();
 
 
 function themeToggle() {

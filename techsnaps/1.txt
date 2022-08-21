@@ -1,0 +1,12 @@
+<div class="story">
+
+<h1>Samsung pushes updates for the Galaxy S7/8 line-ups</h1>
+<div class="main-content">
+<img src="../media/techsnap/1a.jpg">
+<p>6.5 years after the launch of the Samsung Galaxy S7, they've decided to push out a software update. The update is merely a GPS patch to increase stability, however, despite the tiny update, it signifies much more. The software support lasted 4 years for the phones, and yet, past that date when very few people are actually using those phones these days, Samsung recognised an issue and went out of their way to fix it, despite having no obligation to do so. Whilst Samsung probably had a very specific, less consumer-friendly reason for doing this - such as publicity - they still did it nevertheless, and it's a good sign for the future.<br><br>We've seen Samsung lead software update timelines here on Android, closing the gap to Apple and pressuring everyone in the industry to follow suit. However, Apple supports phones for 6 years, so is Samsung really that commendable for pushing a simple, and crucial, firmware upgrade to a 6 year old phone? Either way, it's good to see the Android giant trying to maintain its position as the largest smartphone maker.</p>
+</div>
+
+</div>
+---
+TIME 16:04
+SOURCE https://www.androidauthority.com/samsung-galaxy-s7-s8-updates-3198409/

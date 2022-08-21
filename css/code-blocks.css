@@ -35,9 +35,13 @@ pre[class*="language-"] * {
 	font-family: Consolas, monaco, monospace, serif !important;
 }
 
-code[class*="language-"] *::selection,
 code[class*="language-"] *::-moz-selection,
-pre[class*="language-"] *::-moz-selection,
+pre[class*="language-"] *::-moz-selection {
+	background: #111;
+	color: #999;
+}
+
+code[class*="language-"] *::selection,
 pre[class*="language-"] *::selection {
 	background: #111;
 	color: #999;
