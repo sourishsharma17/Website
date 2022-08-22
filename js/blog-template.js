@@ -84,8 +84,10 @@ window.addEventListener("scroll", function (event) {
 
 	window.clearTimeout(scrolling); 
 	scrolling = setTimeout(function() {
-		goingUp = false;
-	}, 30);
+		if (goingUp) {
+			goingUp = false;
+		}
+	}, 69);
 
 }, false);
 

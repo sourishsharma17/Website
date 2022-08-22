@@ -535,7 +535,6 @@ body > .links span:hover {
 		color: var(--secondary);
 	}
 
-
 	.panel .card:hover {
 		box-shadow: var(--box-shadow-inset);
 	}
@@ -592,6 +591,14 @@ body > .links span:hover {
 
 @media (max-width: 600px) {
 
+	.intro > h1 > span[bloo] {
+		color: var(--secondary) !important;
+	}
+
+	.intro > h1 > span {
+		color: var(--text);
+	}
+
 	.hover-check {
 		color: red;
 	}
@@ -611,6 +618,10 @@ body > .links span:hover {
 	.panel .card.active > button {
 		opacity: 1;
 		color: var(--secondary);
+	}
+
+	.panel .card > button {
+		touch-action: manipulation;
 	}
 
 	.panel .card.active .indicators {
@@ -645,6 +656,10 @@ body > .links span:hover {
 
 	body > .story .main-content > p {
 		font-size: 1.9rem;
+	}
+
+	body > .colour-container {
+		touch-action: none;
 	}
 
 }

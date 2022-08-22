@@ -110,11 +110,12 @@ function repos() {
 
 	if (width <= 1200) {
 		let height = document.querySelector(".years").offsetHeight - 100;
+		height *= 0.5;
 
-		height = 6600
+		//height = 6600
 
 		var counter = 0;
-		var achievementHeight = height/achievements.length + 110;
+		var achievementHeight = height/achievements.length + 180;
 		for (const achievement of achievements) {
 
 			var mod = document.querySelector("."+achievement.className);
@@ -122,7 +123,7 @@ function repos() {
 			mod.style.top = topVal + "px";
 
 			var min = 5;
-			var max = width-mod.clientWidth -20;
+			var max = width-mod.clientWidth -(screen.height/25);
 			var sideVal = Math.floor(Math.random() * (max - min + 1)) + min; 
 			//console.log(sideVal, mod.offsetWidth);
 
@@ -141,7 +142,7 @@ function repos() {
 			mod.style.top = topVal + "px";
 
 			var min = 5;
-			var max = width-mod.offsetWidth -20;
+			var max = width-mod.offsetWidth -(screen.height/22);
 			var sideVal = Math.floor(Math.random() * (max - min + 1)) + min; 
 
 			mod.style.right = sideVal + "px";
@@ -159,7 +160,7 @@ function repos() {
 			mod.style.top = topVal + "px";
 
 			var min = 5;
-			var max = width-mod.offsetWidth - 5;
+			var max = width-mod.offsetWidth - (screen.height/75);
 			var sideVal = Math.floor(Math.random() * (max - min + 1)) + min; 
 
 			mod.style.right = sideVal + "px";

@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>Legal action against Sony for £5bn</h1>
+<div class="main-content">
+<p>Alex Neill is leading a case against the Playstation divison of Sony, claiming that they "ripped off" 9 million UK customers by forcing a price increase of games and in-app payments. Neill claims that the 30% cut that Sony demand from developers inhibits competition, and therefore, under the 2015 Consumer Rights Act, Sony is displaying anti-competitive behaviour.<br><br>All Big Tech participates in anti-competitive behaviour - that is merely the nature of their size and dominance. Whilst the war against Big Tech's transparency should never cease, perhaps Neill is taking it a tad too far? A 30% cut of revenue made on their own product is not a new concept - Apple and Google both do this on their respective app stores, and there must be many, many other sites that do a similar thing. Personally, I think that it is fair, because the Big Tech (in this case) is what creates the market for the game, app etc. and they are also who manage the store on which it is sold. So if Sony didn't exist, these game developers may not even have a job, hence I do believe that Sony deserves their 30% cut.</p>
+<img src="../media/techsnap/4a.jpeg">
+<p>Whilst Neill doesn't detail her argument (or I'm too lazy to read it), she portrays Sony (and Apple/Google) as being anti-competitive by being the only option on the market, and exploiting that position to drive up prices and make games/apps/services less accessible to the average consumer. However, almost 15% of the games sold on Playsation were first-party, showing how Sony can price their products cheaper than the competition as therefore gain unproportional market size - perhaps we need to make Sony, at least, price these titles similarly to the 'competition' (although they would still get more profit, their market share would not be as monopolostic).<br><br>Personally, even though I agree with the principle of their 30% cut and think it's more than fair (especially Apple's implementation), I am even more in agreement regarding the constant pursuit against Big Tech, and therefore I do support Neill's lawsuit. If we don't get consumer-control over Big Tech now, we can- and will lose it in the future, when the decisions they make influence our lives more and more. We need to show that we care about their actions, and that Big Tech can't control the world the way they want to.</p>	
+</div>
+
+</div>
+---
+TIME 18:04
+SOURCE https://news.sky.com/story/sony-playstation-being-sued-for-5-billion-amid-claims-it-ripped-off-nine-million-consumers-12678949 

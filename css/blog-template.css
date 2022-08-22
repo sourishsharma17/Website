@@ -73,6 +73,10 @@ header .navbar-simple {
 	object-fit: contain;
 }
 
+.post .container .content img:first-child {
+	border-radius: 1.5rem;
+}
+
 .post .container .content p {
 	font-size: 2rem;
 	line-height: 1.8;
@@ -116,6 +120,7 @@ header .navbar-simple {
 	color: var(--text);
 	margin-top: -1rem;
 	padding: 0rem 5rem 4rem 5rem;
+	list-style-type: circle;
 }
 
 .post .container .content ul > li {
@@ -304,7 +309,20 @@ header .navbar-simple {
 
 	.post .container .content ul.list1 > ::marker {
 		font-size: 1.25rem;
-	
+	}
+
+	@supports (-webkit-touch-callout: none) {
+
+		.post .container .content ol.list0 > ::marker {
+			font-size: 1.65rem;
+		}
+
+		.post .container .content ul.list1 > ::marker {
+			font-size: 3.25rem;
+		}
+
+	}
+
 	.post .container .content p.caption {
 		font-size: 1.25rem;
 	}
@@ -316,7 +334,6 @@ header .navbar-simple {
 	.post .container .top .info .edit {
 		display: none;
 	}
-
 
 }
 

@@ -724,6 +724,10 @@ noscript .email:hover {
 		font-size: 1.5rem;
 	}
 
+	.intro {
+		padding: 0rem 1rem;
+	}
+
 }
 
 
@@ -744,7 +748,7 @@ noscript .email:hover {
 	noscript .email {
 		font-size: 1.75rem;
 	}
-	
+
 }
 
 

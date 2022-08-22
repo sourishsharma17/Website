@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>The CEO of NSO Group steps down</h1>
+<div class="main-content">
+<p>Shalev Hulio, the CEO and co-founder of the firm behind the infamous Pegasus software is finally resigning.</p>
+<img src="../media/techsnap/3a.jpeg">
+<p>Pegasus is perhaps the most advanced piece of malware that is (publicly) known today. It has infected millions of smartphones and effectively gives the owner complete access and logs of the victim. They claim it's to catch criminals and terrorists, but in reality, corrupt Governments or large tech firms buy the malware to find and jail people - people who are perhaps voicing out against a corrupt Government. Pegasus is immensely powerful (as we've seen in the recent leaked screen captures), and if put to right use, it has the ability to have a profoundly positive impact, however, NSO Group clearly had a focus on money as the highest bidders seem to get access to the malware, as opposed to the most trusted law enforcement organisations.<br><br>This move is ultimately for the good, and perhaps it suggests a new route for NSO Group; one that doesn't involve selling malware to the most corrupt Governments. Combined with the fact that they are firing about 100 people suggests that maybe support for Pegasus has reached the end. However, that is no reason to not be careful - it's still out there in the wild, and still in the hands of those who'd use it to kill.</p>
+</div>
+
+</div>
+---
+TIME 07:58
+SOURCE https://www.engadget.com/nso-group-ceo-shalev-hulio-stepping-down-193226427.html

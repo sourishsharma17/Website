@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - Blog: Website Launch</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/blog-template.css">
+		<link rel="stylesheet" href="../css/code-blocks.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="../">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="../#about">About Me</a>
+					<a href="../food">Food</a>
+					<a href="../techsnap">TechSnap</a>
+					<a href="../blog">Blog</a>
+					<a href="../assets">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="../">Home</a>
+						<a href="../#about">About Me</a>
+						<a href="../food">Food</a>
+						<a href="../techsnap">TechSnap</a>
+						<a href="../blog">Blog</a>
+						<a href="../assets">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+		<section class="post">
+
+			<div class="container">
+
+				<div class="top">
+					<h1>Launching my website!</h1>
+					<div class="info">
+						<div class="read"> <span class="fas fa-hourglass"></span><p>&nbsp;5 min read</p> </div>
+						<div class="dates"> <div class="edit" style="display: none"><span class="fas fa-pen-to-square"></span><p>&nbsp;Updated: 16/06/2022</p></div> <div class="launch"><span class="fas fa-calendar-day"></span><p>&nbsp;August 23, 2022</p></div> </div>
+					</div>
+				</div>
+				<div class="content">
+
+					<img src="../media/blog/launch-rocket.png" alt="">
+					<p class="introduction">Finally, almost a year after having bought the domain <code class="inline">sourishsharma.com</code>, I created and launched this website, replacing the old one, which just contained my Advent of Code (AoC) solutions and comments for 2021 (and was made on, dare-I-say, Google Sites). This blog post is the first, and shortest, of a multi-post series looking at my experience in web development so far. Oh, and a big thanks to Sang-Ryun for his beta testing and feedback :)</p>
+					<h2>But... Why?</h2>
+					<p>These days, it seems as if everyone and their grandma has a website - so why not me? This will be my small corner of the internet, a corner that I have control over and can show off to anyone in the World - isn't that crazy? How you can just buy your name for a URL, throw together some content, and put it up on the massive internet for anyone across the globe to see. To me, that is the magic of the internet.</p>
+					<p>In the future, when I have more content to publish, more expertise, and new ideas, I'll always have this corner to experiment and post whatever I want. I can show off my work, turning this site into a portfolio to share to employers, or advertise myself as a freelancer. I can share 'assets' through my site, and create short links. Instead of having to point someone to long a Google Drive link with a seemingly endless string of letters, numbers, and obscure characters, or trying countless bit.ly links to find one I like. Now, I can just point someone to <code class="inline">sourishsharma.com/&lt;enter-asset-name&gt;</code>.</p>
+					<p>I can also create my own, preferred browser new tab start up page - something with lots of links, and customised to my heart's content. That level of personalisation is awesome; far greater than the current best option shown below.</p>
+					<img src="../media/blog/tabliss-example.png" alt="">
+					<p class="caption"><a href="https://tabliss.io/" target="_blank">Tabliss</a>, a highly customisable browser start up page.</p>
+					<p>And yes, I know I could just create a local <code class="inline">html</code> file and point the browser to the file. However, where will my styling come from? Also, I'd have to keep that file on every computer I use and will use in the future, not to mention the headache with updating the file cross-platform. This idea of having everything stored on the internet through my server makes so many things much more plausible.</p>
+					<p>I also learned so much. So, so much.</p>
+					<p>In terms of UI/UX design, I've gone from basic to (admittedly) a tad more advanced. I've learned how the web, applications, and interfaces are designed. I've looked at the way that humans interpret things, and these design skills will come in handy throughout my life, whether it be in my job, interior design for my future homes, or even just formatting Microsoft Word Documents in a pleasing way.</p>
+					<p>However, the most important thing I've learned, is how to build a website, as an [almost] full-stack developer. I've gained a much deeper insight into both the backend and frontend. I went from, just a couple months ago, shallow knowledge and almost no practical skill, to now, where I know and am confident in building fully responsive sites.</p>
+					<p>I used vanilla JavaScript, CSS, &amp; HTML for the frontend, with no libraries/plug-ins. Similar idea to the backend, where I coded my server in NodeJS, again with no plugins. I'll talk more about it in the upcoming posts, but that's why it took ages to get the site finished!</p>
+					<p>Finally, I now have a Virtual Private Server! My own server to do whatever I want to do on it. Custom email servers, implementing my own privacy-respecting and customisable search engine, configuring my own VPN where I'm in control of the data and rules, Memrise point farming (yes, I still do that), and so much more.</p>
+					<h2>The current state</h2>
+					<p>As of launch, I have the following pages;</p>
+					<ol class="list0">
+						<li>Landing page</li>
+						<li>About me (an 'easy-read' toggle is coming soon)</li>
+						<li>Food</li>
+						<li>TechSnap</li>
+						<li>Blog</li>
+					</ol>
+					<p>Each page has quite a distinct purpose, and my focus will now hover on producing content to fill the Blog and TechSnap pages. I have lots of ideas for the upcoming blog posts, such as looking at the frontend, and a few specific challenges (like the parallax and masonry effects), and then looking at the backend.</p>
+					<p>Speaking of the blog, here's some ideas I've been throwing around on topics once I've completed this series (I know that they are thrilling for everyone):</p>
+					<ul class="list1">
+						<li>Browsers and Firefox</li>
+						<li>Arch Linux and operating systems</li>
+						<li>Hacking my air conditioning</li>
+						<li>AstroPi 2022</li>
+						<li>Favourite Linux apps</li>
+					</ul>
+					<p>Near-future expansion would be finalising the Assets page (and probably time-lapse/log the process to use as a simple case-study for web dev). I could maybe also add recipes and tips to the Food page, or enable comments on the Blog.</p>
+					<p>I'll also make an AoC zone for later this year, and put the 2021 AoC at a subdomain like <code class="inline">aoc2021.sourishsharma.com</code>.</p>
+					<p>Alongside my website, I also set up my own email server (another long blog post coming for that!) which I think is very cool. My email for communicating to me through this website is <code class="inline">contact@sourishsharma.com</code>. Perhaps I'll add something like <code class="inline">sourish@sourishsharma.com</code> for fun, and maybe add a professional email such as <code class="inline">ss@sourishsharma.com</code>.</p>
+					<p>All of my frontend code is available on GitHub <a href="https://github.com/SourishS17/Website" target="_blank">here</a>. No backend will be public to help reduce people finding vulnerabilities to exploit! Also note, whilst the code is on GitHub, it is NOT open-source or licenced under a verified Open Source Initiative licence. Whilst I am fine with the theft of my pure code, the content rights are fully reserved.</p>
+					<h2>Conclusion</h2>
+					<p>Phew - now that I'm done (on the whole) with the launch of my site, I can take a backseat maintenance role, and spend more time doing other things! Of course, I'm sure there are still going to be loads of bugs and dodgy bits which I'll slowly crunch and work towards – especially on Safari/iPhones. But for now, I hope you enjoy the site &#58;D</p>
+
+				</div>
+
+
+			</div>
+
+			<div class="scroll-top">
+				<span class="fas fa-plane-up" onclick="toTop()"></span>
+			</div>
+
+
+		</section>
+
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2022 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://www.github.com/" target="_blank"><h2>Audit the source code / Visit the GitHub site</h2></a>
+					<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/blog-template.js"></script>
+		<script src="../js/code-blocks.js"></script>
+
+	</body>
+</html>

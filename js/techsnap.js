@@ -231,7 +231,7 @@ function fullscreen(number) {
 	document.querySelector("body > .links").children[2].children[0].setAttribute("tooltip", "minimise");
 
 	//html.bind('touchmove', function(e){e.preventDefault()});
-
+	
 	html.style.overflow = "hidden";
 	html.style.height = "100%";
 
@@ -255,16 +255,20 @@ var fireworks = false;
 
 function fireworksToggle() {
 	fireworks = !fireworks
+	document.querySelector(".intro > h1 > span").toggleAttribute("bloo");
 	document.body.toggleAttribute("cross");
 }
 
 document.addEventListener("click", mousePos);
+const canVibrate = window.navigator.vibrate
 
 function mousePos(event) {
 
 	if (fireworks) {
 
-		window.navigator.vibrate([80, 10, 50]);
+		if (canVibrate) {
+			window.navigator.vibrate([80, 10, 50]);
+		}
 
 		var posX = event.clientX;
 		var posY = event.clientY;

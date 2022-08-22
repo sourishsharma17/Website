@@ -157,7 +157,7 @@ html {
 	@-moz-document url-prefix() {
 		.images .name:hover {
 			box-shadow: var(--box-shadow),
-			0rem -150rem 150rem -150rem black inset;
+			0rem -12rem 12rem -12rem black inset, 0rem -15rem 15rem -15rem black inset;
 		}
 	}
 
@@ -180,6 +180,13 @@ html {
 		cursor: pointer;
 		box-shadow: 0rem -15rem 15rem -11rem black inset, 0rem -15rem 15rem -15rem black inset, 0rem -150rem 150rem -150rem black inset, 0rem -150rem 150rem -150rem black inset;
 	}   
+
+	@supports (-webkit-touch-callout: none) {
+		.images .name {
+			box-shadow: 0rem -15rem 15rem -11rem black inset, 0rem -15rem 15rem -15rem black inset, 0 -30rem 30rem -30rem black inset;
+		}
+	}
+
 
 }
 
