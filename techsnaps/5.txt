@@ -1,9 +1,9 @@
 <div class="story">
 
-<h1>Google TV is update looks hopeful</h1>
+<h1>Google TV update looks hopeful</h1>
 <div class="main-content">
-<img src="../media/techsnap/5a.jpeg">
-<p>Google brings some changes to their Google TV service. There are optimisations across the board here, from CPU to RAM and cache. This is great news for those who have already invested into a Google TV device, as the service is almost infamous for being bad. These fixes should bring serious noticeable change, but more importantly, they show how Google is getting more serious with the product. As Google looks to expand its ecosystem and provide a diversified, yet unified line-up of items, they challenge both Apple and Samsung thereby brining more welcome competition and choice to the consumer. This also lends nicely towards the rumours suggesting that Wear OS will get tighter integration with Google TV, and this step from the tech giant is perhaps one of many in their plan to reform once terrible things - in recent years, Google have completely reformed Wear OS, and continue to improve it. They've turned the Pixel smartphones from a laughing stock to a go-to recommendation, and have finally brought some TWS that can actually be considered worthy. I'm excited for whatever more Google has to offer going forward!</p>
+<img src="../media/techsnap/5a.png">
+<p>Google brings some changes to their Google TV service. There are optimisations across the board here, from CPU to RAM and cache. This is great news for those who have already invested into a Google TV device, as the service is almost infamous for being bad. These fixes should bring serious noticeable change, but more importantly, they show how Google is getting more serious with the product. As Google looks to expand its ecosystem and provide a diversified, yet unified line-up of items, they challenge both Apple and Samsung thereby brining more welcome competition and choice to the consumer.<br><br>This also lends nicely towards the rumours suggesting that Wear OS will get tighter integration with Google TV, and this step from the tech giant is perhaps one of many in their plan to reform once terrible things - in recent years, Google have completely reformed Wear OS, and continue to improve it. They've turned the Pixel smartphones from a laughing stock to a go-to recommendation, and have finally brought some TWS that can actually be considered worthy. I'm excited for whatever more Google has to offer going forward!</p>
 </div>
 
 </div>
