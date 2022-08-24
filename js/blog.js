@@ -3,6 +3,8 @@ window.addEventListener("load", blogOrder);
 window.addEventListener("resize", blogOrder);
 var prevWidth = 0;
 
+//document.querySelector(".panel").style.height = window.innerHeight - document.querySelector(".intro").style.height + "px";
+
 function blogOrder() {
 
 	if (screen.width == prevWidth) {

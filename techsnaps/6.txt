@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>Twitter whistleblower exposes security flaws</h1>
+<div class="main-content">
+<p>Peiter Zatko, a highly respected programmer who was the Twitter security chief until January, has filed a complaint to American court regarding the poor security practice that his former employer held, claiming that lies were told, and Twitter broke a settlement made 11 years ago.</p>
+<img src="../media/techsnap/6a.jpg">
+<p>In general, so many companies - including technology companies, do not maintain very good security on their services, or train employees in social engineering. But considering how much data they get on us, and how much we trust them with our data, this is not right. We need to take everything they do and/or say with a massive grain of salt. However, what is more alarming is how it seems as if every company does this, and yet we have no way of exposing them. All we can do is rely on hackers and whistleblowers, the former of which we'd rather not get access to our data. The latter, well, those are rare due to the nature of Big Tech's power.<br><br>Even if companies do not respect privacy at all, they must maintain good security - imagine everything you've ever done online exposed to the world by a hacker, every Google search, your name, birthday, address, work address, NI number etc. This is the data these companies all have on us, and yet, they don't even keep it secure - my server running this website uses newer software than Twitter's. This, of course, breaks a variety of laws but the money fined through courts is pocket change to Big Tech. All we need to take away from this story is to be careful - finding a company that has good state-of-the-art security is rare, and if you're not certain they do, then they don't.</p>
+</div>
+
+</div>
+---
+TIME 20:20
+SOURCE https://www.washingtonpost.com/technology/interactive/2022/twitter-whistleblower-sec-spam/

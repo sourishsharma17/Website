@@ -109,6 +109,14 @@
 	box-shadow: var(--box-shadow-inset);
 }
 
+ @media (max-width: 400px) {
+
+	html {
+		font-size: 45%;
+	}
+
+ }
+
 
 
 

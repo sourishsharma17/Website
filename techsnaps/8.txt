@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>ISA required for cars in New York</h1>
+<div class="main-content">
+<p>A bill is being passed through the New York State Senate that would make ISA technology necessary in all cars in the state (and, by practical extension, the rest of the country). ISA, or Intelligent Speed Assistance, automatically limits the max speed of the vehicle. This is typically a setting that a driver can turn on, for example, the car would not travel faster than 35mph on a 30mph road, even if the driver pushed down the accelerator to the maximum. The senators claim that this would reduce the amount of road accidents in the state, and are therefore making it mandatory in every car manufactured from 2024.</p>
+<img src="../media/techsnap/8a.png">
+<p>Ultimately, this is yet another situation where the consumer and buyer of the product (the car) gets less control over the product, put in place through software limits. Whilst many people are heavily against this idea of buying an object but then having software limits that are clearly not essential for use, I don't usually mind it. However, there are some concerns in this case, because what if the driver needs to rapidly accelerate for some reason? Maybe there is a car coming towards it and the driver would have to accelerate to avoid a collision because they don't have time to brake.<br><br>Situations like these also need to be considered as they could cause just as many accidents as ISA prevents. Anyway, this tech is implemented in many areas of Europe already, so it's just an expansion of the regulations designed to keep us safe on the road, and it paves the way forward for self driving cars - perhaps in 10 years, the human would set the limit on the car, and not the other way around!</p>
+</div>
+
+</div>
+---
+TIME 18:04
+SOURCE https://www.engadget.com/new-york-bill-car-speed-limiting-tech-164500259.html

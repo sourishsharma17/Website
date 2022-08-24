@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>Acer makes an environment-centric Chromebook</h1>
+<div class="main-content">
+<p>The new Acer Chromebook Vero 514 is a refreshing Chromebook built with the environment in mind. The packaging is fully recycled, recyclable, and reusable with some nifty instructions on turning it into a larger storage box. The Chromebook itself is made from 30-50% PCR (post-consumer recycled) materials, and the trackpad is their Ocean Plastic technology.</p>
+<img src="../media/techsnap/7a.jpeg">
+<p>The Chromebook itself looks very nice, it's modern and clean with speckles that give it more character. The value proposition also seems to be very good, although it is yet to be released. Overall, it's awesome that Acer has brought their sustainable Vero line-up to Chromebooks, which they used to only keep in Windows machines.<br><br>Acer did this as part of their 'green day', and with Acer being one of the best Chromebook OEMs, it's promising to see how other companies will react to the consumer and competitor pressure for more sustainable devices, and it's great to see Chromebooks get the same attention from Acer as Windows laptops do - especially as Chromebooks are used lots in schools with children, if the sustainable Chromebook trickles its way down to budget devices pupils will soon be using such devices and it could help inspire them that climate change is a big issue but that they can do something about it.</p>
+</div>
+
+</div>
+---
+TIME 08:02
+SOURCE https://chromeunboxed.com/acer-chromebook-vero-514-hands-on-impressions/
