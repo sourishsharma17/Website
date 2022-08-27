@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>DuckDuckGo Email Protection now in open beta</h1>
+<div class="main-content">
+<p>DuckDuckGo, typically regarded as the most private search engine which doesn't track you or feed off a custom profile made about you, launched an email protection service last year, but now, it's in open beta which means anyone can sign up and begin using it today.</p>
+<img src="../media/techsnap/10a.jpeg">
+<p>The idea is that many emails - especially newsletters (which are more profitable than you may think, thanks to ads/affiliates) or post-purchase spam contain a plethora of trackers that collect and send data about you including where you are, when you opened the email, how long you spent on it etc. A lot of this is done behind the scenes and is not widely known about, yet this tracking is a crucial part of Big Tech's quest to never stop collecting your data. The service from DuckDuckGo, which have had a few public scandals in the past year, seems to be very solid. You get a @duck.com address, and can forward emails or use that email as you would otherwise. DuckDuckGo strips all the trackers from the email as it passes through their servers, before sending it to you - they don't store any emails which is why they allow anyone to make unlimited addresses. They way they evision it is to create as many emails as you need - perhaps one for each shopping website you visit, or if you need something from a suspicious website. You can reply and send through the email service.<br><br>This idea of an almost disposable email address to stamp down on tracking is awesome. DuckDuckGo seems to be all in on this service, and at least for now during the beta, they don't seem to be doing anything dodgy with our email - however, we must still be weary in case they have a change of plans. Either way, it's something worth trying especially if you've noticed your inbox getting full of spam! It's mainly supported on the Android/iOS DuckDuckGo apps, but browser extensions do exist for computers.</p>
+</div>
+
+</div>
+---
+TIME 08:13
+SOURCE https://www.engadget.com/duckduckgo-free-email-privacy-service-open-beta-120044215.html

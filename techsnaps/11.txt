@@ -1,0 +1,12 @@
+<div class="story">
+
+<h1>S23 to change [only] the body</h1>
+<div class="main-content">
+<img src="../media/techsnap/11a.png">
+<p>Ice Universe has posted an interesting graphic on Twitter, and claims that the biggest change from the S22 to the S23 will be the change in fuselage shape. As shown above, the top down view will be less like an oval, and more like a rectangle with rounded egdes. This cycle of design seems to never end, with every company moving between sharp edges, rounded edges, and ovals. However, for now, it seems that the trend is to eradicate complete ovals. As Apple did with their iPhone 12, by making the phones much sharper, the rest of the industry will of course follow suit.<br><br>Also, looking at a phone such as the Asus Zenfone 9, which is very compact but packs a punch in the small chassis, we can understand why. A very rounded design significantly reduces the amount of space available inside the phone for components, and the curvature makes it impractical for many pieces. By doing this, Samsung will be able to fit more into the device, such as a bigger battery in the base model. In regards to comfort, rounded edges like this are best, however, since the industry tends to follow Apple, it will not be long until we see sharp corners such as those on the latest iPhones. These are quite uncomfortable, and although most people make use of a case, the case will have to be larger to maintain the same level of comfort anyway. I'm not sure what to think here, it's merely a trade-off decision taken by Samsung.<br><br>However, what it does show, is that we really have reached peak slab-phone as so few iterative changes are being made, and the defining factor for THE Android flagship next year will be this minor design alteration, following Apple. Not great, but it also means that more will be invested in new, cool, and innovative technology such as foldables as the slab-phone market is saturated with competition and OEMs need distinctive traits.</p>
+</div>
+
+</div>
+---
+TIME 08:29
+SOURCE https://twitter.com/UniverseIce/status/1562724260552278016/photo/1

@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>Oracles faces class action lawsuit</h1>
+<div class="main-content">
+<p>Oracle. The tech giant that too many people have not heard of before (unless you watch F1), as they have a focus in the enterprise market as opposed to the consumer space, focusing on servers and alike. However, as they play such a large role in the backbone of the internet, they have far too much control. And with this control comes data.</p>
+<img src="../media/techsnap/12a.png">
+<p>Yes, another privacy lawsuit is being filed against Oracle in the US. They essentially detail what Oracle does, and how their acquisition of data is unlawful. However, there is a bit of a grey area in this privacy legal zone, and it's unlikely Oracle will lose. Similar lawsuits have been conducted before, but with no success as there is just nothing admissable in court. Whilst this is disappointing, I maintain hope that Oracle will lose, but more importantly, the class action would at least raise more awareness globally about Oracle, and the sheer power they have. Perhaps this class action could spark the creation of new legislation targetting such privacy-invading companies...</p>
+</div>
+
+</div>
+---
+TIME 18:26
+SOURCE https://techcrunch.com/2022/08/22/oracle-us-privacy-class-action/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAD2BAUl48WVJMb3eNo9lQ4dL9lLLnTDlqyi_X8TpcyitW9od8OxASsScAd70XVZYjN87T19kGLRG6sF3uQxpiyrJUrjh8y_GoW4eweJyiA7yHaF9m2WPadk9IA7-5VRw0OfSFqkbUvHyX8nyo3Q3jkPcAmKVfWzo6FetGMXUW0wJ
