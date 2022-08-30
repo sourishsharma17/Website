@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>More leaks about the new tier surface</h1>
+<div class="main-content">
+<p>As Netflix is declining as a service, and was recently passed by Disney+ as the most widely subscribed video streaming service, they are desperate to regain the millions of customers they are losing. Netflix are, as has been rumoured for a while, bringing another tier to the service with ad-support for a lower price to attract more people. The leaks suggest that this tier will cost around $8/month.</p>
+<img src="../media/techsnap/13a.jpg">
+<p>It also seems that Netflix are going to be a little nicer with their ads - with just 4 minutes of ads for every hour of watch-time, and the ads won't be at the end of the video. They claim this is to reduce complaints which is probably true, factoring in their poor PR right now. Also, there are hints suggesting the ads won't be too personalised, and therefore tracker usage could be kept low, however, as Netflix needs to find more ways to make money, perhaps implementing more powerful ads is the way to go.<br><br>Streaming services gained huge popularity during lockdown, but as people spend less and less time at home, it is inevitable that customers are lost. The video-streaming industry doesn't favour Netflix or Apple TV+, but rather Disney+, likely due to the better content available. The integration of ads is really disappointing, and considering that a customer already pays, it seems unfair to still receive ads. However, it could also promote more people to join at this low tier, then re-discover their love for Netflix and upgrade to remove ads - a very sneaky move from the company. Overall, I think their customer counts will remain lower as people prefer not to pay for unneeded services, especially if they are busy all day and facing higher living costs.</p>
+</div>
+
+</div>
+---
+TIME 15:29
+SOURCE https://www.engadget.com/netflix-ad-supported-tier-pricing-report-160211150.html

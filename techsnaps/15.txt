@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>Omnivision's new 200MP sensor</h1>
+<div class="main-content">
+<p>Almost a year without any major high-megapixel smartphone camera sensor news, Omnivison annoucnes their new 200MP sensor. Samsung is the only other manufacturer with 200MP sensors too, and I'm not sure high megapixel counts are what people want. Ultimately, it's the size of the sensor on the whole which makes the most difference - in fact, the per pixel size on this new sensor is smaller than then wavelength of red light. Although 16-pixel binning will probably be used, less light information will be present in the binned version versus a low megapixel sensor over the same area. So what is the point?</p>
+<img src="../media/techsnap/15a.jpg">
+<p>There are lots of things that may be able to happen with high mega pixel sensors, but as smartphones are stopping to grow in size, we probably won't get many larger 200MP sensors, as larger sensors are harder to include in a phone and the lenses required are very expensive. Companies claim that the higher resolution will result in a sharper image, which is technically true. But when the resolution is 200MP, that argument falters as other factors come into play. Perhaps pixel binning will be the biggest advantage, allowing good noise-free night images with high-resolution day images all in just one module. Personally, I'd like to see these large sensors replace telephoto cameras - if the main sensor can zoom in 2 or 3 times and still produce a crisp photo, we can get rid of the telephoto camera and free up more space in the body for a larger sensor or battery.<br><br>Either way, whilst some companies such as Google are putting money towards good ISPs and post-shoot algorithms, other such as Samsung are betting on improved sensors. Both with the intention of nicer photos, but perhaps Samsung/Omnivision are either thinking too far ahead or are doing it for the marketing prestige. It will be interesting to see how smartphone cameras continue to evolve moving forward.<br><br>I'd like better ISPs as it unlocks a lot more computational power, and we've seen what the Pixels can do with Google's own chips. Ultimately, it's about striking the balance between technical, advanced technology and intelligent algorithms.</p>
+</div>
+
+</div>
+---
+TIME 12:45
+SOURCE https://www.androidauthority.com/200-megapixel-phones-3199621/

@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>Authy app user accounts compromised</h1>
+<div class="main-content">
+<p>A few days ago, hackers used standard spear-phishing attacks against some Twilio employees to gain access to the internal systems. First off, I still find it crazy how so many people are vulnerable to these attacks, and more importantly, how people at a technology-centred firm are also vulnerable. Of course, some attacks are better than others and therefore collect a lot of information about the victim... but still... it's not particularly hard to notice a phishy text message.</p>
+<img src="../media/techsnap/14a.jpg">
+<p>Anyway, since the initial response and Twilio blog post, they have noticed more consequences and affected enterprise customers. This goes to show how we can't really take what companies say after an attack at face value. Most of the time, they have just scratched the surface and haven't put a whole lot of effort into post-hack protocols, or haven't shared the whole story.<br><br>Authy is an app acquired by Twilio, and it's a 2FA service that was almost entirely compromised by the hackers. Everyone should use 2FA whenever given the possibility, however, not SMS 2FS. SMS 2FA is extremely weak and easy to bypass, but as hackers seem to even be able to get more control over standard 2FA apps, they are not the solution - just another part of what should be a whole suite of defences, the most important being strong passwords.</p>
+</div>
+
+</div>
+---
+TIME 22:55
+SOURCE https://techcrunch.com/2022/08/26/twilio-breach-authy/
