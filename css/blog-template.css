@@ -288,6 +288,65 @@ header .navbar-simple {
 
 }
 
+.post .copy {
+	padding: 2rem 3rem;
+	border-radius: 2rem;
+	opacity: 0;
+	bottom: 0rem;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	text-transform: uppercase;
+	font-weight: 600;
+	color: white;
+	display: none;
+}
+
+.post .copy.copy-done {
+	display: block;
+	animation: copy-up 0.35s ease-out forwards
+}
+
+@keyframes copy-up {
+
+	0% {
+		bottom: -1rem;
+		opacity: 0;
+	}
+
+	100% {
+		bottom: 1rem;
+		opacity: 0.95;
+	}
+
+}
+
+.post .copy.copy-remove {
+	bottom: 1rem;
+	opacity: 0.95;
+	animation: copy-go 0.13s ease-out forwards;
+}
+
+@keyframes copy-go {
+
+	to {
+		opacity: 0;
+	}
+
+}
+
+.post .copy > p {
+	font-size: 2rem;
+}
+
+.post .copy.success {
+	background: var(--secondary);
+}
+
+.post .copy.error {
+	background: red;
+}
+
 @media (min-width: 601px) {
 
 	.post .scroll-top .fa-plane-up:hover {

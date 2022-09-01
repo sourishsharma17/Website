@@ -151,13 +151,50 @@ function toTop() {
 
 }
 
+var checker = false
+
 function copyHeading() {
 	try {
 		navigator.clipboard.writeText(window.location.href.split("=")[0]+"="+event.target.offsetParent.id);
+		document.querySelector(".post .copy.success").classList.add("copy-done");
+		checker = true;
 	} catch (error) {
 		console.error(error);
+		document.querySelector(".post .copy.error").classList.add("copy-done");
+		checker = true;
 	}
 }
+
+document.addEventListener("scroll", removeCopyToast);
+
+
+function removeCopyToast() {
+
+	if (!checker) {
+		return;
+	}
+
+	document.querySelector(".post .copy.success").classList.add("copy-remove");
+	document.querySelector(".post .copy.error").classList.add("copy-remove");
+
+	setTimeout(function() {
+		document.querySelector(".post .copy.success").classList.remove("copy-remove");
+		document.querySelector(".post .copy.error").classList.remove("copy-remove");
+		document.querySelector(".post .copy.success").classList.remove("copy-done");
+		document.querySelector(".post .copy.error").classList.remove("copy-done");
+	}, 130);
+
+	checker = false
+
+}
+
+
+
+
+
+
+
+
 
 
 
