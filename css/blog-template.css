@@ -175,12 +175,6 @@ header .navbar-simple {
 	top: 2.75em;
 }
 
-.post .container .content div.h2-container > span:hover {
-	opacity: 1;
-	color: var(--secondary);
-	cursor: pointer;
-}
-
 .post .container .content a {
 	text-decoration: underline 2px;
 	text-underline-offset: 2px;
@@ -340,17 +334,23 @@ header .navbar-simple {
 }
 
 .post .copy.success {
-	background: var(--secondary);
+	background: #00b894;
 }
 
 .post .copy.error {
-	background: red;
+	background: #d63031;
 }
 
 @media (min-width: 601px) {
 
 	.post .scroll-top .fa-plane-up:hover {
 		color: var(--secondary);
+	}
+
+	.post .container .content div.h2-container > span:hover {
+		opacity: 1;
+		color: var(--secondary);
+		cursor: pointer;
 	}
 
 }
