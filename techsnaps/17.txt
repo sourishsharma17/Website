@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>AMD launched 7000 series</h1>
+<div class="main-content">
+<p>The long anticipated Zen 4 architecture is here, with the brand new AM5 socket! The pricing and model structure is similar to the 5000 series;</p>
+<img src="../media/techsnap/17b.jpg">
+<p>AMD have really upped their game in the clock-speeds department and all the new CPUs can boost above 5GHz, which used to be Intel's upper hand over AMD. However, AMD have taken it. They have a good generational IPC uplift of 13% and on the whole, the CPUs are a nice upgrade from last time. However, there are some things to note. Because there is a new socket, a brand new motherboard will be needed, but the motherboards for the AM5 socket are currently quite expensive, and will continue to be expensive for a while. AMD themselves said that prices will start from $125. Also, these boards will only support DDR5 RAM, again meaning that more money will have to be spent on expensive DDR5 kits. So even though the value proposition of the new CPUs seems quite good (as even the 7600X can beat Intel's best offering), buyers do have to consider a lot more when purchasing the chips. Maybe we'll have to wait another 6 months before the mobos and RAM fall in price enough to make it accessible.<br><br>This is a little disappointing as AMD was always the option with inexpensive but high-quality products, however, as they leap onto the latest and greatest technologies, we have to expect this sort of situation. On the plus side, considering their support with AM4, I'm very hopeful that AM5 will last far longer than the promised date of 2025. The new spider-like IHS design is awesome, and although you'd never actually see the IHS, I still think it's very cool. The reason for doing this was that the board was smaller as it's now a LGA, like Intel, so the SMDs were more crammed together but the entirety of the bottom of the board was covered in pads. So to maximise the amount of contact with the IHS whilst not touching the SMDs, they had to make a spider shape.</p> 
+<img src="../media/techsnap/17a.JPG">
+<p>AMD tried to obscure the real power intake of their highest end model, but looking at the graphs, it seems to be greater than Intel's highest, probably around 250W! Overall, AMD have yet again released another great lineup of chips that make life at Intel suck, but with the background costs, it may not be for everyone - but if you have the money, you sure will be mega impressed (assuming AMD's numbers were true). Fortunately, as DDR5 and AM5 are just being adopted, I'm sure there's far more great things to come!</p>
+</div>
+---
+TIME 13:08
+SOURCE https://www.youtube.com/watch?v=WcH_7xsYtUk

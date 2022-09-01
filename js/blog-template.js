@@ -1,15 +1,35 @@
 var activated = true;
 
-if (screen.width > 600) {
+function subtleScroll() {
+	if (window.location.href.includes("=")) {
+		document.documentElement.scrollTop = window.pageYOffset + document.getElementById(window.location.href.split("=")[1]).getBoundingClientRect().top;
+	} else {
+		document.documentElement.scrollTop = 0;
+	}
+	setTimeout(function() {
+		activated = true;
+	}, 1000)
+}
+
+function subtleScroll1() {
+	if (window.location.href.includes("=")) {
+		//document.location.href = "#" + window.location.href.split("=")[1];
+		document.documentElement.scrollTop = window.pageYOffset + document.getElementById(window.location.href.split("=")[1]).getBoundingClientRect().top;
+	} else {
+		activated = true;
+	}
+	setTimeout(function() {
+		activated = true;
+	}, 1000)
+}
+
+if (screen.width > 600 && document.documentElement.scrollTop == 0) {
 	var activated = false;
 	window.scrollTo({top: screen.height/5, behavior: "instant"});
-	function subtleScroll() {
-		document.documentElement.scrollTop = 0;
-		setTimeout(function() {
-			activated = true;
-		}, 1000)
-	}
 	window.addEventListener("load", subtleScroll);
+} else if (screen.width <= 600 && document.documentElement.scrollTop == 0) {
+	var activated = false;
+	window.addEventListener("load", subtleScroll1);
 }
 
 //document.querySelector(".post .scroll-top.unseen").animation = "plane-out 0.5s ease-in";
@@ -131,6 +151,13 @@ function toTop() {
 
 }
 
+function copyHeading() {
+	try {
+		navigator.clipboard.writeText(window.location.href.split("=")[0]+"="+event.target.offsetParent.id);
+	} catch (error) {
+		console.error(error);
+	}
+}
 
 
 

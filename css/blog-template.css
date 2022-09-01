@@ -160,6 +160,27 @@ header .navbar-simple {
 	padding: 3rem 0rem 1rem 0rem;
 }
 
+.post .container .content div.h2-container {
+	position: relative;
+}
+
+.post .container .content div.h2-container > span {
+	font-size: 1.75rem;
+	width: min-content;
+	height: min-content;
+	color: var(--text);
+	opacity: 0.2;
+	position: absolute;
+	left: -1.5em;
+	top: 2.75em;
+}
+
+.post .container .content div.h2-container > span:hover {
+	opacity: 1;
+	color: var(--secondary);
+	cursor: pointer;
+}
+
 .post .container .content a {
 	text-decoration: underline 2px;
 	text-underline-offset: 2px;
@@ -333,6 +354,11 @@ header .navbar-simple {
 
 	.post .container .top .info .edit {
 		display: none;
+	}
+
+	.post .container .content div.h2-container > span {
+		left: -1.5em;
+		top: 2.6em;
 	}
 
 }

@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Amazon's India performance is lacking</h1>
+<div class="main-content">
+<p>A recent report released by an investment firm looks into the e-commerce market in India, and we learn that Amazon is struggling in the second largest-populated country. Perhaps the most striking statistic is that Flipkart, an alternative digital marketplace owned by Walmart, claimed 62% market share in festival season last year, compared to Amazon's 27%. Amazon clearly wants to be a global king of online-purchases, but if they cannot succeed to get one of the fastest growing populations and economies in the world, then they may struggle to meet their goals. Amazon have invested a lot in India, and help progress social issues such as the idea that women shouldn't work - I myself have seen a few adverts recently, showing how Amazon have women-only delivery teams to empower them.</p>
+<img src="../media/techsnap/19a.jpg">
+<p>India tends to have extremely harsh regulations for foreign companies, but very generous ones for domestic companies. We've seen their regulations and lack of cooporation with BBK brands leading to huge losses from the companies. India force these companies to make devices in the country in order to not face high tax, and yet, the budget market is still dominated with domestic smartphone brands. A similar thing might be happening with Amazon, as they struggle to keep up with the harsh regulations and the nature of the company means that they cannot compete with Flipkart on a large enough scale. This is very unfortunate for Bezos, but I also feel like that, as time continues and India develops, Amazon will find it easier to capture a greater market and physically reach more people - otherwise, they'll have to stop treating the Indian market the same as they treat the American one. If they build a business model around the country as opposed to repeating a current one, Amazon could see more success.<br><br>Either way, I'm happy to see Amazon struggling for once, and find India's tough regulations quite amusing - yet they still work!</p>
+</div>
+---
+TIME 22:28
+SOURCE https://techcrunch.com/2022/08/30/amazon-facing-unfavorable-regulatory-environment-in-india-struggles-to-expand/
