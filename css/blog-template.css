@@ -334,7 +334,10 @@ header .navbar-simple {
 }
 
 .post .copy.success {
+<<<<<<< HEAD
 	background: var(--secondary);
+=======
+>>>>>>> 2d7dcbc78a35a4294ee7db67371c7178478cb110
 	background: #00b894;
 }
 
