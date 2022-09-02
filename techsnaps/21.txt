@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Asus releases a foldable laptop</h1>
+<div class="main-content">
+<p>Asus has released a 17-inch foldable laptop. Or is it a tablet? You sure wouldn't want to use it as a tablet. It joins Lenovo's attempt at a foldable laptop, and I think it's a bit better. The specs are all good, and what you'd expect from a thin and light. Except that it isn't thin or light. As a 17-inch laptop, it's quite disappointing to see that a U series Intel chip is powering this thing. You'd expect a very high powered chip and maybe even discrete graphics, but not this time.<br><br>As a relatively new concept in a pretty much empty market, we cannot expect a whole lot though. There is a crease, and it's decently visible. The keyboard is a magnetic and wireless - so you can either use it separately to the 17 inch monitor, or place it on the bottom half of the semi-folded laptop to create a more conventional-style device. Oh, and this beast costs £3600...</p>
+<img src="../media/techsnap/21a.jpg">
+<p>More on the topic of what foldable laptops are good for, and why we need them. I'm struggling for reasons, to be honest. At least with a foldable phone, you can have some more extremely valuable screen real-estate in your pocket, and things such as better cooling and cameras as the device has more internal space. With a laptop, this logic is kinda applicable, because the 17 inch device folds down to a 13 inch form factor - but it's still very heavy. And making the keyboard a completely separate device brings cons such as a thick monitor and worse internals (as the monitor has to house everything).<br><br>I just don't understand where this could be too useful, because if you wanted more screen in a 13 inch form factor, there are so many relatively inexpensive laptop monitor add-ons. There are just so many cons to seemingly little pros for this form factor. Back to the device - whilst this specific device is definitely not recommendable, maybe as Asus improves it in the future with a thinner body, better specs, and a price-tag that doesn't blow you off your seat, foldable laptops could become a thing. Could. Personally, I'm not convinced with the concept - but some people are!</p>
+</div>
+---
+TIME 20:01
+SOURCE https://www.gsmarena.com/asus_zenbook_17_fold_oled_is_a_173inch_folding_laptopslashtablet-news-55598.php
