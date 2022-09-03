@@ -1,0 +1,99 @@
+* {
+	transition: color 1s linear;
+}
+
+html {
+	scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+.table {
+	min-height: 100vh;
+	color: var(--text);
+}
+
+.table h1 {
+	font-size: 4rem;
+	text-align: center;
+	margin: 4rem auto;
+}
+
+.table table {
+	border-collapse: collapse;
+	box-shadow: var(--box-shadow);
+	border-radius: 2rem;
+	margin: 5rem auto;
+	font-size: 2.25rem;
+	width: 65rem;
+	max-width: 92%;
+}
+
+.table table thead {
+	position: relative;
+	text-transform: uppercase;
+}
+
+.table table thead::after {
+	content: "";
+	width: 95%;
+	margin: 0 2.5%;
+	border-bottom: 1px dashed grey;
+	bottom: 0.1em;
+	position: absolute;
+}
+
+.table table thead tr td {
+	padding: 0.5em 1em;
+}
+
+.table table thead tr td:last-child {
+	text-align: center;
+}
+
+.table table tbody tr td {
+	text-align: left;
+	padding: 0.5em 1em;
+}
+
+.table table tbody tr:hover {
+	color: var(--secondary);
+}
+
+.table table tbody tr td:last-child {
+	text-align: center;
+	padding: 0.5rem 1em;
+}
+
+.table table tbody tr.start-sep td {
+	height: 0.5em;
+	padding: 0em;
+}
+
+.table table tbody tr.end-sep td {
+	height: 1.5em;
+}
+
+.table table tbody tr:last-child td {
+	padding-bottom: 0.65em;
+}
+
+@media (max-width: 600px) {
+
+	.table h1 {
+		margin: 2rem 1rem;
+	}
+
+	.table table {
+		margin-bottom: 2.5rem;
+	}
+
+}
+
+
+
+
+
+

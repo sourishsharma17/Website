@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - GCSE Results</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/gcse.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+
+		<section class="table">
+
+			<h1>Sourish Sharma's 2022 GCSE Results</h1>
+
+
+			<table>
+
+				<thead>
+					<tr>
+						<td>Subject</td>
+						<td>Grade</td>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr class="start-sep">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Biology</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Chemistry</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Computer Science</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Design & Technology</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>English Language</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>English Literature</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>French</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Further Mathematics</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Geography</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Mathematics</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Physics</td>
+						<td>9</td>
+					</tr>
+					<tr class="end-sep">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>English Speaking</td>
+						<td>Distinction</td>
+					</tr>
+					<tr>
+						<td>Level 2 HPQ</td>
+						<td>A*</td>
+					</tr>
+				</tbody>
+
+			</table>
+
+
+		</section>
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://www.github.com/" target="_blank"><h2>Audit the source code / Visit the GitHub site</h2></a>
+					<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+	</body>
+</html>
