@@ -1,17 +1,13 @@
 * {
-	transition: color 1s linear;
-}
-
-html {
 	scrollbar-width: none;
+	transition: all 0.1s linear;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
 	display: none;
 }
 
 .table {
-	min-height: 100vh;
 	color: var(--text);
 }
 
