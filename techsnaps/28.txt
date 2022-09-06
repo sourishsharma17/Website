@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Hackers hiding malware in space images</h1>
+<div class="main-content">
+<p>James Webb photos are infamous for being incredibly large, but that's worked in the case for the hackers as they can hide large amounts of malicious code without making the file size suspiciously large. Perhaps the most famous of the images from the new telescope contains the malware:</p>
+<img src="../media/techsnap/28a.jpg">
+<p>What I find interesting, is how it is written in Golang - clearly popularity for the language for hackers has increased hugely in the past year or so. It's probably because Golang is such a hard language to reverse engineer so it will take longer for researchers to realise what the malicious code is doing. The hackers who came up with this idea clearly had quite the big lightbulb moment, because the official image has been circulated all over the internet, so adding a modded image to the mix is quite easy.<br><br>It just goes to show how dangerous things on the internet can be - and how you have to be really sure that what you're downloading is actually the right thing, as this specific malware infects a system when a user downloads and opens a malicious office 365 attachment. The hackers managed to hide the code in base64 by making it look like a certificate. Classic.</p>
+</div>
+---
+TIME 08:07
+SOURCE https://www.pcmag.com/news/hacker-uses-james-webb-space-telescope-image-for-malware-attack

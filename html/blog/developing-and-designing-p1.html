@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - Blog: Developing & Designing P1</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/blog-template.css">
+		<link rel="stylesheet" href="../css/code-blocks.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="../">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="../#about">About Me</a>
+					<a href="../food">Food</a>
+					<a href="../techsnap">TechSnap</a>
+					<a href="../blog">Blog</a>
+					<a href="../assets">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="../">Home</a>
+						<a href="../#about">About Me</a>
+						<a href="../food">Food</a>
+						<a href="../techsnap">TechSnap</a>
+						<a href="../blog">Blog</a>
+						<a href="../assets">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+		<section class="post">
+
+			<div class="container">
+
+				<div class="top">
+					<h1>Developing and designing my website - Part 1</h1>
+					<div class="info">
+						<div class="read"> <span class="fas fa-hourglass"></span><p>&nbsp;19 min read</p> </div>
+						<div class="dates"> <div class="edit" style="display: none"><span class="fas fa-pen-to-square"></span><p>&nbsp;Updated: 16/06/2022</p></div> <div class="launch"><span class="fas fa-calendar-day"></span><p>&nbsp;September 00, 2022</p></div> </div>
+					</div>
+				</div>
+				<div class="content">
+
+					<img src="../media/blog/dev-designing.png" alt="">
+					<p class="introduction">Coding the frontend of this website took a very, very long time. There were so many things to learn, and challenges to overcome with novel solutions leading to over 7,000 lines of code on launch! In this series of posts, I will look at the gruelling process I went through, as well as examples to explain my solutions and thinking. Hopefully, you can take a little away from this and maybe even implement some of my code :D<br><br>The first part of this (frontend) series in a (launch) series focuses on setting the scene, looking at the process holistically, and discussing design.</p>
+					<div class="h2-container" id="what-is-frontend">
+					<span class="fas fa-link" onclick="copyHeading()"></span>
+					<h2>What is 'Frontend'?</h2>
+					</div>
+					<p>The frontend of a website is everything related to the user interface - the things that the user sees on screen and can click and interact with. For websites, the frontend always uses the same 3 programming languages at the heart of it - HyperText Mark-up Language (HTML), Cascading Style Sheets (CSS), and JavaScript (JS).</p>
+					<p>HTML is used to create the actual content seen on screen, CSS is used to make the content look nice, and JS is used to create interactivity.</p>
+					<p>Usually, especially in production settings, a modified version of the languages are used to make development easier. Developers typically use CSS pre-processors such as SASS or Stylus, which is almost like a frontend for CSS itself! There is a clearer or simpler syntax which makes the code cleaner and faster to write. Something like Bootstrap or Tailwind is also very popular, because it can make styling with CSS much easier (at the expense of beautiful code). Finally, there are JS frameworks like React (Meta) or Angular (Google) which simplify certain processes. There are frameworks and libraries for everything to do everything.</p>
+					<p>However, I didn't use any frameworks or libraries in my frontend (except one we'll get back to later) - I used the vanilla ('classic', or unmodified - think vanilla ice-cream) versions HTML, CSS, and JS. Why? Why would I subject myself to so much pain when, in reality, frameworks are used everywhere in production websites to make developing faster?</p>
+					<p style="padding-bottom: 2rem">Well, for...</p>
+					<ul class="list0">
+						<li>Fun - there are arguably less internet resources for vanilla languages (since they are rarely used by themselves), so I have more to figure out myself! Doing it all from scratch is just more fun and feels like a challenging journey, with lots of pride at the end.</li>
+						<li>Understanding - through using the base technologies to create my site, I force myself to truly understand the roots of the language and the web. I haven't just followed some commands in Bootstrap or React tutorials to reach the outcome. This ensures, but more importantly, proves to people and employers that I must have a very strong understanding of the 3 technologies. Practically, it also means that I can move between frameworks and libraries easily as I'm not comfortable in just one and nothing else - as I know the basics very well, I will be able to move between all the frameworks very fast. For example, if a candidate only codes in React for a Google job application, but I code in vanilla HTML/CSS/JS, then Google has more reason to believe that I can code in Angular better than the candidate who only uses React as the other candidate may struggle to learn Angular if he doesn't know the languages inside out. Even if I apply to a React job, the employer would know that I have a deep understanding, and it wouldn't take me long to grasp React so that would be a smaller factor.</li>
+						<li>Power - ultimately, with the vanilla language, I have the most power I can get at my fingertips. Frameworks and libraries are all built on top of these bases, so they can't possibly do more than what I can [theoretically] do with the language. Having access to the latest features and syntax is much more powerful than just using someone else's code - what if you don't like a certain aspect of their design? You can either deal with it, or have to write the code from scratch anyway to get exactly what you want. I can [theoretically] turn anything in my mind into a real thing through vanilla languages. Granted, there are many areas where you can customise or modify the code you take from libraries, but that requires good understanding of the vanilla language to do so anyway, coming back to my previous point. And if you want everything to be just how you like it, the level of customisation required is so high that you barely save any time by using pre-built components (only applicable to libraries and not frameworks).</li>
+					</ul>
+					<p>Something to note about frontend is "semantics". It's the idea of making sure all the code is used meaningfully. There's a whole thing about it, but it's largely intended for accessibility reasons, as well as being good practice in the industry. The main area to note is that you should use the most 'correct' HTML tag whenever possible. For example, if you link to another page and make a button for the UI, you may think you should use the button tag. But nope, it should be the a tag! There are loads of standard rules used to make semantic code, but they are well worth learning.</p>
+					<p>I wasn't very good at keeping my code semantic though - I  just chucked almost everything in a div! However, when I begin to make sites that aren't just for me, I'll have to ensure all the code is semantic and accessible.</p>
+					<div class="h2-container" id="progressive-enhancement">
+					<span class="fas fa-link" onclick="copyHeading()"></span>
+					<h2>Progressive Enhancement</h2>
+					</div>
+					<p>First off, I've seen it be called the "accessibility stack" somewhere in relation to accessibility, but the Wikipedia article from where I first saw this refers to it in context of progressive enhancement.</p>
+					<img src="../media/blog/frontend-pyramid.png" alt="">
+					<p class="caption">The progressive enhancement/accessibility pyramid model - the relative amounts of each language that should be included in a website based off support/robustness, decreasing as you go up.</p> 
+					<p>The idea is that, of the three primary frontend technologies, HTML is the most robust and will work pretty much everywhere, even if there are errors in the code and so on. Then CSS will work almost everywhere, again if there are errors in the code, that line of code is ignored but the rest still works. Finally, JS is the least robust. Lots of people turn off JS for security reasons, or browsers may not support it. If there's a runtime error in the JS file, then the entire JS file just stops working from that point in time, or if there's a syntax error... then the file is completely malfunctional.</p>
+					<p>So progressive enhancement is about taking into account the robustness of the code in question, and seeing how many of the users that visit your site will be able to see the feature in question. The purpose is to ensure that every user has at least the content on the page, even if it is ugly. Then, ideally every user should have good styling and therefore an overall good experience.</p>
+					<p>However, there are some things such as custom scroll bars or custom text-highlighting colours that may not work on every browser on every device. But these are what are called "progressive enhancements" - enhancements to the website that make it just that little bit better, but aren't necessary and not everyone visiting the website may even be able to see them.</p>
+					<p>These nice to haves are very important to keep in mind - you have to consider what most people will see, and what cool little features you can add that some people may not see. You have to ensure there is always a good UX, but where possible, you try to create an even better UX by going up this progressive enhancement pyramid, or adding niche lines of code that may be unsupported.</p>
+					<p>Lots of code in these frontend languages are only supported by select browsers, and caniuse.com is a great site for checking support. If not all the boxes are green, then whatever feature you're adding using that code has to be a progressive enhancement, or else you risk bad UX for a significant minority of users.</p>
+					<p>This was quite a major thing back in 2003, when it was first coined, but as support increases across all browsers, it plays a slightly less important role. Nevertheless, keeping as much functionality in HTML and CSS is ideal (I will admit, I haven't done this very well! At some point, I might make a no-javacsript site but for now, a warning will suffice).</p>
+					<div class="h2-container" id="development-process">
+					<span class="fas fa-link" onclick="copyHeading()"></span>
+					<h2>The Development Process</h2>
+					</div>
+					<p style="padding-bottom: 2rem">I'll give an overview on how I coded the frontend of the website, from nothing to a place where it was ready to be put online. The process outline I undertook was like this:</p>
+					<ol class="list1">
+						<li>Think of what I want on my website</li>
+						<li>Research for inspiration</li>
+						<li>Design the page</li>
+						<li>Program it</li>
+						<li>Test it</li>
+						<li>Bugfixes/enhancements</li>
+						<li>Beta test</li>
+						<li>Add content</li>
+					</ol>
+					<p>When researching, I would search up loads of images on Google, visit impressive sites I came across and analyse them, and look at blogs or video that cover the "top 10 landing pages" for example. This was a very long process, and I found ideas spawning all the time and everywhere, from my bed to Pizza Express.</p>
+					<p>As I design, I would try to picture some things in my head, and would usually do some sketches and brain dumps on my Surface Pro. After this seemingly endless cycle of inspiration and drawing, I would finally land on a design that I was happy with and checked all the boxes. I'd have to consider a lot of factors in the design, because typically the web developer and designer are separate people, and the dev would get a full design schematic from the designer. The dev's job would be a clear implementation so he wouldn't have to think loads about small design details - especially as devs are usually bad at design!</p>
+					<p>I designed the computer layouts first, and then the mobile, and I also coded this way. Coding this way is not recommended in general though! This is because a mobile layout is typically simpler than a computer one, so when you adjust the code for mobile screens, you have to overwrite and remove a lot of the code you just wrote for computers, resulting in a messier and larger codebase. You could also encounter issues with all of these pre-set values for computers that you don't want on mobile - I can't even say how many hours I lost because of this! Since it was my first website, I think I can forgive myself, but next time, I need to definitely change my approach...</p>
+					<img src="../media/blog/full-design-onenote-sc.png" alt="">
+					<p class="caption">My design sketches OneNote page</p>
+					<p>You might be wondering why I didn't use Figma, a tool specially made for web design, and the answer is because I didn't need to. I wasn't going to learn more software for no reason. When I can visualise the design in my head, I don't need it - if I'm working alone on my website, there's no one I need to communicate the design with. Some rough OneNote sketches are enough to remind me of my vision and brainstorm.</p>
+					<p>That's not to say Figma is bad - in fact, it's an incredible tool! It's just not for me, and it wasn't an efficient use of my time for this project (yes, I dabbled in it).</p>
+					<p>I am a self-taught developer - I learned everything from random YouTube videos, questions in Discord communities, detailed blog posts, and most importantly, experimentation! The Mozilla Developer Network is definitely a huge win too. I feel like this self-taught approach is the best way to learn programming.</p>
+					<p>To get started learning how to code websites, I initially just followed a short video and wrote the code word for word for a simple website, searching up anything I didn't know (the video had no voiceover/explanations). This was really just to get in the gist of things and get more comfortable with the frontend languages. After this, I began with my own website.</p>
+					<p>Coding it would be a long stretch of writing HTML of one part, styling it, and repeating this until the page was done. Sometimes I'd have to write JS in between, but I mostly wrote it after the HTML and CSS. I'd be developing on my Linux system with the HTML, CSS, and JS files all open at once on a screen, my text editor of choice being vim (and I used Emmet, of course).</p>
+					<img src="../media/blog/dev-workspace-sc.png" alt="">
+					<p class="caption">My coding workspace during development.</p>
+					<p>I'd have a live server running for this directory (the npm package), and have Firefox in another workspace (the Linux equivalent to virtual desktops) which would be my primary browser for development - it has lots of nice tools to help me, as well as being my primary browser anyway! I'd also have Chrome up as it's the most common browser but works fundamentally different to Firefox, so I had to test in Chrome every now and then to ensure the styling worked (and fix it when it didn't).</p>
+					<p style="padding-bottom: 2rem">A note about browsers - all browsers are based off a web engine, essentially the thing that converts code into a visual website. There are 3 primary web engines:</p>
+					<ol class="list2">
+						<li>Gecko - used in Firefox</li>
+						<li>Blink - used in Chromium (and therefore all browsers based off Chromium, such as Chrome and Edge)</li>
+						<li>Webkit - used in Safari (and all iOS browsers - non-Safari iOS browsers are essentially just a skin on top of Safari as the web engine and way it works is identical) </li>
+					</ol>
+					<p>So whilst I use exclusively Gecko, most people use Blink, but a lot of people also use WebKit. And all of these treat code differently. Argh. The screen size and device platform also affects how your code is displayed. This means I have to test as many browsers as I can across as many devices as I can to ensure the experience is just as good on each one - it doesn't have to be identical, but it still has to be good.</p> 
+					<p>Designing for multiple screen sizes is called responsive design - as your website will respond to different sizes. Responsive design is quite hard, but there are lots of tricks and guides to help you, and articles with the most common screen sizes. However, the piece of advice I would give is that you should initially ignore common screen sizes, and just add breakpoints when your design begins to not work, such that you've 'fixed' the issue. Once you're done, then perhaps consider 2 or 3 of the most popular screen sizes and platforms that your demographic of visitors will use, and optimise the site for them to create the best experience for the majority of users.</p> 
+					<p>The testing would happen simultaneously (with coding) on Firefox, testing lots of different screen sizes and simulating phones. Only once I got the site live on the internet (a week before launch) would I test on real phones. At this point, I also got my good friend to do some beta testing and get 3rd party opinions.</p>
+					<p>During all this testing, I'd make short mental lists of things I had to fix, and then fix them. It was a long process, and there were always going to be endless bugs and improvements and enhancements, so I had to draw the line somewhere.</p> 
+					<p>I needed the user to have an overall good experience and encounter as few issues as possible, but also not spend an extremely long time fixing everything; especially the most complex issues or the issues that a very small proportion of people will see. I had already spent a while making the site, but I think that in the end, I did strike a good balance of bug fixes and pushed the site out in good time.</p> 
+					<p>Back to the point about browsers - whilst Firefox is overall the best 'conventional' browser for web development as it makes debugging much easier, there is a better browser. Chrome has a couple of things that Firefox doesn't, such as much better mobile device emulation (and the popularity idea), but there's still a better browser.</p> 
+					<p>Polypane.</p> 
+					<p>It's designed for web devs, and it has absolutely everything a developer could dream of. And more. Now, looking at it, it may not seem as good as it is, and looking at all the marketing and videos people have made of it, I sure wasn't that impressed. I thought it was an overdone, excessively hyped browser. But dear oh dear was I wrong.</p>  
+					<p>Now, I haven't used it much, but after spending straight weeks developing on Firefox (and Chrome), it was so refreshing to dive into Polypane. Normally, it feels like you're battling against the browser to do whatever you need to do, but with Polypane, there are so many nice things that make the process of web development much more seamless - every now and then, I'd ignore an issue or not test it on Firefox just because that's too much effort. Not on Polypane. Maybe I'll write another blog on Polypane later.</p> 
+					<p>And the reason I didn't initially use it? Because it's expensive and I wasn't going to pay that much just to help develop my site (especially if I make no money from it). However, it was a gem to find that I get a year for free of Polypane from GitHub education! Irritatingly, I found this deal the day after launch, but nevertheless, I'm ecstatic to use it moving forward.</p>
+			</div>
+
+			<div class="scroll-top">
+				<span class="fas fa-plane-up" onclick="toTop()"></span>
+			</div>
+
+			<div class="copy success"><p>copied!</p></div>
+			<div class="copy error"><p>failed to copy!</p></div>
+
+		</section>
+
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2022 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://github.com/SourishS17/Website/" target="_blank"><h2>Audit the source code</h2></a>
+					<!--<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>-->
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+			<style>
+				.loader {
+					display: none;
+				}
+			</style>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/blog-template.js"></script>
+		<script src="../js/code-blocks.js"></script>
+
+	</body>
+</html>

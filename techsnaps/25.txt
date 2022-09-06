@@ -1,0 +1,12 @@
+<div class="story">
+
+<h1>Canonical endorses Ubuntu Unity</h1>
+<div class="main-content">
+<img src="../media/techsnap/25a.png">
+<p>Ubuntu Unity Remix is now an official flavour of Ubuntu, from 22.10 onwards! This means that it is endorsed by Canonical, and will receive more support as well as better access to the Ubuntu repos. In 2017, Ubuntu ditched the Unity desktop environment in favour of GNOME, but since then, a developer tried to keep this flavour alive through "Ubuntu Unity Remix". He didn't change a whole lot, and the Unity team did the same - in fact, they changed basically nothing. However, recently (2 months ago) they pushed some bigger feature updates and bugfixes in Unity 7.6, which meant that they've now been deemed the status of an official flavour. Perhaps the best things with Unity are the search feature and settings/tweak panel. The search panel is what GNOME tried to be, and it's a super powerful search feature just like MacOS' spotlight. The settings in Unity are also better laid out, and there are far more things that the user can change. Also, tweaking it is easier. Not to mention that this flavour has some nice animations!</p>
+<img src="../media/techsnap/25b.jpg">
+<p>So whilst there are still some issues (such as a slow install), I think it's great to see Unity come back to Ubuntu. It's quite surprising that Ubuntu ditched it in the first place, because the past few years have just been making GNOME more like Unity - although I will admit that I think GNOME is realllllllllly nice right now! It's actaully my favourite DE, and as much as I love customisation, the aesthetic and everything about it is just awesome. I know that is a very controversial thing to say though... Either way, to see another community spin of Ubuntu being endorsed will surely ignite the fire in many Ubuntu/Unity fans, and I reckon Unity will become the most popular flavour, right after GNOME, within a couple of years!</p>
+</div>
+---
+TIME 23:01
+SOURCE https://news.itsfoss.com/unity-remix-official-flavor/

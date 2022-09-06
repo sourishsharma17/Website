@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>EU may force longevity on smarphones</h1>
+<div class="main-content">
+<p>The EU has proposed some regulations that target smartphones and tablets. The regulations contain a lot of interesting information, such as that smartphones will have to be able to withstand 500 full charging cycles before deteriorating to 83% of their original capacity. Another regulation is that the OEM will have to stock and make sure 15 distinct components are available to buy, for an entire 5 years after the product is released. These components are things such as batteries and screens, presumably components that break easily and so repairs are simplified and possible in the first place.</p>
+<img src="../media/techsnap/24a.jpg">
+<p>This regulation is truly fantastic, and I hope to see it go through. The EU tends to make all sorts of funny tech-related regulations, and it's always entertaining to see what whacky idea they have next. They also typically make pretty strict regulations, and these are always consumer-oriented. Also, the regulations tend to find themselves across the pond afterwards, and the US Senate is in fact already thinking of implementing their own version of the EU's universal smartphone charger rule. Back to this specific regulation, it really pushes the longevity of smartphones. Whilst the battery rule is already quite widespread in the industry, it's nice to think that even budget devices will have to abide by this rule and therefore companies can't cheap out with poor components.<br><br>Hopefully the EU enacts this rule in the coming years, and I think the EU will continue to be a pushing factor for consumer-centric tech products. However, a key issue I can think of is that a lot of the cutting edge devices, such as the Xiaomi Mi Mix lineup, may not at all be realeased in the EU as it just wouldn't be economical for a company to ensure they satisfy all the regulations when they are going to sell just a hundred units or so. But since the EU tends not to get these experimental concept phones anyway, I'm not sure it's that much of a loss. I'm so glad that if Governments are incapable of taking consumer tech and keeping it within reason, that at least the EU can do that :)</p>
+</div>
+---
+TIME 17:16
+SOURCE https://www.theregister.com/2022/09/02/eu_tablet_battery_regulations/
