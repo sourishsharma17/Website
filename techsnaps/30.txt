@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>TikTok hack debunked</h1>
+<div class="main-content">
+<p>The general consensus among the community is that the TikTok hack and data of allegedly 2.05 billion people that was released on Breach Forums is fake. The 3TB of data was never was never public, but the samples that the 'hacker' posted were analysed by security researcher Troy Hunt. He ultimately decided that the data is all publicly available, and probably from a completely different company. Even if you download the samples and pore through them, you'd realise that there is nothing of interest in them - no passwords, emails, phone numbers etc. The only things that exist are some random tags and videos.</p>
+<img src="../media/techsnap/30a.jpg">
+<p>Firstly, I'm glad that nothing was actually leaked, however, we're still talking about TikTok and they sure have too much data on you stored in some Chinese server. Despite the regulations by the Trump administration a few years ago, it still seems as if data is stored there. And any data in China is accessible by the CCP. Not good. Also, the hacker claimed that WeChat information is stored in the same database as the TikTok data - although we cannot verify this, if it's true then there is definitely something fishy going on. Because the breach is probably fake, Breach Forums banned the user and provided a banner above the post, they have a warning saying the post is fake. To get banned by Breach Forums is just funny.<br><br>Either way, even if this time 2.05 billion people were not doxed, that doesn't stop it from happening in the future. The hunt for big tech to get your data will always remain, however, when in the hands of the wrong Governments (such as China's or Israel's), it kills people. And that is really why privacy matters. I don't use TikTok, and nor do I have the app. You shouldn't either.</p>
+</div>
+---
+TIME 08:07
+SOURCE https://twitter.com/troyhunt/status/1566583578850254851

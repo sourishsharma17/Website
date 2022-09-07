@@ -1,0 +1,10 @@
+<div class="story">
+
+<h1>Bitwarden raises $100 million</h1>
+<div class="main-content">
+<p>Bitwarden has recently managed to find a lot of money to fund their ventures, and support the project. 
+<img src="../media/techsnap/29a.png">
+</div>
+---
+TIME 22:08
+SOURCE https://techcrunch.com/2022/09/06/open-source-password-manager-bitwarden-raises-100m/

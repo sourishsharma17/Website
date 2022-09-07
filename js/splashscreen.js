@@ -28,7 +28,7 @@ const draw = () => {
 
 	if (rainDrops[0]*fontSize >= canvas.height*0.95) {
 		window.clearInterval(matrix);
-		clear();
+		clearSplash();
 		return;
 	}
 
@@ -48,6 +48,6 @@ function begin() {
 	window.matrix = setInterval(draw, 1800/(canvas.height/fontSize));
 }
 
-function clear() {
+function clearSplash() {
 	document.querySelector(".glitch").remove();
 }
