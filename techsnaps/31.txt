@@ -1,0 +1,12 @@
+<div class="story">
+
+<h1>Green Bubbles are here to stay</h1>
+<div class="main-content">
+<img src="../media/techsnap/31a.jpg">
+<p>At the awesome and eventful 2022 Code Conference, Tim Cook was asked by a journalist about iMessage and RCS, and after the journalist complained that he couldn't send videos to his mother, Tim replied with "buy your mom an iPhone". The endless debate about the mobile text messaging space just got a whole lot more intense. Personally, I don't really use non-IP messaging at all for anything, and find it very useless and limiting. However, it seems that many people (mainly boomers) use it a lot in the USA.<br><br>Ultimately, everyone can agree that Apple is wrong here, and Tim is not being a good person. From internal document, we know that the reason iMessage has not been ported over to Android yet is because it locks a lot of customers into the Apple ecosystem - the green bubble text message received from someone without an iPhone to an iPhone user is almost used as a status symbol. Apple claims to care about privacy a lot, and yet they still use an outdated and insecure protocol. RCS is the future, and actually has strong, state-of-the-art end-to-end encryption. Apple creates the illusion of privacy, but in reality, no one should fall into this trap. They are just as evil as the rest of Big Tech. They ARE big tech.</p>
+<img src="../media/techsnap/31b.png">
+<p>Google launched a whole campaign against Apple last month for a reason, and the green bubble doesn't even pass the accessibility contrast standard. It's crazy that Apple is still keeping it around, and the interview with Tim suggests that this will continue to happen for the long future. What's even more crazy is that Tim even said this, as the face of Apple. So blunt and straight up shameless marketing. Apple truly is evil.</p>
+</div>
+---
+TIME 08:08
+SOURCE https://twitter.com/troyhunt/status/156658357885025485://www.engadget.com/tim-cook-response-green-bubbles-android-your-mom-095538175.html 

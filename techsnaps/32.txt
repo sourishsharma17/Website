@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>You can vote for new charging locations</h1>
+<div class="main-content">
+<p>Tesla is going to soon launch a poll where participants can vote for places to put new superchargers. To decide what options to put on the poll, they have a Tweet and the most liked replies will succeed.</p>
+<img src="../media/techsnap/32a.png">
+<p>This idea is very interesting, and at least Tesla is connecting with the community more. Tesla have the world's best network of fast car chargers, so making sure they are positioned in the right places for consumers is critical if EVs were to be the future. Tesla is also thinking of opening up their network by the end of the year. Companies such as Tesla, as much harm as they do, still provide significant value to the industry and that is very commendable. I'm looking forward to more chargers, and whilst this is only happening in the USA right now, I'm sure Tesla will expand votes to Europe. Having a Tesla in the family, I know how awesome the fastest superchargers are. They make buying an EV a no-brainer, but that's perhaps because we just got lucky and live near a very, very fast charger. Opening up the network will at least make other EVs more feasible, as Tesla almost gives their biggest advantage to all EV users. Awesome!</p>
+</div>
+---
+TIME 08:38
+SOURCE https://twitter.com/troyhunt/status/156658357885025485://www.engadget.com/tim-cook-response-green-bubbles-android-your-mom-095538175.html://techcrunch.com/2022/09/08/tesla-wants-your-vote-for-new-supercharger-locations/ 

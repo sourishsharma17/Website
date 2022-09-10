@@ -2,8 +2,9 @@
 
 <h1>Bitwarden raises $100 million</h1>
 <div class="main-content">
-<p>Bitwarden has recently managed to find a lot of money to fund their ventures, and support the project. 
+<p>Bitwarden has recently managed to find a lot of money to fund their ventures, and support the project.</p> 
 <img src="../media/techsnap/29a.png">
+<p>Personally, I love Bitwarden - it's free and open source software, as well as having very fair paid plans. They do a lot of things right and have plenty of very useful and cutting edge features. The main reason I like them, however, is because I feel like I can trust them. Compared to other password managers - such as 1Password or LastPasss - Bitwarden is perhaps the security community's favourite. It's not owned by other suspicious organisations, the code can be audited by anyone, new features can be developed in an accelerated timeline, and so much more. It's so awesome to see that they have managed to bag a lot more funding, and hopefully they can continue doing what they do best.<br><br>Personally, I don't use a password manager (other than the in-built browser one - yes, I know they are terrible and no one sane should use them...) so I've been thinking of using Bitwarden for a year or so at this point. I have mixed feelings about using one - but I know that they are very useful and almost a necessity these days online. If anyone doesn't use a password manager (or not Bitwarden), I would personally recommend it. Of course, it would be great to self host a password manager in the future (I can self host a Bitwarden vault).</p>
 </div>
 ---
 TIME 22:08
