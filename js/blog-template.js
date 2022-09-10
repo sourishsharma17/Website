@@ -46,7 +46,7 @@ function rand(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-for (var i = 0; i < rHeight/400; i ++ ) {
+for (var i = 0; i < rHeight/450; i ++ ) {
 
 	var blob = document.createElement("div");
 	blob.classList.add("blob");

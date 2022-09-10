@@ -194,6 +194,7 @@ header .navbar-simple {
 	color: var(--text);
 	border-radius: 7px;
 	font-family: Consolas, monaco, monospace;
+	font-size: 1.75rem;
 	font-weight: 600;
 	padding: 2px 5px;
 }
@@ -381,7 +382,7 @@ header .navbar-simple {
 	}
 
 	.post .container .content ol.list0 > ::marker {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 	}
 
 	.post .container .content ul {
