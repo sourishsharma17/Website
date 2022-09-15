@@ -1,0 +1,14 @@
+<div class="story">
+
+<h1>Quest Pro first look</h1>
+<div class="main-content">
+<img src="../media/techsnap/35a.jpg">
+<p>Someone found a Meta Quest Pro in a Hotel room - and being the ethical person they are, they made a video opening up the box and put it online. Oh, and because they were so ethical, they ensured the owner got back their stolen Quest Pro. On a more serious note, we've been hearing about Project Cambria for well over a year. It's a new headset designed for less consumer-focused markets, and more so in professional environments such as workplaces or even game dev studios. The idea is that you can have a lot of virtual desktops in the headset, and therefore have more screen real estate and shortcuts to be more efficient at working. Other benefits also exist, such as AR modelling whilst designing something, or remote conferences that actually work (we all know what Teams conferences are like...)</p>
+<img src="../media/techsnap/35b.jpg">
+<p>The unboxing shows us a lot of information about the headset - likely to be released next month. This close to launch date means that the engineering sample is probably quite accurate. The headset is very flat and sleek from the front, a stark contrast to the Meta Quest 2. Clearly, Meta has done a lot of work behind the scenes to compact and improve the tech, and I'll be interested to see how they did that, and whether or not it could come to consumer-grade headsets in the coming years. But perhaps the most interesting feature are the controllers - they don't have a touch pad on them because cameras will track the user's actions. This movement towards camera tracking is extremely scary, but also crazy on a technical level, and I'm even more excited to see how well this works (based off their current hand tracking in the Quest 2, I have high hopes). But it begs the question as to what exactly has Meta achieved behind the closed door of their offices? What are they hiding from the rest of the world?</p>
+<img src="../media/techsnap/35c.jpg">
+<p>We also learn more about the strap of the headset, which seems to be significantly more comfortable and practical than the Quest 2, which was perhaps the most common criticism of that product. Meta has always been advancing VR, and they are so heavily invested in it that I'm sure new awesome tech will arrive in our hands soon - their survival depends on VR's success. Of course, this also means that there will be a massive monopoly in the industry, but when working on bleeding-edge tech, we don't have a choice but to let that happen.<br><br>Either way, there are so many cool things that should come out of this product, and this news has only made me even more excited for next month!</p>
+</div>
+---
+TIME 10:10
+SOURCE https://www.theverge.com/2022/9/11/23347979/meta-quest-pro-leak-vr-project-cambria-headset

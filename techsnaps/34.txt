@@ -1,0 +1,10 @@
+<div class="story">
+
+<h1>Valve is pro consumer?</h1>
+<div class="main-content">
+<img src="../media/techsnap/34a.jpg">
+<p>The Steam Deck, a year after the initial teasings, now have repair centres to fix any warrant-covered damage for free, and out-of-warranty damage for a[n unknown] fee. This is great news, as Valve seems to be a very pro-consumer brand in general. They open-sourced some Steam Deck schematics recently, and they do a lot of open-source work for the Linux gaming community, driving forward compatibility on the OS with Proton and alike. This news is also great because Nintendo have terrible consumer-ethics, with terrible repair programs and customer support. As Nintendo produces the biggest competitor to Steam Deck (the Switch), it's nice to see that Valve are standing out.<br><br>Oh, and they are also releasing some repair kits and guides on iFixit (like, a lot lot, basically everything you'd ever need) - a very welcome industry trend! Finally, OEM tech is starting to be controlled by the consumers, and not the company :D</p>
+</div>
+---
+TIME 08:36
+SOURCE https://store.steampowered.com/news/app/1675200/view/3398545888823804940

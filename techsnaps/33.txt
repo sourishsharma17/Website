@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>FCC introducing new regulations</h1>
+<div class="main-content">
+<p>Space junk is getting a bigger and bigger issue over time - as we send more satellites into space for communication, experiments and recon (surveillance). And with that, as with everything, comes irresponsible big tech that leave decommissioned satellites in space. The issue with this is that it increases the probability of collisions in space - and that may break current functioning satellites and therefore lead to all sorts of issues on Earth such as poorer GPS connections. More importantly, however, the thousands of pieces of space junk can end up hitting astronauts on space walks on the ISS and kill them - these pieces are travelling at insane speeds. The pieces also damage the ISS, which causes the need for space walks in the first place.</p>
+<img src="../media/techsnap/33a.jpg">
+<p>So, the FCC is proposing that all satellites (launched from September 29th 2024 onwards) will have to be deorbited within 5 years of decommission. Currently, there is no law even though NASA recommends a span of 25 years (a recommendation 32 years old when space junk was barely a thing). This law would force more companies to take responsibility, and perhaps do things that Starlink is doing with their satellites - they force the satellite downwards into the atmosphere, causing them to burn and fully disintegrate before they reach Earth's surface.<br><br>This law is great, but maybe it comes too late as LEO (Low Earth orbit) is already saturated with bits of broken satellite. On the plus side, since US companies almost control space exploration (with SpaceX and NASA taking lead), this US FCC law will affect most space-related activities if the voting succeeds.</p>
+</div>
+---
+TIME 07:04
+SOURCE https://www.engadget.com/fcc-five-year-rule-space-junk-181745779.html

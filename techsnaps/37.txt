@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>The robot prints blueprints on the site</h1>
+<div class="main-content">
+<p>HP just unveiled a construction robot which can print a digital blueprint onto a construction site. It can precisely mark, using specialised ink, all the outlines of a building and the locations of where everything should go. It can print on a variety of surfaces, including uneven ones, and the ink used can vary such that it lasts just a few days or up to a few months, adapting to the timeline of the project. This should help ease the labour shortage in the construction industry as fewer people are required to create this layout plan than before.</p>
+<img src="../media/techsnap/37a.jpg">
+<p>I think this robot idea is fantastic, and is one of few actually good and useful cases of a robot. The robot will almost certainly work on the site, as the site will have to be made flat anyway, and the robot targets a market that is already struggling. The high precision and accuracy of the robot also reduce chance for human error, and I think these applications are where the near future of robotics lie. Enhancing our lives and doing things for us. It's awesome to see that HP is getting into this industry with quite a unique idea, and the product should fully launch in 2023, with trials later this year. I'm excited!</p>
+</div>
+---
+TIME 07:13
+SOURCE https://www.engadget.com/hp-siteprint-construction-blueprint-robot-191114174.html

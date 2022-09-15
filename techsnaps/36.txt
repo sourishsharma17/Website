@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Ice Universe & Samsung's decline</h1>
+<div class="main-content">
+<p>In the past few months, Ice Universe (the prolific Tweeter) has expressed plenty of hatred towards Samsung and the direction they are going in. He Tweets numerous times a day complaining about all sorts of things, and I finally got sick enough of it to write a TechSnap!</p>
+<img src="../media/techsnap/36a.jpg">
+<p>Whilst Ice Universe used to be a big Samsung fan, perhaps his fanboy-ism is what led to such disappointment and hence despise for the brand. But he has a point. There are plenty of issues with them, and they seem to be getting worse. Lots of relatively minor issues combined to create a bigger question - what actually has TM Roh done? I still remember when this change happened a few years ago, when DJ Koh left. He was great, but everyone had even higher hopes for Roh. Clearly, he didn't hold up to them.<br><br>The removal of a screen protector, the lack of the Note series, the display downgrade from QHD to FHD (which is something that geeks care about hugely), the slowing pace of foldables. Even if Samsung has grown in size, their smartphones are just getting worse. Yes, we have perhaps passed peak slab phone, but Samsung are just so boring and money-hunting. All of Ice Universe's claims are valid in my opinion, and as almost the ambassador of Android, Samsung keeps disappointing everyone. Hopefully they'll change soon, but as Big Tech controls the industry, we have no choice... But we do. Just don't buy Samsung phones.<br><br>Of course, that's hard to do because they have nothing to do with China, and Chinese phones are suspicious. However, brands such Asus' Zenfones and Google's Pixels also offer awesome devices, and for less money too. Ultimately, I really hope Samsung takes control soon, before they become a laughing stock for not just enthusiasts, but also consumers. Their way out is to polish the user experience with all the money they have, even if Samsung are incapable of making innovative devices, at least they can make the user feel valued.</p>
+</div>
+---
+TIME 06:51
+SOURCE https://twitter.com/UniverseIce
