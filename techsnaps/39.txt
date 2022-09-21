@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>GTA VI internal files hacked</h1>
+<div class="main-content">
+<p>The 18 year old hacker that got into Uber's systems through Slack social engineering a few days ago repeated the same method with Rockstar Games, the dev studio behind GTA. GTA VI is expected to be released in 2-3 years, but the game is close to completion so the gigabytes of video files that were released contained plenty of juicy info. We can learn loads about what the new game has to offer, such as a female protagonist and some *interesting* new additions. Perhaps the most sought after feature, heists, are making a come back from GTA SA.</p>
+<img src="../media/techsnap/39a.jpg">
+<p>Anyway, I can't really post any images or videos here because Rockstar are being very harsh and DCMA'ing people of all sorts who spread their stolen content - countless related YouTube videos have already been removed. Whilst this teenage hacker didn't ask for anything from their Uber hack, this time he claims he'll sell the source code if Rockstar don't pay him up. As the GTA series is perhaps one of the most profitable video game series of all time, Rockstar are definitely going to be willing to put up a fight. I reckon this hacker will be found and jailed, and Rockstar are sure to pour in millions to keep their code behind closed doors.<br><br>Imagine if some shabby dev studio got access to the near-completed code, they could quickly finish it off and package it into a game a year before official launch, and would make millions by doing so whilst simultaneously cutting away at Rockstar's income.<br><br>Anyway, it's still hilarious how hacks like these happen, and how this 18 year old kid just outsmarted two industry leaders within a week. Again, employees are the weakness to commercial cybersecurity, but it's the company's job to fix that.</p>
+</div>
+---
+TIME 18:00
+SOURCE https://www.bbc.co.uk/news/technology-62960828

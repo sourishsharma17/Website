@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Area 120 funding cuts</h1>
+<div class="main-content">
+<p>Google's experimental division, known as "Area 120", is an 'incubator' for internal projects. Big ideas that could spin off into another company or provide significant value to their business. Sundar Pichai, the CEO, hinted last week that Google needs to become 20% more efficient, and this idea seems to plague the industry. The idea that there are now too many staff members and that big tech is not being efficient. Perhaps their constant drive to push forward and grow is now cursing them, and with revenue growth beginning to increase at a reducing rate, big tech are struggling to manage their business.</p>
+<img src="../media/techsnap/38a.jpg">
+<p>Internal project departments are always great, and it's perhaps one of the best things about being in a large company - internal projects are given a higher priority and the company has enough money to both fund them, and risk losing millions if [when] they fail. There were 14 active projects in Area 120, but this is being halved to just 7, and some projects such as EV charging station maps, are being cut. These internal projects, in my opinion, are what cause innovation, and are very important to push the industry forward, so it's a little saddening to lose this.<br><br>It's also saddening to see these talented and intelligent engineers being fired for no fault of their own. Whilst Google is giving them their salary and benefits for now, they only have until January to find a new role within the company and this would be very difficult for many. Google, along with other Big Tech, is working on slowing their hiring pace, so people who want to enter the industry in the coming years (such as myself) may struggle to find jobs at the biggest of big tech. Although, Amazon has an incredibly high turnaround rate of employees, and maybe if they are working to keep employees for longer, the industry will settle down. Either way, jobs in engineering and technology will always be in demand as it paves the path for the future of society and humanity.</p>
+</div>
+---
+TIME 07:38
+SOURCE https://techcrunch.com/2022/09/14/google-cancels-half-the-projects-at-its-internal-rd-group-area-120/

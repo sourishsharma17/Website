@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Powerful, but pricey</h1>
+<div class="main-content">
+<p>At their GTC 2022 keynote, NVIDIA gave us some insights into the RTX 4000 series. But only the 4080 and 4090. Across the board, prices are even higher than last year, power consumption is roughly the same, and the chips are cutting edge. They claim the 4090 is 2-4x faster than the 3090ti, and it will be released on October 12th costing £100 more expensive than the 3090ti. Not even the 3090, but the ti variant.</p>
+<img src="../media/techsnap/40a.jpg">
+<p>People are very disappointed with the price increases, and the past few years of getting a GPU have been very hard as mark ups are at the extreme. Combined with after-market board partner issues, I think that NVIDIA is getting a little out of control. They are just doing what they want without the consideration for the market. However, as GPU prices hopefully stabilise, we should still expect decreases in the cost of a good GPU.<br><br>The 3000 series provided awesome value (at MSRP), and it seems that the 4000 series, despite being even more powerful, won't be able to offer the same accessible value. A little disappointing from NVIDIA, but at least we can see that their tech is improving rapidly as ray tracing and CUDA core numbers are escalating. What I'm most excited for is the 4070 and seeing the value proposition of that, or if the 3080 would be a better choice as discounts will start to hit.</p>
+</div>
+---
+TIME 08:17
+SOURCE https://www.engadget.com/nvidia-rtx-4090-announced-152529456.html
