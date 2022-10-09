@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>The end of Stadia</h1>
+<div class="main-content">
+<p>Google has finally confirmed that they are killing Stadia, their game-streaming service.</p>
+<img src="../media/techsnap/43a.jpg">
+<p>After over 2 years of operations, Stadia is now shutting down. It will officially be axed by the end of January, and Google employees working on the project were encouraged to find jobs elsewhere within the company. In fact, Google claimed that their expertise and knowledge gained from Stadia will be applied across Google services, such as YouTube and Workspace. To be honest, I'm not sure I'm surprised that Google finally killed Stadia - they tend to kill a lot of projects, especially the non-fundamental ones (such as Google Search). And considering the recent Area 120 accouncements, no one should be surprised anyway. Stadia was not the most popular service and Google claims that this was the driving force for its death. Whilst I'm sure this was a significant factor (as Stadia hasn't gained the traction gathered by GeForce Now and alike), I reckon it's deeper than this.<br><br>Perhaps game streaming isn't really the future. Right after Logitech launched their handheld gaming device intended for game streaming, this is quite a funny time. I snabbed 2 months of Stadia for free on the day it came out, and now with it being stopped, all customers - even those who bought hardware - will get a full refund and can continue using Stadia free of charge until it shuts down for good. This is at least some good news from Google, but I'm sure it only costs them pennies compared to the insane amounts of money that must have been invested into cloud gaming.</p>
+<img src="../media/techsnap/43b.jpg">
+<p>Cloud gaming seems to be the future - or at least companies seem to want it to be the future. I've expressed my views on it before, but I think the underlying issue is that companies are pushing it to consumers before we are even ready; before the infrastructure makes it widely accessible for high quality gameplay. Perhaps companies are doing this to get their hand in the cookie jar before everyone else, but it doesn't seem to be going to plan. It's quite sad that one of the world's largest organisations has given up on cloud gaming, but I'm sure there is plenty to follow suite in the coming years.<br><br>Alas, for now, this is yet another Google project done and dusted, another experiment discarded, thrown upon the pile, into the Google grave.</p>
+</div>
+---
+TIME 21:34
+SOURCE https://www.theverge.com/2022/9/29/23378713/google-stadia-shutting-down-game-streaming-january-2023

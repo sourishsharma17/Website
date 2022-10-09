@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>The "AI Bill of Rights"</h1>
+<div class="main-content">
+<p>The White House has proposed the "AI Bill of Rights", which are a set of regulations that could become US law soon. They revolve around the use of AI, primarily looking at it from an ethical view point and, as you can infer from the name, human rights over their data. The proposal goes on to describe all the essentials, such as the user clearly being told what their data is being used for, their right to decline the use of their data, and the responsibility on companies to use machine learning effectively and trying their best to remove bias on protected characteristics.</p>
+<img src="../media/techsnap/44a.jpg">
+<p>This is fantastic news, but it is of course still a Bill, and therefore is entirely optional. Whilst it's awesome that the Government is encouraging this and all state-backed organisations like the FBI will be following these standards, there is nothing stopping private companies from completely ignoring it. And I sure bet that private companies like Google and Microsoft do indeed happily ignore them. Also, this bill comes after the harsh regulations set by the EU, and this is where America falls behind.<br><br>AI is clearly the future and there is so much positive potential for it to change our lives in a drastically good way, so using it ethically is pivotal in society. However, the rules need to be strict, and society needs to call out unethical uses of their data. But they can only do that if they know what their data is being used for - companies can easily conceal this information behind millions of lines of confusing code. I hope that organisations do follow this bill, and I hope that it gets passed as a law as soon as possible. But for now, we must accept that AI will be just as biased as the human.</p>
+</div>
+---
+TIME 08:12
+SOURCE https://techcrunch.com/2022/10/04/white-house-proposes-voluntary-safety-and-transparency-rules-around-ai/

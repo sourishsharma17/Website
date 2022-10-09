@@ -1,0 +1,12 @@
+<div class="story">
+
+<h1>XDA dev shares his opinions</h1>
+<div class="main-content">
+<img src="../media/techsnap/45a.jpg">
+<p>For the longest time - despite the bathtub notch, the tacky hand gestures, and the bugs - there have been a notably large subset of Google Pixel phone fans. The purists, the enthusiasts, the average person. They all seem to be addicted to their Pixel in some way or another!<br><br>You may want to read the article yourself, but it mentions the big things like magic eraser, Google Assistant, live translate/transcribe, voice typing and now playing. He mentions how some of these were Pixel-exclusives at some point, and how Google's focus on AI with the Tensor chip, combined with their expertise, leads him to love Pixels. I find this a little strange (and very intriguing), because a lot of these features don't seem to even be that useful on their own, such as the Now Playing, or voice typing. I guess there may be some infrequent scenarios when they are great, but lots of almost-as-good 3rd party apps exist.</p>
+<img src="../media/techsnap/45b.jpg">
+<p>The article claims that they are awesome features which he really values. I can understand the "Google experience" on the whole, but I still find lots of the Google features like these a little gimmicky and barely factors to include in decision making. Google used to have lots more fun, useful features on their Pixels (such as squeeze for Assistant on the Pixel 2), but no more.<br><br>Of course, the Pixels are still an awesome series of devices with sales that shot up at the start of this year, so I'm looking forward to tomorrow's event where we expect to see the Pixel 7 start at £600 again!</p>
+</div>
+---
+TIME 17:53
+SOURCE https://www.xda-developers.com/google-pixel-series-defined-by-software-features-editorial/

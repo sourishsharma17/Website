@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>VR Headsets relieve pain</h1>
+<div class="main-content">
+<p>Some more tests have backed up a theory that patients wearing a VR headset during surgery feel less pain and therefore require less anaesthetic than otherwise. A lot less, actually. This is extremely intriguing because it seems that VR is trying to take over the world, and maybe Zuck's Metaverse dream is closer to reality than we think. Maybe one day, we'll have surgery in the comfort of our homes. Maybe we'll just have to put on a headset and a wireless robot can be controlled remotely by a surgeon. That would be very cool, but also provide value in more remote/poor locations where doctors aren't available.</p>
+<img src="../media/techsnap/42a.jpg">
+<p>However, the idea of wearing a headset to surgery is so weird, and it will take a while before more people do it. But it begs the question of why people feel less pain. They must be so engrossed in their headset and their own dreamland that they can almost ignore any pain. Is that perhaps dangerous? When we are in headsets now, and will be more so in the future, will we tune out to pain? Pain is a necessary human response and it's a critical indication of lots of issues with our body that need to be addressed. Will headsets take away a lot of our identity? I never really believed people who said this, but with mounting evidence of this radical surgery idea, I'm inclined to become more concerned about digitising human life to the extent where we lose our feelings. Just think about that for a minute. Isn't that crazy. That's the psychological power that technology has. That Meta has.<br><br>Nevertheless, when used right, VR has incredible potential and I'm super excited to see where top-tier engineers can take humanity.</p>
+</div>
+---
+TIME 09:34
+SOURCE https://www.engadget.com/patient-vr-surgery-less-anesthetic-study-213044578.html
