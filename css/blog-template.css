@@ -368,6 +368,10 @@ header .navbar-simple {
 		font-size: 3.5rem;
 	}
 
+	.post .container .content p.introduction {
+		text-align: left;
+	}
+
 	.post .container .content img {
 		padding: 1rem 0rem;
 	}
