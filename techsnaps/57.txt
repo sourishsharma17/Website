@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>SBF arrest announced</h1>
+<div class="main-content">
+<p>The USA has arrested Sam Bankman-Fried, SBF, yesterday in the Bahamas.</p>
+<img src="../media/techsnap/57a.jpg">
+<p>Let that sink in. Perhaps the greatest fraudster that this century has seen is finally being held in custody. The Government held a testimony earlier today with the recently appointed CEO of FTX, and I watched the politicians in the testimony be shovelling anger on SBF's actions. SBF has made not just normal people feel like idiots, but completely defamed rich policitians and investors. The Government is keen to get him in jail, and based off their charges so far, I don't think he'll ever be getting out of it...<br><br>The Government streamed a video earlier today going over their decision and making the official announcement. It seems like a long investigation is ongoing, but progress is rapid with the help of the new CEO who has all sorts of things to say about SBF. Through his written statement, the new CEO attacked FTX management, claiming that SBF had backdoors into the auditing systems so that he could take out money from FTX without anyone being able to check. This is genuinely absurd.<br><br>That's just not how a company should be run. It was a playground full of toddlers who got drunk off money.<br><br>There are always fraudsters, and SBF is next in line. He used the greatest and latest, the most promising technology to scam people. Web3. And yet, despite its decentralised hope, regulation has to be invovled in some way or else stories like these will keep on coming. It's great to see the USA get under this, and considering the many billions of lost assets, I'd sure hope SBF gets jailed for life and can only pray for everyone who has lost life savings trusting him. Either way, this is massive news and I'll be watching closely to see how it continues to unveil.</p>
+</div>
+---
+TIME 23:24
+SOURCE https://twitter.com/SDNYnews/status/1602763476010680321

@@ -1,0 +1,10 @@
+<div class="story">
+
+<h1>FBI considering Pegasus use</h1>
+<div class="main-content">
+<img src="../media/techsnap/52a.jpg">
+<p>Our favourite 3-letter American organisation, the FBI, is back at it with spying on its citizens. They have put the NSO Group on their entity list, but that didn't stop the FBI from taking their chief product, Pegasus. Pegasus is of course the infamous mobile spyware with incredible amounts of power. It can be used by criminals or governments in less free countries such as Israel, which is why it poses such a threat to so many lives and why we hate the spyware. However, if the Government uses it against us, then they can continue to farm large amounts of personal data - never a good thing.<br><br>Recently, it has come to light that the FBI licensed Pegasus software for 'testing purposes'. No one is believing that despite the efforts made to convince the public otherwise. It's crazy how much power a Government has, and being perhaps the greatest Government on Earth right now, it's even scarier to consider the precendent that is being set for countries such as the UK to follow suit. The FBI claim they are only using the software to understand the technologies, and discover what hackers could do with it, but we have no proof that they are not monitoring countless people with it as we speak. This is very poor from the Government, and whilst their reasoning is somewhat valid, it's near impossible for us to trust it. It really doesn't help restore faith, but instead acts as a gentle reminder of what Governments can do - this is the flip side of the coin when compared to my techsnap earlier today!</p>
+</div>
+---
+TIME 22:31
+SOURCE https://www.nytimes.com/2022/11/12/us/politics/fbi-pegasus-spyware-phones-nso.html

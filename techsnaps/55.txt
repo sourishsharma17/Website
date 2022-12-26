@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>TSMC plans their 2nd site</h1>
+<div class="main-content">
+<p>This is massive news - TSMC has released plans for a second fab in the USA (Arizona) which will produce cutting edge 3nm processors by 2026. Their first planned US fab will also begin producing chips in 2024, as TSMC upgraded plans from 5nm to 4nm. This brings the total cost up to $40 billion for both fabs.</p>
+<img src="../media/techsnap/55a.jpg">
+<p>This is truly amazing - in the years of silicon shortage despite the exponentially growing demand, the world needs more chips. Whilst older, less sophisticated and therefore cheaper chips can be used for most things such as toys and cars, smart IoT devices require the top of the range chips. These fabs will hugely reduce the supply-demand deficit, and should also slightly lower the prices of smartphones as a lot of the money goes towards securing competitive deals for chips as so many companies are trying at once.<br><br>This is also great news to diversify the West's reliance on China, and help the USA become more self sustaining as TSMC claims the 600,000 annual chips produced in the USA will meet the domestic demand. I'm sure TSMC has a long roadmap for increasing the figure yet more to export their chips. Of course, the issue then arises of shipping, which would be significantly more expensive as the chips would be shipped to Asia, where the manufacturing lines are.<br><br>Either way, the fab market is getting more players involved, and TSMC's incredible breaking technology will only improve the market as every other fab is behind them. With humanity's increased dependence on chips, this is fantastic news and I look forward to monitoring the progress of these sites!</p>
+</div>
+---
+TIME 22:39
+SOURCE https://www.engadget.com/tsmc-arizona-investment-40-billion-semiconductor-plant-135339516.html

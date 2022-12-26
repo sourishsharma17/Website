@@ -1,0 +1,12 @@
+<div class="story">
+
+<h1>There's a new Snapdragon</h1>
+<div class="main-content">
+<img src="../media/techsnap/53a.jpg">
+<p>The Snapdragon AR2 Gen 1 is a squeaky new chip from Qualcomm, targeted at smart glasses. And it was developed in collaboration with Microsoft which perhaps suggests something about new products that they may release soon. It has a lot of the features that smart glasses would benefit from, such as the rapid new WiFi 7, and a compact, power efficient design to be used for plenty of AI and camera processing. In fact, Qualcomm have designed the chip to be split up and utilise as much of the space in the frames as possible to contain the things it needs.</p>
+<img src="../media/techsnap/53b.webp">
+<p>Smart glasses are a weird subject - we've seen several over the years with the most prolific being Google Glass. However, Bose was the first large company to make a mainstream device that was actually worth buying, with their speaker glasses. I tried it once (in Dubai) and they were very cool and quite functional - though bulky. And with the Nreal Air's recent fame, the miniaturisation of hardware is only getting better and more popular.<br><br>I look forward to a future where everyone is wearing smart glasses; thin and light objects that cannot be distinguished from generic glasses. They can provide an incredible amount of information to us at any given point in time - being on our head means they could become more useful than a smartphone. We've seen glasses with great screens, great speakers, great cameras, and great voice assistants - but none with all of these.<br><br>Hopefully, Qualcomm is changing that, pioneering an era where the future becomes reality. I'm super excited to see what companies can do, now that they have a solid platform to build on. And I can't wait to see future generations of AR2, perhaps 4nm can become 3, and then 2, and then 1, and then beyond...</p>
+</div>
+---
+TIME 08:02
+SOURCE https://www.engadget.com/qualcomm-ar2-gen-1-platform-augmented-reality-glasses-230017922.html

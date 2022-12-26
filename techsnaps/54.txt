@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Conquest of the Skies now in VR</h1>
+<div class="main-content">
+<p>Sir David Attenborough is once again using state of the art technology to produce his content. His documentary series, Conquest of the Skies, has made it's way over to the Meta Quest store. The documentary was available in 3D originally, but now it's been designed for 3D at 180 degrees. This isn't the full 360 experience, but it's still really cool to see, and I'd definitely want to try it out, seeing the creatures all fly right in front of me!</p>
+<img src="../media/techsnap/54a.jpg">
+<p>Attenborough is a very well known name, and in recent years, he's been trying to reach the younger audience and inspire the next generation with nature. I saw a behind-the-scenes look at the production of his first 3D film, and he was extremely uncomfortable acting in it, but knew he had to if he wanted to spread his message about climate change even further with stunning visuals. In fact, the BBC refused to support him in his mission so he went with another studio. I'm glad that Meta is supporting him with the release, and writing blog posts / showing trailers for the experience. At least Zuck is spending his money on something <i>useful</i>.<br><br>It's great to see him expand his repertoire of content even further, and I think this is such a cool idea!</p>
+</div>
+---
+TIME 07:32
+SOURCE https://www.youtube.com/watch?v=YqMorPxbtfA

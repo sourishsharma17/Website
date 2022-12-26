@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Nuclear fusion breakthrough</h1>
+<div class="main-content">
+<p>This is a story which I'm really excited about. A new massive breakthrough has been achieved in Nuclear Fusion technology. For the longest time, the biggest issue with Fusion has been that producing electricity requires more power than you get - a fundamental flaw in current science and engineering. You can't have a working powerplant which sucks up more juice than it spits out. But today, humanity has changed it. It's a huge milestone in our never ending endevaour for clean, limitless, cheap energy.</p> 
+<img src="../media/techsnap/56a.jpg">
+<p>For countless decades - exceeded far beyond when I was born in 2006 - Nuclear Fusion has been dubbed as the holy grail of energy, and it's always promised to be just a few years away. That promise has never been delivered, but today marks a point in history where humanity can progress ever closer to breaking the cipher and unlocking the potential of fusion. Or does it? The news is slightly misleading in the sense that the <i>total</i> energy put into that experiment was in fact more than the 3.15MJ released. Nevertheless, this is still a critical point along the fusion timeline. The Californian scientists took this opportunity to advertise new roles for budding engineers and scientists.<br><br>But did they also take this opportunity to make news out of something that isn't that big? Was this all just a PR stunt for the USA to assert power? They mentioned nuclear weapons in the video press release - perhaps this serves as a message to Putin more than to any random citizen? With the details hidden behind confidential documents, we'll never know.<br><br>I just hope that the scientists did indeed do something extraordinary behind the hype mangifying glass to push the limits of human knowledge and bridge the gap between science fiction and reality.</p>
+</div>
+---
+TIME 18:37
+SOURCE https://www.bbc.co.uk/news/science-environment-63950962

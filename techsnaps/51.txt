@@ -1,0 +1,12 @@
+<div class="story">
+
+<h1>NCSC scanning UK servers</h1>
+<div class="main-content">
+<img src="../media/techsnap/51a.jpg">
+<p>The NCSC has recently announced and begun a program where they scan webservers based in the UK - so this probably means that even if the owner lives abroad but they have a UK server, they still get scanned. This is great news because it shows initiative from the government to try and map out the security of UK machines. I hope that they collect this data, track it over time, and publicly release some anonymised results.<br><br>The Government claimed that they would try not to collect and store personal information (you can inform them if they do, or just back out of the program altogether). They said the scans would be 'continuous', and at least the UK Government is doing something useful with all their scans - compared to the USA which probably scans everyone anyway and makes notes of vulnerabilities in servers. The UK says they hope to start off with some more basic web scanning techniques to identify potential 0-days as they are released/discovered, and notify the server about the issue, including a solution. Considering how rapidly the NCSC put together and published log4j resources last year (10th December, 2021), I have a good amount of faith in them to identify and find vulnerabilities in different pieces of server software, and therefore overall make the UK server space significantly safer. This would prove to be great for server owners such as myself (though I do mostly maintain good security practices and keep up to date on the news).<br><br>Oh, and they also told us some characteristics and technical details of their HTTP request scans - such as the 2 potential IPs and common headers.</p>
+<img src="../media/techsnap/51b.jpg">
+<p>On the whole, this is a welcome program and I look forward to seeing how it benefits people when more 0-days are discovered and the NCSC ramps up the rigour of their scanning and testing!</p>
+</div>
+---
+TIME 16:42
+SOURCE https://www.ncsc.gov.uk/information/ncsc-scanning-information
