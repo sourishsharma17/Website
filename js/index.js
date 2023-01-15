@@ -264,6 +264,10 @@ function closeMobileNav() {
 	document.querySelector("#about").scrollIntoView();
 }
 
+function goToAbout() {
+	document.querySelector("#about").scrollIntoView();
+}
+
 function amoled() {
 	event.target.toggleAttribute("active");
 	body.toggleAttribute("amoled");

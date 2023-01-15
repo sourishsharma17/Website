@@ -470,13 +470,17 @@ span.bubble {
 	display: none;
 }
 
-.landing .scrolldown {
+.landing a {
 	position: absolute;
 	bottom: 5vh;
 	left: 50%;
 	transform: translate(-50%, 0%) rotate(45deg);
 	height: 7rem;
 	width: 7rem;
+}
+
+.landing a:hover {
+	cursor: pointer;
 }
 
 .landing .scrolldown > span {
@@ -648,7 +652,7 @@ span.bubble {
 		left: 0;
 	}
 
-	.landing .scrolldown {
+	.landing a {
 		bottom: 1.5rem;
 		height: 3.5rem;
 		width: 3.5rem;
