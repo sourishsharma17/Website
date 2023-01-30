@@ -68,13 +68,17 @@ function blogOrder() {
 	}
 
 	for (var i = 0; i < columns; i ++) {
-		dists[i] =  window.pageYOffset + document.querySelectorAll(".panel .grid .column")[i].lastChild.getBoundingClientRect().top;
+		dists[i] =  window.pageYOffset + document.querySelectorAll(".panel .grid .column")[i].lastChild.getBoundingClientRect().bottom;
 	}
 
 	while (!dists.every(i => i == dists[0])) {
 
 		let maxC = dists.indexOf(Math.max(...dists));
 		let minC = dists.indexOf(Math.min(...dists));
+
+		if (dists[minC] + 100.0 >= dists[maxC]) {
+			break;
+		}
 
 		var column = document.querySelectorAll(".panel .grid .column")[minC];
 		var filler = document.createElement("div");
