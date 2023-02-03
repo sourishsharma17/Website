@@ -4,7 +4,10 @@
 		<meta charset="UTF-8">
 		<title>Sourish Sharma - Blog</title>
 		<script>
-			window.addEventListener("load", loaded);
+			setTimeout(function(){
+				//window.addEventListener("load", loaded);
+				window.onload=loaded();
+			},400);
 			function loaded() {
 				document.querySelector(".loader").remove();
 				document.body.classList.remove("loading-page");
