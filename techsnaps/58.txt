@@ -1,0 +1,14 @@
+<div class="story">
+
+<h1>Unpacked 2023</h1>
+<div class="main-content">
+<img src="../media/techsnap/58a.jpg">
+<p>Samsung unpacked 2023 happened yesterday, and there is lots to unpack. The stars of the show, the S23 series, were first. They appear to be very similar to last year following the pattern of minor upgrades in the past few generations. The S23 and it's + bigger brother now both adopt the new camera 'bump' first seen in the S22 Ultra, with merely the lenses sticking out. I love this clean look, and it brings about more design cohesiveness in Samsung's flagship series.<br><br>The S23 Ultra now has a 200MP sensor, the G2 that Samsung released just a few weeks ago. This feels kinda useless, but Samsung made a very fair point - you can pixel bin 2x2 arrays and end up with a 50MP image. This strikes the balance between image clarity (noise is removed when pixel binning occurs) and detail. Other than that... Not a whole lot changed!</p>
+<img src="../media/techsnap/58b.jpg">
+<p>The event was well-done, and filmed entirely on the S23 Ultra which was kinda nuts, and follows the big-tech trend started by Apple to showcase their latest phones. Though you could tell that there was very little material substance for Samsung to talk about by the sheer amount of marketing videos shown.<br><br>Samsung are using the new Snapdragon 8 Gen 2. They claimed it was a special "For Galaxy" series which was a tad misleading since the only thing they really changed was ramping up the clock speeds a little - facilitated by the bigger vapour chamber cooling in the Ultra variant. Samsung are also going down the eco-warrior route, with all sorts of stats from 12 parts now made from recycled materials, including the Gorilla Glass made from 22% recycled glass. In the grand scheme of things, they are doing almost nothing for the environment and this doesn't mean anything beyond marketing fluff. So be wary, consumers!<br><br>The new Samsung laptops are pretty cool though, and include Intel's latest H-series processors. I'm excited to see the reviews and get a hands-on at Currys!</p>
+<img src="../media/techsnap/58c.webp">
+<p>Overall, it was quite a good event, but the updates were expectedly underwhelming, as we grope past peak slabphone.</p>
+</div>
+---
+TIME 09:42
+SOURCE https://www.youtube.com/watch?v=gUM2wYKdxDA
