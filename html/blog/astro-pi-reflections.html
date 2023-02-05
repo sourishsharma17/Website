@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - Blog: Astro Pi Reflections</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/blog-template.css">
+		<link rel="stylesheet" href="../css/code-blocks.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="../">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="../#about">About Me</a>
+					<a href="../food">Food</a>
+					<a href="../techsnap">TechSnap</a>
+					<a href="../blog">Blog</a>
+					<a href="../assets">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="../">Home</a>
+						<a href="../#about">About Me</a>
+						<a href="../food">Food</a>
+						<a href="../techsnap">TechSnap</a>
+						<a href="../blog">Blog</a>
+						<a href="../assets">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+		<section class="post">
+
+			<div class="container">
+
+				<div class="top">
+					<h1>Astro Pi - Reflections from Team Pithons</h1>
+					<div class="info">
+						<div class="read"> <span class="fas fa-hourglass"></span><p>&nbsp;9 min read</p> </div>
+						<div class="dates"> <div class="edit" style="display: none"><span class="fas fa-pen-to-square"></span><p>&nbsp;Updated: 16/06/2022</p></div> <div class="launch"><span class="fas fa-calendar-day"></span><p>&nbsp;February 5, 2023</p></div> </div>
+					</div>
+				</div>
+				<div class="content">
+
+					<img src="../media/blog/astro-pi-poster.jpg" alt="">
+
+					<p class="introduction"><a href="https://astro-pi.org/mission-space-lab/" target="_blank">Astro Pi</a> is a global competition where teams design and run an experiment on the International Space Station. There are 4 phases, each with its own challenges and goals. In 2021/22, Dom and I took part driven by our passion for space, science, and programming, launching ourselves to the top with a Highly Commended award. But how did we do it?</p>
+					<p class="introduction">Oh, and our team name was "Pithons"... Pi like Raspberry Pi, Python like the programming language, but also the snake ;)</p>
+					<div class="h2-container" id="phase-1">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Phase 1 - Idea</h2>
+					</div>
+					<p>The first step was Phase 1 - the initial idea to submit for judging. This step essentially determined the entirety of the project for the year, so we wanted to ensure we could strike a good balance between a manageable goal and something to make us stand out from the (very large) crowd.</p>
+					<p>The competition is usually divided into 2 categories, “Life in Space” and “Life on Earth”. Life in Space uses an RPi in the Columbus module of the ISS and allows a team to analyse conditions such as temperature and pressure onboard the station. To be honest, we weren’t terribly excited by this idea, as we mainly wanted to work on image processing and have the chance to take our own satellite images! So, we quickly settled on Life on Earth. Then all we had to do was think of a project… which proved much harder than expected.</p>
+					<p>Initially, we had two contrasting ideas, so we spent <i>lots</i> of time arguing amongst ourselves and trying to justify our idea to the other. Honestly, this was probably very constructive for the long-term, as we had to convince each other that we knew exactly how to execute our project idea. This helped us avoid incredibly difficult implementation problems, or overreaching the realms of possibility completely (like calculating Milankovitch cycles)!</p>
+					<p>Eventually, with just a week to go, we settled on a project. Our idea was to improve food security by reclaiming desert which could be used for agriculture. We planned to use the camera on the RPi module to map out plant health, but crucially we wanted to link plant health to the surrounding environment and explain what conditions were required to foster healthy vegetation. We would then look for all the areas with these good conditions, and if very little vegetation was present we would flag it as land to reclaim for farming. Simple, right?</p>
+					<p>The biggest factor for choosing this idea was achievability, we had a clear vision of how to implement this project and we knew it had the ability to be upscaled and developed further if we had the time. Another factor was the climate focus - we wanted to complete a project with scope to make an impact on the world, which distinguished this idea from all of the others.</p>
+					<p>So, with our idea sorted and the initial plan submitted on time (just about!), we eagerly awaited for news. And finally, our Phase 2 acceptance came through...</p>
+					<div class="h2-container" id="phase-2">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Phase 2 - Create</h2>
+					</div>
+					<p>Before we did anything, we attended a webinar talking through the basics of our task. They went on about how we could go about coding our experiment and use the cameras effectively, including calculating ground distance per pixel.</p>
+					<p>So now we had the idea nailed, it was time to code. Unboxing the free kit they sent us, we got to work building up the RPi with the HAT and the camera.</p>
+					<img src="../media/blog/rpi4-close-up.jpg" alt="">
+					<p class="caption">The chip on the Raspberry Pi 4, mingled alongside other components</p>
+					<p>Only one of us could use the RPi at once, so we coded most of the program locally and shared it between us using GitHub. It was a matter of compartmentalising all the code into a series of modular functions that we could split among us to maximise our efficiency. We used a lot of new tools, from Thonny on the custom Astro Pi OS, to libraries like <code class="inline">picamera</code> and <code class="inline">logzero</code> - learning all about logging was quite difficult but critical when it came to testing.</p>
+					<p>We followed the best programming practices we could, with ample whitespace, descriptive variable names, comments, and plenty of redundancy. Neither of us had ever coded like this before, so it was a pretty eye-opening experience - but for the first time in our lives, someone else would be reading our code too!</p>
+					<p>A particular challenge was the image filtering - to maximise our allotted 3GB of storage, we needed to delete as many images as we could. So images taken at night (where there is no light to see), over the ocean (no land to analyse), or with heavy cloud cover (land not visible) had to be removed. It took hours to find the most efficient and reliable method of doing this, but we eventually stumbled upon a technique where we compared the average pixel value in an image against pre-decided thresholds.</p>
+					<pre><code class="language-py match-braces">def is_useful(path):
+
+    """ Checks to see if the image is over water/clouds
+
+	so that we can delete it to save storage and processing
+	because an image largely over water is useless for the task.
+	The function takes the average light/darkness value and compares
+	it to a known threshold to determine if the image is over water/clouds.
+
+	INPUT: path location for image to check
+	RETURN: a boolean, True if it is not over water/clouds, False otherwise
+    """
+
+    image = cv2.imread(path).astype(np.float)
+    nir_val = np.average(image[:, :, 0])
+
+    if cloud_threshold &gt; nir_val &gt; water_threshold:
+		logger.info("image useful")
+		return True
+
+    else:
+		logger.info("image not useful")
+		return False</code></pre>
+					<p>Once that was done, it came to testing... And we sure did <i>loads</i> of tests. Over the course of a week, the RPi must have been running our program for almost 30 hours as we battled against bugs and tried to hunt them all. Testing is perhaps the biggest stage in a commercial setting, so doing it here was insightful. And this is when we learned to appreciate the awesomeness of logging!</p>
+					<p>The code had to be completely robust, and handle all situations safely - if it crashed once on the ISS then we wouldn't get our data back. Working together, we dreamt up every error we could and patched them. We will admit though, at some point, we just wrapped the entire driver code in a <code class="inline">try except</code> block ;)</p>
+					<p>Finally, we had the code done and tested. All that was left was to submit it and see if it passed Astro Pi's threshold...</p>
+					<div class="h2-container" id="phase-3">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Phase 3 - Analysis</h2>
+					</div>
+					<p>...and it did! At this point we were both so delighted that our code had been run on the ISS and had received our very own bespoke satellite images, that we almost forgot how much work we had remaining to get to Phase 4!</p>
+					<p>We got the data in the middle of our GCSEs - so it was time to get to work during the half-term break. We had already prewritten a lot of the image processing code in anticipation of time constraints, using sample images to test it. But as any programmer would tell you, there were bugs, there are always bugs!</p>
+					<p style="padding-bottom: 2rem">First, we converted our Near InfraRed (NIR) images into images for each of our 3 indices (used to quantify certain characteristics, the science behind them is amazing and worth a read): </p>
+					<ul class="list1">
+						<li>SAVI - plant abundance</li>
+						<li>RCI - plant health</li>
+						<li>NDWI - water availability</li>
+					</ul>
+					<p>This was tricky, but some <code class="inline">open-cv</code> and <code class="inline">matplotlib</code> magic got us what we wanted - after painstakingly calculating 3 different adjusted pixel values for every pixel in every image...</p>
+					<p>Okay, we may have been lying there - this didn't get us what we wanted. Firstly, cloud cover (white splodges in the image) needed to be discarded or else it would skew the results. After all, an algorithm fed with bad data will only output bad data. Oh, and the annoying black border around every image had to be cropped out too. Some more <code class="inline">open-cv</code> and <code class="inline">numpy</code> magic later, we had our images!</p>
+					<img src="../media/blog/iss-image-board.png" alt="">
+					<p class="caption">The bottom left image is one of the photos we received back on Earth. It's an NIR image, so the land appears blue(!) and the ocean appears black. The three coloured images visualise index values calculated from the original. The lower-centre photo is used to confirm the accuracy of our index values.</p>
+					<p>But then, we slammed into our first major problem. How do we <i>actually</i> compare hundreds of datapoints to find what we're looking for?</p>
+					<p>To simplify things, we calculated the average value for each index in each image. Next, we created our own "entropy" formula to use all the data collected and combine it into just one value per image. We then handpicked images with the highest entropies. As always in data science, this didn’t go entirely to plan at first, as any images taken over the ocean gave a huge reading! But, after sifting through plenty (we assure you we mean that) of images  with associated high-ranking datapoints (getting good photos was quite a lottery), we eventually found some with land which we could use.</p>
+					<p>One of these, luckily enough, was over Tokyo City which provided the perfect case study to display our findings. And, it showed that our technique worked!</p>
+					<p>Phew, after a couple of intense days, our analysis was done.</p>
+					<div class="h2-container" id="phase-4">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Phase 4 - Report</h2>
+					</div>
+					<p>Juggling the report writing with our GCSEs was tough - we assigned ourselves just a weekend to write our entire report. So the intense work continued.</p>
+					<p>We frantically went back and forth to figure out the best way to do things, and stick to the tight word limits. We wanted plenty of graphs and images to clearly show what we did and tell a story to the reader. We spent hours in voice calls just optimising the report and providing as much value in coherent, logical sentences as possible, choosing to include only the most critical information. We stuck to a distinct colour scheme for each of the three indices in our photos, maps, and equations for consistency, enabling the flow of the report.</p>
+					<p>Finally, we had a working draft but it would be almost another month until we submitted. Then, the month came around and one free night we got together to pour over every word for the last time, finalise the GitHub repo, and send in our complete report.</p>
+					<p>Yay!</p>
+					<p>Writing concisely was extremely difficult; we learned life-long skills in the process and though it shows but a small fraction of the effort we put in over the 9 months it took we're both immensely proud of our final product.</p>
+					<div class="h2-container" id="conclusion">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Conclusion</h2>
+					</div>
+					<p>Astro Pi 2021/22 was a blast - we learned so much about so many things. Logging everything that happened in the code, testing it, working collaboratively, manipulating images, using Anaconda, and finding the time to write a report. It was a great journey and we'd strongly encourage anyone to give it a go next year (we even made a <a href="https://youtu.be/W2TZAn4i1hQ" target="_blank">video</a>). We're also mentoring a Year 11 team this year and can hopefully bring them to victory using our learnings. It gave us a good idea of what a career in programming could look like, the entire project pipeline starting from communicating our idea and ending with publishing our findings.</p>
+					<p>To get the winning email was a refreshing way to bring a close to the project. We had the chance to record a video question to be answered by astronaut Mattias Maurer in an <a href="https://www.youtube.com/watch?v=86x5ZrF6eVE" target="_blank">exclusive livestream</a>! And we got a whole pack of goodies alongside it.</p>
+					<p>Astro Pi is a competition that gave us insane amounts of value, so we're super grateful for this opportunity. We only scratched the surface of our project, so feel free to check out our code and report <a href="https://github.com/SourishS17/Astro-Pi-2022/" target="_blank">here</a>, and thanks for reading!</p>
+					<img src="../media/blog/dom-and-sourish.jpg" alt="">
+					<p class="caption" style="padding-bottom: 0.5rem">Dom on the left, Sourish on the right.</p>
+
+				</div>
+
+
+			</div>
+
+			<div class="scroll-top">
+				<span class="fas fa-plane-up" onclick="toTop()"></span>
+			</div>
+
+			<div class="copy success"><p>copied!</p></div>
+			<div class="copy error"><p>failed to copy!</p></div>
+
+		</section>
+
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2023 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://github.com/SourishS17/Website/" target="_blank"><h2>Audit the source code</h2></a>
+					<!--<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>-->
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+			<style>
+.loader {
+	display: none;
+}
+			</style>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/blog-template.js"></script>
+		<script src="../js/code-blocks.js"></script>
+
+	</body>
+</html>

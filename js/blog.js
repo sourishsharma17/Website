@@ -1,7 +1,11 @@
 let blogs = document.querySelectorAll(".panel .grid .blog-post");
-window.addEventListener("load", blogOrder);
-window.addEventListener("resize", blogOrder);
+//window.addEventListener("load", blogOrder);
+//window.addEventListener("resize", blogOrder);
 var prevWidth = 0;
+
+setTimeout(function(){
+	window.onload=blogOrder();
+},400);
 
 //document.querySelector(".panel").style.height = window.innerHeight - document.querySelector(".intro").style.height + "px";
 
@@ -63,7 +67,8 @@ function blogOrder() {
 
 		column = document.querySelectorAll(".panel .grid .column")[ind];
 		column.appendChild(post);
-		fixedHeights[ind] += post.offsetHeight;
+		//fixedHeights[ind] += post.offsetHeight;
+		fixedHeights[ind] += post.getBoundingClientRect().bottom;
 
 	}
 
@@ -121,6 +126,8 @@ for (var i = 0; i < columns; i ++) {
 
 }
 */
+
+	loaded();
 
 };
 

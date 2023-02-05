@@ -1,5 +1,10 @@
 var activated = true;
 
+//var images = document.querySelectorAll(".content img");
+//for (let i = 1; i < images.length; i++) {
+//	images[i].setAttribute("loading", "lazy");
+//}
+
 function subtleScroll() {
 	if (window.location.href.includes("=")) {
 		document.documentElement.scrollTop = window.pageYOffset + document.getElementById(window.location.href.split("=")[1]).getBoundingClientRect().top;
