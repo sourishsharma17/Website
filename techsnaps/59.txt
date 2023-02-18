@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>Is Blink coming to iOS?</h1>
+<div class="main-content">
+<p>Google and its Chromium team seem to be experimenting with Blink to try and get it ported over to iOS. For the longest time, Apple has had strict rules imposed on iOS web browsers, forcing them to all use Apple's own web engine "WebKit". They claim this makes the Apple experience more cohesive and reduces the chance of hacks on iOS users, but it also eliminates competition as every iOS browser is therefore fundamentally the same.</p>
+<img src="../media/techsnap/59a.jpg">
+<p>Oh and I really hate WebKit. Every web developer hates it because it is limiting and just does things differently. It makes designing and coding websites a much bigger hassle.<br><br>
+Google is testing out their own Chrome web engine, Blink, on iOS devices. They claim it's non-production testing for now, looking at how graphics render and whatnot - but we have no reason to believe them.<br><br>Google claims they are still going to abide by Apple's rules... But what if Apple changes them? The US Government recently complained about Apple's locked-down software and called for Apple to allow side loading on iOS devices. So perhaps in anticipation of Apple changing their regulation, Google is hopping on the train very early. That's an incredibly smart move because many people already use Chrome, so if they can come out with a new browser as soon as Apple lifts the ban, then it could be faster and more feature rich, stealing lots of Safari's market share.<br><br>Anyway, only time can tell before we see what Apple does, and how Google responds. But either way, I'm excited and can't wait to see the battle between two Tech Giants, all in the healthy name of competition.</p>
+<img src="../media/techsnap/59b.jpg">
+</div>
+---
+TIME 09:37
+SOURCE https://www.theregister.com/2023/02/03/googles_chromium_ios/

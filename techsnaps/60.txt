@@ -1,0 +1,13 @@
+<div class="story">
+
+<h1>YouTube CEO steps down</h1>
+<div class="main-content">
+<p>Susan Wojcicki, the CEO of YouTube, has officially stepped down from her role.</p>
+<img src="../media/techsnap/60a.jpg">
+<p>She sent an internal email to employees yesterday (which is linked in the sources) describing her journey through Google and the future of YouTube. She has been with Google for over 25 years, and lead YouTube for the last 9. Susan is a very influential and important figure in the company. People seem to have mixed feelings over this. Susan has brought about many changes to the platform, and YouTube wasn't even profitable until 2016 so she clearly played a major part in helping that happen. In recent times, she approved removing the dislike counter, perhaps the most controversial change in YouTube's history. But she's also headed YouTube shorts, the only real competitor to TikTok. And she's improved YouTube livestreaming as a very viable, and even preferable, alternative to Twitch. YouTube is a mega platform, making billions every year, and Susan is the one who deserves credit.<br><br>Replacing her will be Neal Mohan, who joined Google through their DoubleClick aquisition.</p>
+<img src="../media/techsnap/60b.webp">
+<p>Neal was the Chief Product Officer of Google, so he probably actually had a greater say in YouTube's changes than Susan. Neal is a very diplomatic yet business-oriented person, so I'm sure he'll be a good replacement. However, it could lead to more controversial decisions and Neal doesn't seem to entirely listen to the community based off his interviews. Of course, in a company as large as Alphabet, Neal doesn't really have the power to just do what he wants, so I suspect not much will actually change from a consumer's perspective. Maybe, in the long term, Neal will improve profitability of YouTube and support creators, but only time can tell.<br><br>Susan leaves her involved role to be more of a senior Google consultant, and hands over the reigns to someone similar to her. I'll watch the space closely in the coming days, but I don't expect much to happen.</p>
+</div>
+---
+TIME 12:31
+SOURCE https://blog.youtube/inside-youtube/a-personal-update-from-susan/

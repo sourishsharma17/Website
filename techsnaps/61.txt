@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Sony Xperia 1 V leaks</h1>
+<div class="main-content">
+<p>Thanks to OnLeaks, we have some new beautiful 5k renders of Sony's flagship this year..</p>
+<img src="../media/techsnap/61a.jpg">
+<p>You'd be forgiven to think you're looking at an Xperia 1 IV... they are very similar. Subtle changes include shrinking the phone in the X and Y dimensions by notable amounts, whilst keeping the same 6.5inch display. Perhaps those bezels can get smaller, though they are quite functional. Compact phones are the future, and most people prefer them anyway! The design maintains the headphone jack, and bumps up the cameras - both in size and resolution. However, Sony decided to upgrade the ultrawide and leave the primary which makes absolutely no sense, especially since they make their own industry-leading smartphone sensors! I do hope this aspect of the leak was a mistake!<br><br>I also expect the continuous zoom range to increase, from 3.5x-5.2x to perhaps something a bit more useful. The tech is cutting edge, so anything could happen. The handset is expected to get a RAM boost too, to 16GB.<br><br>But perhaps the most important upgrade is that chip! Replacing the Samsung-fabbed 8 Gen 1 with an 8 Gen 2 will give the Sony good thermals and top of the line performance. Combined with the 5000mAH battery, and I reckon it's gonna be a battery champ. Of course, being Sony, it's expected that the phone will be unveiled in the coming weeks, but you won't be able to get your hands on it until the Summer...<br><br>These leaks make the upgrade look iterative, but show the device improving in a couple of key aspects. Now, it's all down to pricing and we can only wait to see if Sony maintains their ultra-premium price tags (given it's basically the same phone as last year (and the year before (and the year before))), I don't see any reason to not cut it down. So if they do... it sure will be a banger!</p>
+</div>
+---
+TIME 14:25
+SOURCE https://greensmartphones.com/blog/sony-xperia-1-v-first-look/
