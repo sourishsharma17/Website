@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Apple internally banning AI tools</h1>
+<div class="main-content">
+<p>Apple has banned software tools such as ChatGPT and GitHub Copilot for their developers.</p>
+<img src="../media/techsnap/63a.webp">
+<p>They probably did this a while ago, but the news has only just surfaced mainstream (presumably because of ChatGPT's iOS release). It makes sense that Apple doesn't want their devs handing confidential, proprietary code to the companies behind LLMs, especially as Microsoft is one of their competitors in the laptop space. I really wonder how this affects the development of software - AI tools are incredibly useful for many things, and more so in programming applications where they can create boilerplate code incredibly quickly or help debug long programs. If big tech restricts their employees from using these services, will it slow down the development of AI? Will their employees still use the tools anyway? It's quite entertaining to see how big tech is now getting concerned about their privacy as a result of products from other big tech companies, and perhaps it leads the way for a future with less surveillance and tracking.<br><br>As more and more companies block AI tools to prevent their secret code getting leaked, we can only wait and see what the creators behind these generative models do. It would be great if laws were put in place to minimise data collection and storage, but as the US government has a track record of liking telemetry, I don't have much hope here. Perhaps it pushes towards a future of open source code, where big tech just accepts that selling raw code is not a sustainable business model. Either way, the future is very uncertain but I'm excited to see how the AI/tech space evolves!</p>
+</div>
+---
+TIME 22:15
+SOURCE https://techcrunch.com/2023/05/19/apple-reportedly-limits-internal-use-of-ai-powered-tools-like-chatgpt-and-github-copilot/

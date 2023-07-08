@@ -1,0 +1,11 @@
+<div class="story">
+
+<h1>Sony invests in RPi</h1>
+<div class="main-content">
+<p>Sony's relatively new AI IoT divison, AITRIOS, is promising to give the Raspberry Pi Foundation a bucket-load of their AI image-sensing chips.</p>
+<img src="../media/techsnap/62a.webp">
+<p>Sony has had a bit of a history with helping out RPi in the past, and it's great that they are going to do so. I, for one, absolutely love Raspberry Pis. But looking at the bigger picture, it's clear how AI is dominating the tech landscape. Soon, even electronics enthusiast devices will have AI chips on them. Google already has a suite of their own AI dev boards, the Coral line-up, and I'm glad that RPi isn't going to be too late to the party. With the help of Sony, they are keeping up with the hottest trends - an incredibly important thing to do if they are to educate and inspire the next generation.<br><br>But RPi boards do more than that - they have a shocking amount of commercial and industrial applications. Lots of factories, such as Brompton's factory, have hundreds of RPis doing all sorts of tasks in custom-designed situations. So adding machine learning capability is awesome.<br><br>We don't know when this is coming to an RPi commercial product, but I'm hoping it'll feature in the RPi 5, which I reckon will come out in about a year (depending on supply chain issues!). Specifically, this chip is an image-oriented one. That's fantastic. Perhaps the most common uses of AI on RPis right now is to do with image sensing and detecting various things, so now having that capability baked right on the board will give way to more powerful models.<br><br>I'm so glad Sony is making this investment, and can't wait to get my hands on RPi's first AI board!!</p>
+</div>
+---
+TIME 10:29
+SOURCE https://www.engadget.com/sony-investment-will-put-ai-chips-inside-raspberry-pi-boards-083503462.html

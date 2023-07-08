@@ -67,8 +67,8 @@ function blogOrder() {
 
 		column = document.querySelectorAll(".panel .grid .column")[ind];
 		column.appendChild(post);
-		//fixedHeights[ind] += post.offsetHeight;
-		fixedHeights[ind] += post.getBoundingClientRect().bottom;
+		fixedHeights[ind] += post.offsetHeight;
+		//fixedHeights[ind] += post.getBoundingClientRect().bottom;
 
 	}
 
@@ -81,7 +81,7 @@ function blogOrder() {
 		let maxC = dists.indexOf(Math.max(...dists));
 		let minC = dists.indexOf(Math.min(...dists));
 
-		if (dists[minC] + 100.0 >= dists[maxC]) {
+		if (dists[minC] + 150.0 >= dists[maxC]) {
 			break;
 		}
 

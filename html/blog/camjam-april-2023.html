@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - Blog: CamJam April 2023</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/blog-template.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="../">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="../#about">About Me</a>
+					<a href="../food">Food</a>
+					<a href="../techsnap">TechSnap</a>
+					<a href="../blog">Blog</a>
+					<a href="../assets">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="../">Home</a>
+						<a href="../#about">About Me</a>
+						<a href="../food">Food</a>
+						<a href="../techsnap">TechSnap</a>
+						<a href="../blog">Blog</a>
+						<a href="../assets">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+		<section class="post">
+
+			<div class="container">
+
+				<div class="top">
+					<h1>CamJam April 2023</h1>
+					<div class="info">
+						<div class="read"> <span class="fas fa-hourglass"></span><p>&nbsp;9 min read</p> </div>
+						<div class="dates"> <div class="edit" style="display: none"><span class="fas fa-pen-to-square"></span><p>&nbsp;Updated: 16/06/2022</p></div> <div class="launch"><span class="fas fa-calendar-day"></span><p>&nbsp;April 24, 2023</p></div> </div>
+					</div>
+				</div>
+				<div class="content">
+
+					<img src="../media/blog/raspberry-jam-banner.png" alt="">
+
+					<p class="introduction">When I volunteered at my first <a href="https://coderdojo.com/en" target="_blank">CoderDojo</a> 2 months ago, I met this guy called Brian, and he told me about this thing he was organising called <a href="https://camjam.me/" target="_blank">CamJam</a>. So I scanned the QR code and reserved myself a free ticket :) and that's where it all started! CamJam, or Cambridge Raspberry Jam (us programmers like our puns), is a meet up for electronics geeks and RPi nerds. It was held in MakeSpace this time so the environment was pretty cool. There was a series of workshops, talks, and projects that people brought in (including me) - so in this blog, I'll tell you all about my experience and why you should go too!</p>
+					<p class="introduction">Oh, and this was my first ever event so I was quite excited to be going...</p>
+					<div class="h2-container" id="show-and-tell">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Show and Tell</h2>
+					</div>
+					<p>The "show floor" is always the best place of any event - it's the place where you see the coolest things, meet the coolest people, and have the coolest chats. Alongside about 10 others, I set up a small area with a couple of my projects. I had my <a href="https://www.instructables.com/DIY-Word-Clock-part-of-CREST-Gold/" target="_blank">word clock</a>, and a demo robot that I was developing for a club I'm running in school.</p>
+					<p>The projects that people brought in were nuts, so bear with me here! First, here's mine:</p>
+					<img src="../media/blog/my-camjam-stall.jpg" alt="">
+					<p class="caption">My stall! I have a game of snake running on the clock (controlled using radio + gyro in the micro:bit)</p>
+					<p>There was also a ~12-year-old who made a parking garage system to detect empty spaces. He had three bays, one used an IR sensor, another used an ultrasonic sensor, and the final used a camera with machine learning (powered by the <a href="https://coral.ai/products/accelerator/" target="_blank">coral accelerator</a>). All of this data was processed and wirelessly fed back to a Pico W which was connected to a display. Truly impressive stuff, and I enjoyed talking to his brilliant mind.</p>
+					<img src="../media/blog/smart-parking-garage.jpg" alt="">
+					<p class="caption">An overly complicated car parking tracker</p>
+					<p>Someone also came in with a humanoid robot. The tech in it was awesome, and we had a very lengthy chat about it. The robot was designed to be quite modular, initially intended for Pi Wars 2020 (feel free to guess what happened to that event...) he then worked on it and plans to open source everything soon. He started a company, <a href="https://neave.engineering/" target="_blank">Neave Engineering</a>, and I'd recommend following his socials if you're interested.</p>
+					<p>The robot had two stereo cameras for 3D vision (think of it like human vision - two eyes gives us depth perception if you use some clever maths), using RPi's latest global shutter cameras (in contrast to 'rolling shutter', which <a href="https://www.youtube.com/watch?v=3HhdO11lD04" target="_blank">warps the image</a>). It had a third camera with greater resolution, to be used for ML tasks. The degrees of motion of its arm was identical to a human, using lots of daisy chained servos. It was powered by a compute module 4 with a secondary board in its head.</p>
+					<p>Neave also flexed his charging port on the robot. He absolutely hates having to swap out batteries, so all his robots have a battery, BMS, and charging port! He was also talking about adding kinematic motion to the robot at some point - I can only imagine how cool that would be... Anyway, I'll spare you the rest of the details and let you have a look at the NE-Five:</p>
+					<img style="width: 60%; display: block; margin-left: auto; margin-right: auto" src="../media/blog/ne-five-robot.jpg" alt="">
+					<p style="text-align: center" class="caption">NE-Five. He's missing an arm because a servo burned out.</p>
+					<p>Now, I'm sure some of you would have seen a 'supercomputer'. I've seen the one at <a href="https://www.cam.ac.uk/news/hawking-launches-supercomputer" target="_blank">Cambridge University</a>. The idea is that you chain a tonne of identical computers together and distribute the load of whatever task you're doing across them. When you see a cluster of computers, such as a small cluster of rack-mounted servers, we like to refer to it as a supercomputer, because they still use the same technology that makes a supercomputer work. I'm sure many of you would have also seen a cluster of Raspberry Pis... but have you ever seen an RPi Pico supercomputer?!?!</p>
+					<img src="../media/blog/pico-supercomputer.jpg" alt="">
+					<p class="caption">A £30 supercomputer</p>
+					<p>This only felt apt given the silicon shortages of the past few 3 years! So, he connected all 8 Picos together using the I2C protocol and gave them a nice complicated challenge to solve - calculating the Mandelbrot set and rendering the resulting fractal on a display. My oh my, did he manage to squeeze a lot of power from some £5 Picos! This is one thing I love about the community - it's all about making the most of the technology we have and pushing it to the very limits. What's even better is that RPi is cool with this. I can imagine Apple or Nintendo suing someone to bankruptcy if they tried that...</p>
+					<p>The same guy made a few more interesting things, including a mini Pico computer running CPM, and a solenoid engine.</p>
+					<img src="../media/blog/pico-puter-cpm.jpg" alt="">
+					<p class="caption">The clicks on the keyboard were mmmmmmmmm... also, I need to learn BASIC!</p>
+					<p>I won't ramble on for much longer about how epic the show and tell was, but there was this cool Pico grabber robot that I got a play with:</p>
+					<img src="../media/blog/construction-bot.jpg" alt="">
+					<p class="caption">I had too much fun with this robot...</p>
+					<p>And a Pico infinity mirror from the one and only Brian:</p>
+					<img src="../media/blog/pico-infinity-mirror.jpg" alt="">
+					<p class="caption">A Pico-powered infinity mirror. There was a small kid who looked into it, and put his hand under the table thinking it was real!!</p>
+					<p>The Pico was used a lot in the projects, talks, and workshops - it's an awesome piece of kit and easily my favourite Pi. It's super cheap, but versatile yet accessible... and very cute!</p>
+					<p>The final project I want to talk about was this compact, wireless robot. Someone made a mini robot and equipped it with a camera. From a web browser on any device in the world, you could connect to the robot and drive it, using the live camera feed. The guy set up a really nice demo area and the latency was optimised to be extremely small. He coded the bot so that it maintained a constant speed (using encoders) - so even if it was going up an incline, the robot would be just as consistent. Impressive stuff!</p>
+					<p>There was so much more, from reactive LiDAR robots to lightsabers - but for now, let's talk about the workshops.</p>
+					<div class="h2-container" id="workshops">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Workshops</h2>
+					</div>
+					<p>The main workshops had to be pre-booked and were intended for younger children. But MakeSpace were hosting a couple of free activities. One was some basic soldering, and the other was laser cutting a custom badge (using Inkscape on a Pi 400). Both hosts were super nice and radiated knowledge. Despite having previously done countless hours of soldering and spent days standing at a laser cutter, they still taught me new things. It goes to show that there's always more to learn! Thanks to MakeSpace for providing the awesome venue and the volunteers there making the event that little bit better :)</p>
+					<img src="../media/blog/camjam-workshop-goodies.jpg" alt="">
+					<p class="caption">My laser-cut name tag - of course I needed a pi symbol on it, and the CamJam mascot. My soldered robot souvenir is pretty cool too.</p>
+					<p>Speaking of the venue, there was this ~8 metre long LED strip on the wall, spanning across the main room. There were some wireless hand controls on either side of the strip where you could play pong across the room against someone else. It was intriguing and felt like magic!</p>
+					<div class="h2-container" id="talks">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Talks</h2>
+					</div>
+					<p>Of the four talks, I went to the first and last ones. The first one was titled "Is the Raspberry Pi Pico a Computer?" The speaker went on about the history of computing and tried to define what a computer is, taking inspiration from the early days (waaaaaaay before I was born, so yes, I was clueless). It was a great talk nevertheless and the 45 minutes flew by ultra quickly.</p>
+					<p>He then plugged his own project, the <a href="https://github.com/Neotron-Compute/Neotron-Pico" target="_blank">Neotron Pico</a>. He wrote some firmware (he's a massive fan of Rust) to turn the Pico into a very simple computer, and he designed a standard form factor motherboard for the Pico to live in. It was an amazing project and I had plenty of fun messing around with it.</p>
+					<p>The last talk was by Mr Neave, where he discussed different robotics competitions and talked through the development of his own robot. It was truly entertaining and he had lots of ideas - he bought a Steam Deck to use as a controller for the NE-five. It was perfect because it ran Linux, was powerful enough to offload processing to, and had lots of I/O in a compact form factor. He also talked about some specific technical challenges and his roadmap for robotics.</p>
+					<img src="../media/blog/keegans-talk.jpg" alt="">
+					<p class="caption">Keegan Neave's presentation rounded the day nicely. Oh, and you see the robot with the orange tracks in the centre of the table? He made that just to rescue a spanner he dropped under the floor!</p>
+					<div class="h2-container" id="final-thoughts">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Final Thoughts</h2>
+					</div>
+					<img style="margin-top: 0.5rem" src="../media/blog/camjam-swag.jpg" alt="">
+					<p class="caption">My swag pack that Mark gave me just as I was leaving - sooooooooo many stickers :D</p>
+					<p>My first ever tech event was a blast - an experience that I'll never forget. I gained so much knowledge in a single day, and everything I saw inspired me to be more creative and the event only amplified my excitement for electricity.</p>
+					<p>The best bit, though, were the people. The conversations I had, friends I made, and things I learned were invaluable. Having so many kind enthusiasts, from 10 year olds to 60 year olds, interested in electronics and building cool stuff to share with the world was amazing. Despite all their differences, 100s of people still came together connected by their love for electronics.</p>
+					<p>The community was unbeatable. Everyone was respectful, enthusiastic, and welcoming. Younger people were encouraged to join in and the trust between everyone to handle each other's projects (some were worth £100s, and took 100s of hours to make) without breaking them was wholesome.</p>
+					<p>To be able to have geeky conversations with people whilst not needing to explain everything I said was a mind blowing concept to me. Everyone understood each other, and all of this was totally new to me. As great as the internet is, talking to people through text or video is simply too abstract of a concept for even the best of programmers. Meeting people face-to-face is just... different. Teaching people how I made my projects, and learning how others made theirs was a satisfying moment of sharing our journeys. Seeing tangible things in front of you, some of the best robots on the planet, is magical.</p>
+					<p>The atmosphere was utterly energising.</p>
+					<p>One thing I'll remember forever, though, is when a technology teacher from Thailand came to my stall. He was fascinated by my word clock and took a photo of it to inspire his students back home. The feeling that my creations could inspire others to join my passion across the world was overwhelming. And the delightful faces of the children who stared at my clock, searching for different words and coming back every 10 minutes to play another game of snake was moving.</p>
+					<p>So, 2 days on, I'm more thrilled by electronics than ever before and have some big projects lined up for the Summer...</p>
+					<p>An ultra massive thank you to Brian for organising it all, and bringing CamJam April 2023 on to my radar! I'll see you there next time :)</p>
+
+
+				</div>
+
+
+			</div>
+
+			<div class="scroll-top">
+				<span class="fas fa-plane-up" onclick="toTop()"></span>
+			</div>
+
+			<div class="copy success"><p>copied!</p></div>
+			<div class="copy error"><p>failed to copy!</p></div>
+
+		</section>
+
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2023 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://github.com/SourishS17/Website/" target="_blank"><h2>Audit the source code</h2></a>
+					<!--<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>-->
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+			<style>
+.loader {
+	display: none;
+}
+			</style>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/blog-template.js"></script>
+
+	</body>
+</html>
