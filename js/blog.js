@@ -81,7 +81,7 @@ function blogOrder() {
 		let maxC = dists.indexOf(Math.max(...dists));
 		let minC = dists.indexOf(Math.min(...dists));
 
-		if (dists[minC] + 150.0 >= dists[maxC]) {
+		if (dists[minC] + 175.0 >= dists[maxC]) {
 			break;
 		}
 
