@@ -1,65 +1,178 @@
-<p class="introduction">When I volunteered at my first <a href="https://coderdojo.com/en" target="_blank">CoderDojo</a> 2 months ago, I met this guy called Brian, and he told me about this thing he was organising called <a href="https://camjam.me/" target="_blank">CamJam</a>. So I scanned the QR code and reserved myself a free ticket :) and that's where it all started! CamJam, or Cambridge Raspberry Jam (us programmers like our puns), is a meet up for electronics geeks and RPi nerds. It was held in MakeSpace this time so the environment was pretty cool. There was a series of workshops, talks, and projects that people brought in (including me) - so in this blog, I'll tell you all about my experience and why you should go too! </p>
-<p class="introduction">Oh, and this was my first ever event so I was quite excited to be going...</p>
+<p class="introduction">I've always been interested in robotics. The multidisciplinary nature of connecting physical things together, writing code, and watching everything play its part to form the larger creation is... magical. The first <i>real</i> thing I built was a Micro:bit-controlled RC buggy that could also follow lines and avoid obstacles. It changed my life. 5 years on, I'm sharing that spark of joy with younger inventors in the hope that they find their new passion and get inspired to achieve incredible things in the world of electronics, robotics, and engineering.</p>
+<p class="introduction">In August 2022, I was chilling at home coding this very website when a teacher of mine emailed me saying he had ideas for a robotics club the following year, and secured a small budget to spend. As we brainstormed and discussed options, he shifted the club to become a student-led affair. I just knew I had to grab Dom to help me out with this, and together, we took on the challenge.</p>
+<p class="introduction">The aim was to create a sort of competition with weekly drop-in sessions (run by us), where teams of 2 or 3 Year 9 students would be working to design, build, and program a buggy that could solve a line maze. They'd be scored on various factors, so it wasn't all about the fastest solve time: we wanted to encourage them to learn and experiment as much as possible. Anyway, let's dive straight in for a more comprehensive look at what we worked on!</p>
 <div class="h2-container" id="">
 <span class="fas fa-link" onclick="copyHeading()"></span>
-<h2>Show and Tell</h2>
+<h2>Preparation</h2>
 </div>
-<p>The "show floor" is always the best place of any event - it's the place where you see the coolest things, meet the coolest people, and have the coolest chats. Alongside about 10 others, I set up a small area with a couple of my projects. I had my <a href="https://www.instructables.com/DIY-Word-Clock-part-of-CREST-Gold/" target="_blank">word clock</a>, and a demo robot that I was developing for a club I'm running in school.</p>
-<p>The projects that people brought in were nuts, so bear with me here! First, here's mine:</p>
-<img src="../media/blog/my-camjam-stall.jpg" alt="">
-<p class="caption">My stall! I have a game of snake running on the clock (controlled using radio + gyro in the micro:bit)</p>
-<p>There was also a ~12-year-old who made a parking garage system to detect empty spaces. He had three bays, one used an IR sensor, another used an ultrasonic sensor, and the final used a camera with machine learning (powered by the <a href="https://coral.ai/products/accelerator/" target="_blank">coral accelerator</a>). All of this data was processed and wirelessly fed back to a Pico W which was connected to a display. Truly impressive stuff, and I enjoyed talking to his brilliant mind.</p>
-<img src="../media/blog/smart-parking-garage.jpg" alt="">
-<p class="caption">An overly complicated car parking tracker</p>
-<p>Someone also came in with a humanoid robot. The tech in it was awesome, and we had a very lengthy chat about it. The robot was designed to be quite modular, initially intended for Pi Wars 2020 (feel free to guess what happened to that event...) he then worked on it and plans to open source everything soon. He started a company, <a href="https://neave.engineering/" target="_blank">Neave Engineering</a>, and I'd recommend following his socials if you're interested.</p>
-<p>The robot had two stereo cameras for 3D vision (think of it like human vision - two eyes gives us depth perception if you use some clever maths), using RPi's latest global shutter cameras (in contrast to 'rolling shutter', which <a href="https://www.youtube.com/watch?v=3HhdO11lD04" target="_blank">warps the image</a>). It had a third camera with greater resolution, to be used for ML tasks. The degrees of motion of its arm was identical to a human, using lots of daisy chained servos. It was powered by a compute module 4 with a secondary board in its head.</p>
-<p>Neave also flexed his charging port on the robot. He absolutely hates having to swap out batteries, so all his robots have a battery, BMS, and charging port! He was also talking about adding kinematic motion to the robot at some point - I can only imagine how cool that would be... Anyway, I'll spare you the rest of the details and let you have a look at the NE-Five:</p>
-<img style="width: 60%; display: block; margin-left: auto; margin-right: auto" src="../media/blog/ne-five-robot.jpg" alt="">
-<p style="text-align: center" class="caption">NE-Five. He's missing an arm because a servo burned out.</p>
-<p>Now, I'm sure some of you would have seen a 'supercomputer'. I've seen the one at <a href="https://www.cam.ac.uk/news/hawking-launches-supercomputer" target="_blank">Cambridge University</a>. The idea is that you chain a tonne of identical computers together and distribute the load of whatever task you're doing across them. When you see a cluster of computers, such as a small cluster of rack-mounted servers, we like to refer to it as a supercomputer, because they still use the same technology that makes a supercomputer work. I'm sure many of you would have also seen a cluster of Raspberry Pis... but have you ever seen an RPi Pico supercomputer?!?!</p>
-<img src="../media/blog/pico-supercomputer.jpg" alt="">
-<p class="caption">A £30 supercomputer</p>
-<p>This only felt apt given the silicon shortages of the past few 3 years! So, he connected all 8 Picos together using the I2C protocol and gave them a nice complicated challenge to solve - calculating the Mandelbrot set and rendering the resulting fractal on a display. My oh my, did he manage to squeeze a lot of power from some £5 Picos! This is one thing I love about the community - it's all about making the most of the technology we have and pushing it to the very limits. What's even better is that RPi is cool with this. I can imagine Apple or Nintendo suing someone to bankruptcy if they tried that...</p>
-<p>The same guy made a few more interesting things, including a mini Pico computer running CPM, and a solenoid engine.</p>
-<img src="../media/blog/pico-puter-cpm.jpg" alt="">
-<p class="caption">The clicks on the keyboard were mmmmmmmmm... also, I need to learn BASIC!</p>
-<p>I won't ramble on for much longer about how epic the show and tell was, but there was this cool Pico grabber robot that I got a play with:</p>
-<img src="../media/blog/construction-bot.jpg" alt="">
-<p class="caption">I had too much fun with this robot...</p>
-<p>And a Pico infinity mirror from the one and only Brian:</p>
-<img src="../media/blog/pico-infinity-mirror.jpg" alt="">
-<p class="caption">A Pico-powered infinity mirror. There was a small kid who looked into it, and put his hand under the table thinking it was real!!</p>
-<p>The Pico was used a lot in the projects, talks, and workshops - it's an awesome piece of kit and easily my favourite Pi. It's super cheap, but versatile yet accessible... and very cute!</p>
-<p>The final project I want to talk about was this compact, wireless robot. Someone made a mini robot and equipped it with a camera. From a web browser on any device in the world, you could connect to the robot and drive it, using the live camera feed. The guy set up a really nice demo area and the latency was optimised to be extremely small. He coded the bot so that it maintained a constant speed (using encoders) - so even if it was going up an incline, the robot would be just as consistent. Impressive stuff!</p>
-<p>There was so much more, from reactive LiDAR robots to lightsabers - but for now, let's talk about the workshops.</p>
+<p>The initial conversation involved bouncing ideas off each other. It started with ideas around using cameras in an arena to push balls into a designated section, before progressing to the concept of a line maze. We needed to strike the balance between a challenging project with lots of scope for optimisation, and something that was achievable by most. Oh, and we also didn't want the project to be well-documented online, otherwise contestants could just copy code, algorithms, and designs from others - we wanted <i>them</i> to think creatively and come up with novel solutions themselves.</p>
+<p>Once the theme was locked in, we spent hours choosing the best components. We planned for 10 teams, in addition to spare kit (someone's bound to break something) and another set or two for ourselves. The budget was tight - we were given £500 to buy everything and award as prize money to the podium places.</p>
+<p>We wanted the teams to learn how everything fit together, breaking down the "black box" of robotics, so we settled on buying each individual component as opposed to pre-made kits (which tend to cost more). In the end, we managed to get it down to about £300 for all the kit! After careful consideration, we bought some TT motors, wheels, IR sensors, breadboards, AAA batteries, battery holders, wires, L298N motor driver boards and finally the Raspberry Pi Picos.</p>
+<p>The Picos were chosen for their versatility, low cost, ease of use, and our previous experiences with it. It was the perfect microcontroller for an introduction to robotics. Oh, and they were actually in stock!</p>
+<p>Once the kit arrived, we split them into 12 packs (10 teams + 2 of us). But our advertising for the competition ended up being too effective, and we got 12 teams signing up! Deciding to give the late sign-ups an opportunity to participate, we desperately threw together another 2 kits, sacrificing components from our own (we had similar parts lying around at home anyway) and exhausting our spares.</p>
+<p>In parallel with all this, we were also sorting out the details of the robot and the maze - we needed to ensure the task was feasible, and be comfortable with everything ourselves so that we could mentor the teams effectively. After a brain-frying amount of thought and discussion, we felt like we had a good plan for the year, and overcame the technical challenges which initially seemed would plague the project.</p>
+<img src="../media/blog/robotics-planning-notes.png" alt="">
+<p class="caption">A snapshot of notes from our planning meetings - bursting with random thoughts, checklists, and approaches to solving problems.</p>
+<p>Essentially, each team would receive a kit containing all the components they'd need. We'd run a few lessons with the teams to teach them all the basics and how to get started. After putting the circuit together, the teams would design a base/chassis for the buggy and program it to complete the challenge. The challenge was to solve an unseen line maze as fast as possible - so the buggy would need to do a 'recon' run beforehand to memorise the maze and find an optimal path, before doing a timed speedrun. Finally, we had a clear vision.</p>
+<p>So now, the only thing left to do was to launch the competition and start the sessions!!</p>
 <div class="h2-container" id="">
 <span class="fas fa-link" onclick="copyHeading()"></span>
-<h2>Workshops</h2>
+<h2>Diving In</h2>
 </div>
-<p>The main workshops had to be pre-booked and were intended for younger children. But MakeSpace were hosting a couple of free activities. One was some basic soldering, and the other was laser cutting a custom badge (using Inkscape on a Pi 400). Both hosts were super nice and radiated knowledge. Despite having previously done countless hours of soldering and spent days standing at a laser cutter, they still taught me new things. It goes to show that there's always more to learn! Thanks to MakeSpace for providing the awesome venue and the volunteers there making the event that little bit better :)</p>
-<img src="../media/blog/camjam-workshop-goodies.jpg" alt="">
-<p class="caption">My laser-cut name tag - of course I needed a pi symbol on it, and the CamJam mascot. My soldered robot souvenir is pretty cool too.</p>
-<p>Speaking of the venue, there was this ~8 metre long LED strip on the wall, spanning across the main room. There were some wireless hand controls on either side of the strip where you could play pong across the room against someone else. It was intriguing and felt like magic!</p>
+<p>The first lunchtime, standing in front of a bunch of noisy Year 9s crammed into a small ICT room was when the competition really began to feel real! We knew that the first sessions were really important to minimise dropouts. We started with the basics; handing out the kits and introducing the Picos. After some (minor) technical difficulties with the wrong USB connectors, we finally got the teams up and running with IR sensors. It was wonderful to see the joy on their faces when they first wired up an IR sensor and saw its LEDs turning on and off as they waved their hand over them.</p>
+<p>We aimed to spend the first 4 weeks or so having compulsory sessions, where teams would learn the basics of robotics as we introduced each component in turn and they took baby steps towards the end goal. Then, the lunchtime sessions would become optional as teams work in their own time but can always drop-in for support.</p>
+<p>The initial sessions were very chaotic and we fought to maintain control, but most of the teams managed to complete all the key tasks - success!</p>
+<img src="../media/blog/robotics-intro-ppt.png" alt="">
+<p class="caption">The second PowerPoint - encouraging teams to try out some hands-on challenges.</p>
+<p>But, as teachers would know, different teams had different levels of experience. This meant that some teams raced ahead and had completed all of our challenges immediately whereas others needed more help. The teams at either end of the spectrum probably got a little bored and dropped out quite soon into the competition, but we had a healthy 8-9 left by the time everything had settled. So now we knew that there <i>would</i> be a competition, we just had to make sure it was as fun and inspiring as possible, which was harder than we thought…</p>
 <div class="h2-container" id="">
 <span class="fas fa-link" onclick="copyHeading()"></span>
-<h2>Talks</h2>
+<h2>The Technical Bit</h2>
 </div>
-<p>Of the four talks, I went to the first and last ones. The first one was titled "Is the Raspberry Pi Pico a Computer?" The speaker went on about the history of computing and tried to define what a computer is, taking inspiration from the early days (waaaaaaay before I was born, so yes, I was clueless). It was a great talk nevertheless and the 45 minutes flew by ultra quickly.</p>
-<p>He then plugged his own project, the <a href="https://github.com/Neotron-Compute/Neotron-Pico" target="_blank">Neotron Pico</a>. He wrote some firmware (he's a massive fan of Rust) to turn the Pico into a very simple computer, and he designed a standard form factor motherboard for the Pico to live in. It was an amazing project and I had plenty of fun messing around with it.</p>
-<p>The last talk was by Mr Neave, where he discussed different robotics competitions and talked through the development of his own robot. It was truly entertaining and he had lots of ideas - he bought a Steam Deck to use as a controller for the NE-five. It was perfect because it ran Linux, was powerful enough to offload processing to, and had lots of I/O in a compact form factor. He also talked about some specific technical challenges and his roadmap for robotics.</p>
-<img src="../media/blog/keegans-talk.jpg" alt="">
-<p class="caption">Keegan Neave's presentation rounded the day nicely. Oh, and you see the robot with the orange tracks in the centre of the table? He made that just to rescue a spanner he dropped under the floor!</p>
+<p>With the projects underway, it is now important to outline how we went about building our own maze-solving robot, which we did almost directly in parallel with the teams - we were planning and adapting the competition as we participated in it ourselves and identified difficult aspects with potential solutions.</p>
+<img src="../media/blog/demo-robot.jpg" alt="">
+<p class="caption">Our demo robot. See if you can try and figure out how everything works!</p>
+<p>First off, we'll talk about the chassis design. There's nothing too special here, as we rushed to create ourselves a base to get a visibly complete robot ready for the first session, ready to inspire the teams. It started with some Googling to get an idea what the base could look like, before a quick sketch of the layout.</p>
+<img src="../media/blog/robot-chassis-sketch.png" alt="">
+<p class="caption">The first sketch of our base - we were so tight on time that we didn't have any more sketches!</p>
+<p>We turned that into a CAD model on 2D Design.</p>
+<img src="../media/blog/robot-chassis-cad.png" alt="">
+<p class="caption">A midnight CAD drawing - comparing it to the resulting robot above could help visualise the design.</p>
+<p>You can see the location of each key component marked with the etched black lines. The various holes are intended for screwing the components, organising the wires, or using zip ties (an engineer's favourite tool). The triangular grooves on the long sides allow for rubber bands to be securely used, if needed for additional support. The red mushroom-shaped cutouts are for attaching the motor. The long bar cut near the front allows the IR sensors to be positioned at varying distances from each other.</p>
+<p>That's pretty much it. After laser cutting it, we found a small mistake in the design and hastily fixed it. Then, it was a matter of using a load of screws and wiring everything together. Done!</p>
+<p>The chassis was uniquely long (which brought a unique set of challenges when it came to programming, but could be leveraged using the right algorithms) yet it worked remarkably well and didn't need any re-designs throughout the year. Now for the electronics!</p>
+<p style="padding-bottom: 2rem">Here's a quick rundown of the idea:</p>
+<ul class="list1">
+<li>	• The 3 IR sensors at the front would detect lines. The black tape on the white paper would be less reflective and thus trigger a different reading. The width of the tape was a little bigger than the width of an IR sensor. 3 sensors leads to 8 combinations of patterns for the robot to detect, the majority of which would be various junctions.</li>
+<li>	• The RPi Pico would process this data and decide what to do next; path correcting, turning, computation etc.</li>
+<li>	• The Pico would send the signal to the motors (via the motor driver board at the back).</li>
+<li>	• The Pico and the motor board would both take 6V from the battery pack, whilst the low-powered IR sensors would take juice from the 3V output of the Pico.</li>
+<li>	• The wiring is all broken out onto the mini breadboard.</li>
+</ul>
+<p>Now that the robot was built, the first step was to get the robot to follow a straight line. We had considered this to be quite trivial, just use the 3 IR sensors at the front of the buggy and ensure that the central sensor is always over the line. Easy, right?</p>
+<p>We quickly found that the buggy strayed off from the line very often, as the (worryingly low quality) motors ran at different speeds. At first we tried out PWM control, reducing the speed of the faster motor. In truth, other than causing some very loud buzzing, this had no real effect! It was probably as we were using 6V as opposed to 12V, so the range of PWM control was severely limited from around 60% to 100% power.</p>
+<p>This was a big issue for the teams, especially as we branded this as the "easy" part! There were loads of approaches to solving this problem, all of which hinged upon the same idea.</p>
+<p>Use short, jittery movements. Turning the motors on for a brief period and then waiting for the IR sensor inputs before making another brief movement worked quite effectively. There was a balance of speed and reliability to strike here. The reason this method worked is because the IR sensors (also being a low quality component) had a measurable lag between a change in environment, and an output to the Pico. So keeping the motors running continuously would cause the buggy to stray too far off the line before the IR sensor, and therefore the Pico, could respond.</p>
+<p style="padding-bottom: 2rem">Once that key insight was discovered, further optimisations could be creatively applied to increase the speed whilst maintaining a high level of reliability. We both implemented our own ideas into our respective robots:</p>
+<ol class="list0">
+<li>Sourish - I decided to space the IR sensors out as much as possible. This meant my robot could go much quicker and, whilst it would go off the line by a lot, the IR sensors would always catch it and the robot would quickly swerve back into position, again roughly aligning itself to the centre.</li>
+<li>Dom - I put the 3 IR sensors perfectly adjacent to themselves, and had a "line-hugging" algorithm, where the robot would carefully position the line almost between 2 IR sensors. However, the robot travelled at an angle to the tape which would cause issues later down the line...</li>
+</ol>
+<p>We also tried learning about other techniques used by researchers and hobbyists online - it seemed like PID was a critical feature for a good line-follower, but PID wouldn't really work with just the 3 IR sensors in their planar configuration since there was not much 'weighting' that could be done.</p>
+<p>At this point we had exhausted much of the first term and the reality that this would be a very difficult project began to hit us. As we tried to offer support to the teams, we moved on to cornering at around Christmas time. Once again, in principle, in our (very naïve) planning phase turning a corner is simple. When a corner is reached, the middle and left/right sensor (depending on the junction type) would be activated. If this happened, simply move the buggy forwards and right/left.</p>
+<p>This, of course, was far too trivial to work.</p>
+<p>The robots struggled to not only detect the junction accurately, but also turn reliably. The first issue was a result of the robots not perfectly following a line. Whilst both of our methods above worked to move in an overall straight line, Sourish's would mean the central IR sensor was rarely over the line (and so could not detect junctions), and Dom's angled approach worked perfectly for right-turns, but never read a left-turn. The central IR sensor was never <i>really</i> over the tape with Dom's method, so junction detection failed if the turn was opposite to the side the buggy was 'hugging'.</p>
+<p>So, the solution?</p>
+<p>To revisit our straight-line code and improve it! We all took very different paths to try and resolve this. After working tirelessly, Dom had a really nice idea. The robot would 'measure' the tape line width such that it knew how much to correct itself. So when the robot realises it is off the line, instead of correcting until it's back on the line, it would keep turning until it was over the <i>centre</i> of the line!</p>
+<p>This worked so well because, otherwise, the robot would likely just accelerate back off the line right after correcting. This solution delayed that occurring, so the buggy spent more time accurately aligned.</p>
+<pre><code class="language-py match-braces">start = time()
+
+count = 0
+
+while True:
+
+    read()
+
+    count += 1
+
+    right()
+
+    sleep(0.03)
+
+    pause()
+
+    sleep(0.05)
+
+    if val2 == 0:
+
+        break
+
+    if count &gt;= 300:
+
+        break
+
+end = time()
+
+TIME_FROM_RIGHT = end - start - (count * 0.05)
+
+</code></pre>
+
+<p>The code snippet above implements the first part of this idea - 'measuring' the line width. Initially, the code lines up the central sensor to be just on the left edge of the line. It then jitters to the right in lots of small increments until it reaches the right edge. The time taken to do this is halved. So next time the sensors stray off the line, the robot moves back until the central sensor is over the tape, and moves <code class="inline">TIME_FROM_RIGHT</code> seconds further inwards.</p>
+<p>This was just one approach to solve the problem, and it was incredible to see that the 3 teams all found their own solutions. We only needed to help them with optimisation to squeeze as much reliability as possible.</p>
+<p>Once the robots could follow a straight line very well, turning 90 degree corners became a little easier. Teams used similar approaches here. They could either 'line hug' (which was quite slow), or move forward briefly, before swinging right about 60 degrees and then making small adjustments until the robot re-centred.</p>
+<p>Sourish had a hyper-optimised version of this second technique, where the robot would slightly overshoot and then correct backwards. Combined with his centering algorithm, which had a 'memory' of which way (relative to the line) the robot last left the tape, the buggy was pretty rapid at cornering and line following. To see our full code, check out our <a href="https://github.com/SourishS17/Year-9-Robotics-Sample-Code/" target="_blank">GitHub repo</a>.</p>
+<p>Oh, and to determine the junction type, the robot would first realise it's at a junction, then move forward a little to detect what is ahead of it, before coming back. This is where our long robots struggled as a slight disparity with the motors would cause the IR sensors to become off-angle to the tape.</p>
+<p>The robots all had their own ways of traversing various line configurations. It was almost as if each robot had its own distinct personality! It was quite cool to see how each one tackled an issue and discuss the best approaches and optimisations with the teams - we just loved collaborating with them and seeing everyone make progress by pinging ideas off each other.</p>
+<p>The final step left was the maze-solving algorithm itself. We initially intended to have something like Djikstra's or a BFS, before eventually realising that wouldn't work very well for numerous reasons. The next idea was to then do a 'recon' run of the maze using a left/right-hand turn rule, storing the turns taken. You could then use a clever reduction algorithm to get rid of dead-ends and find the faster path. But we soon discovered that dead-ends would cause a huge amount of issues and there wasn't enough time to find an accessible solution. So we settled on everyone just using some simple right/left-hand rules. The competition was difficult enough already!</p>
+<p>Of course, if a team <i>did</i> manage to find a smart algorithm, they'd be rewarded with a faster route.</p>
+<p>Anyway, with the technical details covered, it's time to see how the teams were really getting on!</p>
 <div class="h2-container" id="">
 <span class="fas fa-link" onclick="copyHeading()"></span>
-<h2>Final Thoughts</h2>
+<h2>Lent Term Highlights</h2>
 </div>
-<img src="../media/blog/camjam-swag.jpg" alt="">
-<p class="caption">My swag pack that Mark gave me just as I was leaving - sooooooooo many stickers :D</p>
-<p>My first ever tech event was a blast - an experience that I'll never forget. I gained so much knowledge in a single day, and everything I saw inspired me to be more creative and the event only amplified my excitement for electricity.</p>
-<p>The best bit, though, were the people. The conversations I had, friends I made, and things I learned were invaluable. Having so many kind enthusiasts, from 10 year olds to 60 year olds, interested in electronics and building cool stuff to share with the world was amazing. Despite all their differences, 100s of people still came together connected by their love for electronics.</p>
-<p>The community was unbeatable. Everyone was respectful, enthusiastic, and welcoming. Younger people were encouraged to join in and the trust between everyone to handle each other's projects (some were worth £100s, and took 100s of hours to make) without breaking them was wholesome.</p>
-<p>To be able to have geeky conversations with people whilst not needing to explain everything I said was a mind blowing concept to me. Everyone understood each other, and all of this was totally new to me. As great as the internet is, talking to people through text or video is simply too abstract of a concept for even the best of programmers. Meeting people face-to-face is just... different. Teaching people how I made my projects, and learning how others made theirs was a satisfying moment of sharing our journeys. Seeing tangible things in front of you, some of the best robots on the planet, is magical.</p>
-<p>The atmosphere was utterly energising.</p>
-<p>One thing I'll remember forever, though, is when a technology teacher from Thailand came to my stall. He was fascinated by my word clock and took a photo of it to inspire his students back home. The feeling that my creations could inspire others to join my passion across the world was overwhelming. And the delightful faces of the children who stared at my clock, searching for different words and coming back every 10 minutes to play another game of snake was moving.</p>
-<p>So, 2 days on, I'm more thrilled by electronics than ever before and have some big projects lined up for the Summer...</p>
-<p>An ultra massive thank you to Brian for organising it all, and bringing CamJam April 2023 on my radar! I'll see you there next time :)</p>
+<p style="padding-bottom: 2rem">After the first couple of weeks, it became clear that teams needed extra support on a few key areas. So we threw together some resources for them:</p>
+<ol class="list0">
+<li>Creating a base - this help sheet gave the teams ideas, inspiration, and advice on making a chassis for their robot.</li>
+<li>Circuity and wiring - this document was an introduction to wiring the Pico, components, and using the breadboard.</li>
+<li>Motor board - motor driver boards are confusing components for beginners, so we created a whole page telling the teams how it works and how to safely use it.</li>
+</ol>
+<p>There seemed to be lots of confusion around what the project actually was, so we created a doc to clarify the competition, rules, and rough format. Adapting quickly to satisfy what the Year 9s needed was a pretty vital component!</p>
+<p>Oh, and a month or two in, everyone was confused about how to wire the full circuit. The idea was that we'd give the teams enough resources to get them started and give them a direction, with the rest left up to them to figure out. We wanted to encourage the idea of self-learning, Googling, and independence. This ended up not being the best idea, and we eventually just gave teams a full circuit diagram as they all got too confused.</p>
+<p>You can check out our resources <a href="https://drive.google.com/drive/folders/16eVk180ZbEP-HYilwtBZXRE5FvrsKtcJ?usp=sharing" target="_blank">here</a>!</p>
+<p>With the first, busy, term done we were glad to see things settle down a bit in the Lent term. We had a strict requirement that by this stage all remaining teams had to have built a buggy that could follow a straight line, which (after some chase-up emails) whittled down the competition to just 3 remaining teams. With the drop-in sessions still ticking along nicely, slow but steady progress was made by all.</p>
+<p></p>
+<p>In the middle of all of this, we were both requested to feature in a promo film for the school's Computer Science department. This was an amazing opportunity to show off all of the cool stuff we were doing, so of course we jumped at the opportunity. We mainly discussed the AstroPi competition, but lots of our Year 9s also came along to show off their buggies so far. You can check out the whole video <a href="https://www.youtube.com/watch?v=3gQXbOkVkik&" target="_blank">here</a> (including interviews of us!) to see what progress had been made on the robots.</p>
+<p></p>
+<p>As the teams were becoming a little more independent, drop-ins were less busy, so we had some time to reach out to local tech companies and organise a fun trip for the remaining 8 pupils. This was mainly aimed to keep up motivation (and allow Sourish to miss some lesson time). To be honest, we were worried that some teams may pull out as it became clear that the challenge was much harder than we initially thought, so a trip would be really important to maintain interest.</p>
+<p>Despite that, we still had no luck! We did receive the occasional response but nothing concrete materialised. With the competition day now just weeks away, we had to park the idea for the time being as we started to focus on how the competition would actually be run, and hastily bought some more matte black tape. Oh and of course there was a huge rush for progress as teams realised how soon they would be testing out their creations…</p>
+<div class="h2-container" id="">
+<span class="fas fa-link" onclick="copyHeading()"></span>
+<h2>The Competition</h2>
+</div>
+<p>And so the big day finally arrived! After some tinkering around with projectors and music, the atmosphere was set for a great hour to show off teams' creations. Whilst Sourish busily materialised our pre-designed maze, the teams continued working on their final (slightly panicked) preparations.</p>
+<img src="../media/blog/robot-maze-sketch.png" alt="">
+<p class="caption">A sketch of our maze design. The black lines represent the maze itself, the yellow route is a "left-hand-turn" algorithm, whilst the green route is a "right-hand-turn" algorithm. The length and number of intersections of each route are shown. Lots of thought went into crafting the best design we could!</p>
+<p>The idea was to have a fairly simple maze; teams were worried about needing sufficient room to turn without any other lines being in the turning radius which would cause confusion. We did, of course, include a couple of sneaky paths. If the teams used a more advanced algorithm than the green or yellow routes, they'd be able to get a much faster time with a length of just 17 units.</p>
+<p>We designed a grid-based system from which we could easily reproduce the maze with standardised lengths (each unit is 30cm) according to the sketch above. Something to notice is that the green route is notably faster - so hopefully the teams would have programmed in both routes so that they could finish the maze with a better time. Of course, this depended on the teams reaching the end…</p>
+<p>A crowd of spectators started to form as buggy wheels finally began to move on the maze, and it was great to see some initial progress being made. Generally, the buggies were very reliable at turning corners and teams ended up making around 6-7 corners each run. However, we had done limited testing on a full maze so none of the teams were fully prepared to encounter loops. In fact, all of the teams just took any corner they saw, causing them to go round in circles!</p>
+<p>In the end, nobody reached the end but every group made a great effort and had clearly achieved their goal of a reliable line-following buggy. In hindsight, we should have given more testing opportunities as much of the issues encountered on the day were easily solvable.</p>
+<img src="../media/blog/ryans-second-try.jpg" alt="">
+<p class="caption">One dedicated team-member came back the following week with debugged code and reached the end in just a few minutes!</p>
+<p style="padding-bottom: 2rem">To determine a winner, we allocated points based on the following:</p>
+<ol class="list0">
+<li>The maze itself, who got the furthest?</li>
+<li>Build, how nicely was the robot put together?</li>
+<li>Solution design, how well was the code written, and how reliable was the robot?</li>
+</ol>
+<p>We wanted to make sure that not everything came down to the maze. The whole point was to test their creativity and holistic performance, so teaching skills such as laser cutting to produce a base was just as important as how far their buggy reached! After Sourish, Dom and our teacher supervisor had given their scores, the winner (GTEM) was crowned and screeches of joy were heard!</p>
+<img src="../media/blog/team-gtem-photo.jpg" alt="">
+<p class="caption">Team GTEM, an hour before they knew they won!</p>
+<p>We wrote certificates, and awarded them with cash prizes the next week. You can see the final scoresheet <a href="https://docs.google.com/spreadsheets/d/1GrkRP9xoofBbg-CDc8uNxrIQ1tzcGAs6BYfDb7BrW44/edit?usp=sharing" target="_blank">here</a>. The scores from each us vary quite a lot, as we were all looking for subtly different things!</p>
+<img src="../media/blog/first-place-certificate.png" alt="">
+<p class="caption">The first place certificate.</p>
+<p>It was great to see how much fun everyone had that day, as well as appreciate the progress that all of the teams made over the course of 8 months. It gave them (and us!) a really good flavour of engineering in the real world. The 3 teams stuck with the challenge throughout the year, showing immense perseverance and independence.</p>
+<p>One group even revealed that they now planned to take AS Computer Science a year early! It was clear that the competition provided huge value and a positive impact to all those taking part. The hard work put into Competition Day resulted in an experience never to forget.</p>
+<div class="h2-container" id="">
+<span class="fas fa-link" onclick="copyHeading()"></span>
+<h2>A Play-around at Pi</h2>
+</div>
+<p>After a whole year of challenging robotics, we thought we'd all earned some sort of reward. Despite our fruitless attempts to organise a school trip back in Lent, we were pretty adamant that we'd get something!</p>
+<p>As Sourish had been volunteering at the Raspberry Pi Foundation HQ (RPi HQ) CoderDojo for a few months now, he thought it would be a cool place to take the teams. After a quick chat with RPi's Mark Calleja (he's a legend), we managed to secure a trip! Some admin work and back-and-forth later, and a plan was in place to visit RPi HQ for a couple of hours one afternoon.</p>
+<p>The teams (and us) were all super excited :)</p>
+<p>On the day, Mister C greeted and introduced us to the makerspace they had. He gave us a lovely tour of the building, which included a deserted office (work from home is now more popular - especially on Mondays), a mini filming studio, the break room (where we devoured some leftover Dominos and sweets), and another random room. He also let us choose some books to take home - all sorts of Python and RPi project tutorials.</p>
+<p>He talked to us about the working environment there and how everyone is given time to learn all about RPis and use them first hand - Mister C took this time to make a talking traffic light that told people to go away when they came to him with annoying questions! He additionally mentioned how taking lots of breaks and having fun time is crucial. We thought this modern approach to working was epic and it clearly made everyone there happier.</p>
+<p>Anyway, for the bulk of the time there, we played around with RPi 4s, Sense HATs, and Coral accelerators. Sourish was delighted to finally use a Coral amid the chip shortages, whilst Dom was bashing away at a game of snake on the Sense HAT. We supported the teams as they worked on their own things, making full use of the gear we were given.</p>
+<img src="../media/blog/rpihq-messaround.jpg" alt="">
+<p class="caption">Everyone messing around with cool components!</p>
+<p>Mister C helped us out, gave us cool demos of all sorts of projects, showed us some insane ChatGPT hacks (he seemed to spend all his time finding ways to get ChatGPT to do useful things), and made our time there memorable. He was full of energy and fun - impressive considering it was a Monday afternoon! The teams learned loads on the trip, and lots of cool conversations took place; it was incredible for all of us.</p>
+<p>It was really nice to see the space, and an especially awesome opportunity for the young teams to have their first insight into the industry being such a great and inspiring experience!</p>
+<div class="h2-container" id="">
+<span class="fas fa-link" onclick="copyHeading()"></span>
+<h2>Wrapping Up</h2>
+</div>
+<p>From the first email outlining competition ideas to the trip that concluded a year of hard work, persistence, grit, success, failure, learning, and laughter, the whole thing was a blast for us. We taught the teams so much whilst working on our own buggies, developing our robotics skills and passing them down to younger pupils. We designed resources and presented to a room packed with over 30 excited 13-year olds (which made us appreciate the talent of our own teachers), organised competition day, a school trip, and worked on the economical and technical side of the challenge. Bonds were formed and memories were created - it was a roller coaster ride with as many downs as ups, but we're glad we took on the challenge.</p>
+<p>There are, of course, plenty of things we learned from this year that could have gone better. The end goal itself was too challenging; we didn't test things early enough; we didn't provide enough initial support; we struggled to teach; and competition day was chaotic.</p>
+<p>But, moving forward, we're flipping all of these negatives and strive to work on them for next year, when we run a similar competition but with bigger hopes. We've already started planning it and it should be even more awesome as we transition the club towards a new set of passionate roboticists. We're extremely excited to see how it'll turn out!</p>
+<img src="../media/blog/robotics-competition-group-photo.jpg" alt="">
+<p class="caption">Competition Day! A huge well done to all 8 finalists, we know everyone involved found the experience valuable.</p>
+<p>Thank you for reading - we hope you enjoyed it as much as we loved writing it :) Feel free to reach out if you want to ask anything! And a massive thanks to Mr Baker, the teacher that made everything possible - people like him inspire people like us.</p>
