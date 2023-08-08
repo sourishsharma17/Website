@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - Blog: Leonardo Work Experience</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/blog-template.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="../">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="../#about">About Me</a>
+					<a href="../food">Food</a>
+					<a href="../techsnap">TechSnap</a>
+					<a href="../blog">Blog</a>
+					<a href="../assets">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="../">Home</a>
+						<a href="../#about">About Me</a>
+						<a href="../food">Food</a>
+						<a href="../techsnap">TechSnap</a>
+						<a href="../blog">Blog</a>
+						<a href="../assets">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+		<section class="post">
+
+			<div class="container">
+
+				<div class="top">
+					<h1>Work Experience Account (Pt. 3) - Leonardo</h1>
+					<div class="info">
+						<div class="read"> <span class="fas fa-hourglass"></span><p>&nbsp;17 min read</p> </div>
+						<div class="dates"> <div class="edit" style="display: none"><span class="fas fa-pen-to-square"></span><p>&nbsp;Updated: 16/06/2022</p></div> <div class="launch"><span class="fas fa-calendar-day"></span><p>&nbsp;August 8, 2023</p></div> </div>
+					</div>
+				</div>
+				<div class="content">
+
+
+					<img src="../media/blog/leonardo-luton-site.jpg" alt="">
+
+					<p class="introduction"><a href="https://www.leonardo.com/en/home" target="_blank">Leonardo</a> are primarily a defence company, with most of their work being in aircraft and helicopter systems. They have 7 sites across the UK and I spent a week at the Luton one, staying in London for a shorter commute. It was their electronic warfare division - so the work done there aligned pretty well with what I hope to be doing in the future! I was excited to see what they had in store for me...</p>
+					<div class="h2-container" id="day-1">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Day 1</h2>
+					</div>
+					<p>After a short but hilly walk, I reached their office. It was in a nice business park with excellent infrastructure and plenty of greenery. Admiring the sleek interior design, I received my visitor pass from the super nice receptionist and met the other students. There were 7 of us, all interested in electronics, mechanical, or aerospace engineering.</p>
+					<p>We headed to our room for the week, did introductions, and got a rundown of what Leonardo do. Electronic warfare is essentially anything in the electromagnetic spectrum - radar systems, communications, jamming, aircraft automation, etc. We also discussed stealth shapes. These are aircraft designed with passive stealth technology which reflects incoming radar all over the place due to their shape - a good example is the <a href="https://media.defense.gov/2003/Sep/22/2000597310/2000/2000/0/030922-F-0000J-888.JPG" target="_blank">B-2 Spirit</a>. Expendables such as chaffs or flares can be useful against certain types of missiles, as a last resort.</p>
+					<p>Then, we got a quick tour of their timeline wall of warfare technology before looking at some of the displayed objects. They had quite a few decoys on show, including the latest BriteCloud.</p>
+					<p>On another note, the amount of security required to get into a Leonardo laptop is absurd. You've first gotta enter the Bitlocker key to decrypt the drive. Then there's an RSA security key (with a hardware authenticator). And only <i>then</i> is there the username/password field. I'm sure you can imagine that this caused plenty of issues!</p>
+					<p>Anyway, so the first session of the week was on systems engineering. Our hosts told us about their job, and the interdisciplinary nature of it. We looked at how to create clear requirements so that anyone reading them would all interpret them the same way - communication is pretty important in engineering. The Mars Climate Orbiter is a legendary example of poor communication where different teams used different units of measurement and it lead to a $200 million disaster!</p>
+					<p>We looked at the V-model, which is a framework showing the development lifecycle of a project from a systems engineer's perspective. Following the diagram, we created a paper aeroplane to a set of requirements and tested it. It was a really nice way to demonstrate the overall theme of systems engineering.</p>
+					<img src="../media/blog/v-model.png" alt="">
+					<p class="caption">The V-model. The apprentices complained that their manager always gave them lectures on using it!</p>
+					<p>Lunchtime! I had some really nice cheesy pasta with salad and cake. The prices for each item of lunch were quite funky - it felt as if they were being decided every Sunday by an AI model.</p>
+					<p>The afternoon session was all about electronics. We were introduced to our project for the week, a proximity sensor, and looked at the theory behind it. We took a deep dive on each component involved, including the OpAmp. An operational amplifier is a very powerful and common component. It essentially takes two inputs and outputs the difference between them. But this output signal is amplified, making it much larger than it actually is. The energy to do this comes from the source voltage, which is also sent to the OpAmp.</p>
+					<p>In the case of our circuit, we're using the OpAmp as a buffer and a comparator. Wait, lemme go back a second and describe what the circuit actually does.</p>
+					<img src="../media/blog/proximity-circuit.jpg" alt="">
+					<p class="caption">My completed proximity sensor circuit.</p>
+					<p>The general idea is that the IR LEDs and sensor on the left detect how far away an object is, and feedback is provided in one of two ways. The first way is shown - the RGB LED changes colour and brightness to indicate proximity. The second way is selected when the red switch is toggled, and this would result in the other LED turning either on or off, depending on if the object is close enough to pass a set threshold (the threshold can be customised using the blue potentiometer).</p>
+					<p>So, notice anything? The first representation is continuous, analogue. The second representation is discrete, digital. The buffer is used in the first method, as it outputs a varying current with a consistent voltage. The closer an object is to the sensor, the stronger the signal it produces, and thus the greater the difference between the two inputs on the OpAmp is, increasing the current of the output.</p>
+					<p>This current goes through the resistors R5, R6, and R7 to vary the colours in the LED depending on distance. Great! Method 2 uses a comparator. The OpAmp essentially compares the two input voltages. If the non-inverting input (+) is greater than the inverting input (-), the supply voltage (9V) is sent to the output. This causes the LED to turn on. Otherwise, 0V (GND) is sent through and the LED remains off.</p>
+					<p>The inverting input can be thought of as the reference voltage, as it represents the threshold at which the LED is turned on. This reference voltage is from the 9V input, but modified using the potentiometer to alter the threshold as desired.</p>
+					<p>Phew, that was complicated.</p>
+					<p>The engineers explained other concepts, such as how the potentiometer is just a coiled-up potential divider, how a three-prong switch works, the maths of a diode, and how complex numbers are used to represent values in an AC circuit due to their 2-dimensional nature. There was even a sprinkle of argand diagrams and second-order differential equations!</p>
+					<p>All in all, they did a fantastic job at sharing their understanding and knowledge with us. To see all my A-level Maths and Physics being used in practical settings was super eye-opening.</p>
+					<p>To cool down, we ended the day with a visit to their makerspace and labs. After a detour to look at the offices and some more cool projects, we entered the makerspace. It was pretty standard, but I like how <a href="https://sourishsharma.com/blog/y9-robotics-comp=trip-to-rpihq" target="_blank">more and more companies</a> are encouraging their employees to spend some time making their own things, and giving them the resources to do so.</p>
+					<p>Finally, we went into one of the labs. These were where Leonardo tests/develops EM equipment. They have to do their work in isolated areas - so as to ensure they don't break the law by using unlicenced frequencies or jammers. Especially because an airport was nearby... you wouldn't want to jam their comms with flight control!</p>
+					<p>These labs were essentially just metal rooms - Faraday cages to block out every EM signal from the outside and vice versa. To get in, you'd have to go through a set of two (metal) doors, only ever keeping one open at a time. The doors were very cool - pressing the button and opening it felt just like a sci-fi film with all the pneumatic sound effects! And if both doors were opened at once, the power to the room would be cut off immediately so as to ensure no signals escaped.</p>
+					<p>The labs themselves were as expected - lots of computers, servers, and random equipment. There was a nifty jammer drone that would fly over a region and jam everything. I so badly want one...</p>
+					<p>Anyway, that marked the end of day 1, and after nabbing a delicious bubble tea at Truedan, I went back to my home for the week.</p>
+					<img style="width: 60%; display: block; margin-left: auto; margin-right: auto" src="../media/blog/truedan-tea.jpg" alt="">
+					<p style="text-align: center" class="caption">Best bubble tea I've ever had :P</p>
+					<div class="h2-container" id="day-2">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Day 2</h2>
+					</div>
+					<p>The morning was all about software. We messed around with Micro:bits using Blocks and Python. I had used Micro:bits extensively before, so I mostly took the time to talk to the apprentices leading the session and the other students. The main languages used at Leonardo are C and C# - and Python/MATLAB for the systems engineers.</p>
+					<p>The Micro:bits were the V2 - I'd really wanted to mess around with these ever since they came out, but never had a good reason to get one. So I was pretty excited to make use of the microphone, piezo, and touch sensitive logo. It was quite cool, and I even tried getting a voice speaking on the piezo but it was comically robotic!</p>
+					<p>The software tools for the Micro:bit improved drastically since the last time I used one, and it was epic to see the continual development towards computer science education in the UK.</p>
+					<p>After another tasty lunch (with massive portions again), we had the antenna session. None of us really considered antenna engineering as a thing, but I guess every niche exists and this niche is fairly important for a company like Leonardo.</p>
+					<p>The engineers taught us the theory behind antennae, recapping physics principles such as polarisation. They then went straight in and explained all sorts of concepts, such as passive/active radar, bandwidth, return loss, gain, impedance etc. And they showed us examples of these technologies on planes in service. A lot of their work comes from a customer (generally the Government) asking to equip their plane with some specific technology, and Leonardo have to find the best solution.</p>
+					<p>We then applied a few equations to determine the required length of an antenna which can detect 2.4GHz signals (that's WiFi). Why? So we could make our own makeshift antenna!</p>
+					<img src="../media/blog/diy-wifi-antenna.jpg" alt="">
+					<p class="caption">My simple WiFi antenna. It's got the copper ground plate, a wire antenna, and the connector.</p>
+					<p>We headed over to the antenna labs to test them on a £300k Vector Network Analyser (VNA). It was so old that it still used floppy discs to update the firmware. After a crash course on how to use it, I discovered that my antenna was most sensitive to 2.42GHz - pretty close to my target! I cut down the wire length to see the measured frequency go up, playing with the knobs and buttons on the VNA.</p>
+					<p>The entrance to the antenna lab had a sticky shoe pad to minimise the FOD (foreign object debris) - a single spec of dust can ruin the connection between an antenna and a machine. And I was told that the machine's connector is manufactured to such precision that it costs £10,000!</p>
+					<p>We also got shown some cool antennae, such as spiral shaped antenna which are used to maximise the reliability of a ground receiver due to the plane of the aircraft's transmitter varying throughout manoeuvres.</p>
+					<p>We were taught about radomes, solder resist (hence why PCBs tend to be green), and how varying configurations of an antenna can affect its properties. All in all, antenna engineering was epic!</p>
+					<p>Before we left, we had a look at their largest anechoic chamber. Boy, was I excited! I'd seen so much about them online, and would've seen one at my work experience with Cambridge Consultant if it wasn't broken. An anechoic chamber is a room that blocks all EM signals. What makes it special is that the 6 walls are designed to absorb all waves - so there is no echo inside.</p>
+					<img src="../media/blog/anechoic-chamber.jpg" alt="">
+					<p class="caption">An example of an anechoic chamber. Man, these are cool!!!</p>
+					<p>Stepping in the chamber was awesome! Everything was muted, and you had to talk quite loudly for someone to hear you. The foam lining the surfaces was designed to ensure any reflections would not go straight back to their source - they'd instead bounce around between the spikes until they dissipate. Foam was used to help absorb the wave energy, and it was laced with various substances such as carbon to further increase absorption power.</p>
+					<p>The technical term for this is Radiation-Absorbent Material, or RAM.</p>
+					<p>A fun fact we were told - if there's a fire in the chamber (perhaps caused by overheating components), you've got to escape and shut the door as fast as possible. Pure cyanide is produced when the RAM burns, so you wouldn't wanna be in there!</p>
+					<p>They had a setup installed to test antenna transmission. There was a 3-axis mount for the transmitter, and a sensor across the chamber. The mount would rotate in tiny increments and test every orientation of the antenna to build up an intensity map. This process would take weeks for a single antenna! Good thing they had multiple chambers.</p>
+					<p>Usually, the primary aim when designing antennae is to channel their energy/sensitivity towards the specific direction required - otherwise, huge amounts of energy are wasted, the antenna is less stealthy, and it can be jammed easily. There are all sorts of intriguing tactical decisions that antenna engineers must consider when designing.</p>
+					<p>So, after an epic day at Leonardo, I topped it off with a trip to London's Twist Museum and ended with some delicious ramen.</p>
+					<img src="../media/blog/twist-tensegrity-structure.jpg" alt="">
+					<p class="caption">The Twist Museum. This made me super excited - I finally saw a tensegrity structure in person!! If you have no clue what this is, Steve Mould created a <a href="https://www.youtube.com/watch?v=0onncd0_0-o" target="_blank">nice video</a> on them.</p>
+					<div class="h2-container" id="day-3">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Day 3</h2>
+					</div>
+					<p>I reached in the nick of time and met the others just as they were leaving to start the day. The electronics engineers from Monday, Solomon and Ahmed, took us to the makerspace to do some soldering. The goal was to finish the proximity sensor board that morning.</p>
+					<p>So, using some nice soldering irons with in-built filters (we had leaded solder), I got to work. The process was fast and error-free for me - though a couple of people burned themselves and others had faulty components.</p>
+					<p>I chose resistances for the RGB LED which would mean the red hue would always be slightly on, then the green would appear as the object got closer, and finally blue. I grabbed some more jumpers and played around with different configurations to vary the colours. I also tuned the potentiometer until I was happy with the sensitivity of the LED.</p>
+					<p>It worked!</p>
+					<p>I spent some time chatting with the degree apprentices about their experience. They were all overwhelmingly positive about Leonardo, saying how they give you plenty of time and support to upskill yourself and work on projects. This is really reassuring to me, as that's something you'd get at university but could easily be missed in an apprenticeship.</p>
+					<p>I sat with Ahmed during lunch as he told us all about the culture at Leonardo, and how to ace assessment days. The office seemed to only have old people or young people - Ahmed said that's because Leonardo stopped hiring for 20 years before realising that they needed a much greater workforce to replace the current retiring one. So they mass-hired graduates and apprentices to learn from the experienced engineers, hoping that 2 or 3 inexperienced employees could make up for 1 experienced employee.</p>
+					<p>This did mean that the culture at Leonardo was fantastic - it was full of younger people and it genuinely gave off some uni vibes. You'd definitely be able to get a good level of "uni life" experience as an apprentice here!</p>
+					<p>Ahmed then discussed how we need to stand out at assessment days, and sell ourself as a character. With hugely competitive ratios, standing out is the only way to guarantee being seen. He said to always talk to people, as the recruiters are observing you at all times. Ahmed told us to use our experiences/projects/hobbies to demonstrate the skills we have, and apply them to engineering to show the interviewers the value we'd have to the company.</p>
+					<p>We talked for even longer, about the geeky nature of the engineers at Leonardo and how passion was critical to success. It was an awesome chat, with plenty to learn from it!</p>
+					<p>After lunch, Solomon gave us some circuit analysis challenges to complete. They were quite difficult, reminding me of <a href="https://isaacphysics.org/" target="_blank">Isaac Physics</a> questions. He also tasked me to calculate the maximum frequency of the capacitors, before explaining why it has a cut-off to prevent interference, and how you can get a lower bound as well with a more advanced arrangement of components. He discussed the issues with such scenarios and how engineers overcome those problems.</p>
+					<p>Once everyone had a working board, we headed back to the room to meet some mechanical engineers. We learned about their roles, including the strong similarities between aerospace and mechanical engineering - they both involve the same skills and even software, but used in subtly different manners.</p>
+					<p>We spent a couple of hours designing a housing for our proximity sensor project in Creo Parametric. It was quite similar to OnShape or Solidworks, so it didn't take long to grasp. It was a nice, relaxing task and helped brush up my CAD skills.</p>
+					<img src="../media/blog/3d-printed-housing.jpg" alt="">
+					<p class="caption">My finished housing. Interestingly, the bottom of the print had this carbon-fibre-like texture. It turns out they used a textured print sheet. I'd never seen one like it, but presumable it helped the first few layers of the print stick to the print bed as they snugly fill the gaps in the pattern.</p>
+					<p>The engineers were commenting on how the industry likes using outdated versions of software - I remember seeing a Windows 7 computer in the makerspace. They say this is for reliability and security, but in reality, I'm sure the effort to migrate is a big decision factor!</p>
+					<div class="h2-container" id="day-4">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Day 4</h2>
+					</div>
+					<p>Today was all about software engineering, working on one project. We started by playing around with a Minibit (a buggy kit powered by the Micro:bit), flashing the LEDs with the Neopixel library and moving the robot with the motors.</p>
+					<p>We developed functions to make controlling the buggy easier and do turns, constantly testing and iterating our code. The buggy wasn't particularly consistent - it would veer off slightly instead of going straight. Also, when writing code to travel a specific distance, the same code would not work for both small values (~10cm) and large values (~50cm). A similar issue occurred with turning; a function to turn X degrees would maybe work with 45 degrees, but not 120 degrees.</p>
+					<p>Whilst hardware inconsistencies were definitely part of the issue, the physics of the robot's motion meant the scaling was non-linear. For example, after a turn, the robot's momentum would swing it a little further than desired. This varied depending on how long the intended turn was, and so I needed to optimise my code for different ranges of distances/turns. How long I waited after a turn also affected it - moving forward instantly would prevent the robot from swinging any further.</p>
+					<p>After lots of tuning and adding nice light effects, I was pretty happy with my progress and it was time for lunch!</p>
+					<p>We were then introduced to our final challenge with the buggies - complete a course and fulfil tasks along the way, making use of the Micro:bit array and LEDs on the chassis.  The afternoon was a chilled experience, and we spent lots of time chatting whilst working on the robots.</p>
+					<img src="../media/blog/minibit-course.jpg" alt="">
+					<p class="caption">Testing my Minibit on the course. The surface of the paper was different to the tables, so I had to re-tune all my values!</p>
+					<p>After lots of time spent optimising the robot to complete the course, we did one final run in front of each other. And the winner? Well, none of the robots quite managed to complete the course!</p>
+					<p>The inconsistent nature of the hardware made it more of a lottery than a talent game. It was interesting to see everyone's approaches though - that's one thing I love about engineering. Given the exact same problem and the exact same resources, 7 people came up with 7 distinct solutions.</p>
+					<p>My primary method to move was by creating arcs - turning and moving forward simultaneously. Some people went slowly, some error-corrected over time, some did lots of small jittery movements, and so on. Every time I saw a new robot do a run, it sparked curiosity and ideas in my head about what worked and what didn't, and what I could've applied to further improve my program.</p>
+					<p>It really reminded me of the <a href="https://sourishsharma.com/blog/y9-robotics-comp" target="_blank">robotics competition</a> I ran in school with a friend this year, and I took some time to reflect upon it. I discussed what was good about today's challenge, and distilled those principles to figure out what we need to apply to next year's robotics competition. It came down to getting hands-on quickly, abstracting everything so everyone understands it, and providing plenty of room for expansion for those who are more experienced.</p>
+					<p>One big point for our competition is to make the robots more reliable. We'd thought that higher quality components would completely solve the issue, but today proved that wrong. The Minibits had the same motors and similar wheels to the ones we're planning to use - yet there was still lots of unreliability. I'm thinking the only way to solve this is to have some sort of external sensor, like an encoder. That idea was vouched for by one of the engineers too.</p>
+					<p>Something interesting that the software engineers said was that they only spend ~3 hours a day writing code - the rest of the time is dedicated to meetings, admin, reviewing, etc. To be honest, that's something which really sucks about engineering in a big firm; there's a lot of talk and less action.</p>
+					<p>Anyway, by the end of the day, everyone had a blast and I went back, after enjoying a delicious waffle :)</p>
+					<img src="../media/blog/millionaire-waffle.jpg" alt="">
+					<p class="caption">Feeling 'healthy', I only went for a half-waffle...</p>
+					<div class="h2-container" id="day-5">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Day 5</h2>
+					</div>
+					<p>The final day! We started off by tying everything together and completing our project. We mounted it all to the housing, and used the Micro:bit's ADC for live debugging, to show the voltage received from the IR sensor.</p>
+					<p>Ahhh, that was satisfying.</p>
+					<img src="../media/blog/completed-proximity-sensor.jpg" alt="">
+					<p class="caption">My completed proximity sensor board.</p>
+					<p>Finally, we each threw together a presentation of the week and our project, delivered it, and received our EDT Industrial Cadets Silver Award. The week ended with us all getting a goodie bag, which contained various Leonardo-themed items and the classic early-careers ads.</p>
+					<p>The 7 of us parted ways, and after a fabulous time together, we shared some contact details so we could hopefully meet again some point soon.</p>
+					<div class="h2-container" id="final-reflections">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Final Reflections</h2>
+					</div>
+					<p>I learned plenty from the week, but there were 2 key insights I took away. First, it seemed like a degree apprenticeship could be the better option for me - and I need to be very careful in which company I choose (assuming I get more than 1 offer!). A company like Leonardo gives their apprentices lots of time for personal development, and the staff there are all quite geeky. Both are great, but not every firm has that.</p>
+					<p>I found it quite interesting how most of the apprentices we met did 'meh' on their GCSEs/A-Levels, but seemed to all be on track to achieve a first in their uni course. The environment provided by an apprenticeship can really change how well you learn!</p>
+					<p>Secondly, I gathered some important lessons from Thursday to take into my robotics competition for next year.</p>
+					<p>On the whole, I discovered a lot about the industry, loved the anechoic chamber, and had a great time with the other students. A massive thank you to Leonardo and all of our hosts - especially Solomon and Ahmed (the electronics apprentices) for being so enthusiastic and engaging. The antenna engineers were also awesome!</p>
+					<p>This marked another step in my relentless pursuit to always learn more and keep on meeting interesting people, so I'm grateful for the opportunity provided and would recommend it to anyone! Thanks for checking out this article :)</p>
+
+				</div>
+
+
+			</div>
+
+			<div class="scroll-top">
+				<span class="fas fa-plane-up" onclick="toTop()"></span>
+			</div>
+
+			<div class="copy success"><p>copied!</p></div>
+			<div class="copy error"><p>failed to copy!</p></div>
+
+		</section>
+
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2023 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://github.com/SourishS17/Website/" target="_blank"><h2>Audit the source code</h2></a>
+					<!--<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>-->
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+			<style>
+.loader {
+	display: none;
+}
+			</style>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/blog-template.js"></script>
+
+	</body>
+</html>
