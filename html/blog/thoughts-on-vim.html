@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - Blog: Vim</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/blog-template.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="../">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="../#about">About Me</a>
+					<a href="../food">Food</a>
+					<a href="../techsnap">TechSnap</a>
+					<a href="../blog">Blog</a>
+					<a href="../assets">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="../">Home</a>
+						<a href="../#about">About Me</a>
+						<a href="../food">Food</a>
+						<a href="../techsnap">TechSnap</a>
+						<a href="../blog">Blog</a>
+						<a href="../assets">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+		<section class="post">
+
+			<div class="container">
+
+				<div class="top">
+					<h1>Vim</h1>
+					<div class="info">
+						<div class="read"> <span class="fas fa-hourglass"></span><p>&nbsp;13 min read</p> </div>
+						<div class="dates"> <div class="edit" style="display: none"><span class="fas fa-pen-to-square"></span><p>&nbsp;Updated: 16/06/2022</p></div> <div class="launch"><span class="fas fa-calendar-day"></span><p>&nbsp;January 8, 2024</p></div> </div>
+					</div>
+				</div>
+				<div class="content">
+
+
+					<img src="../media/blog/vim-featured-image.jpg" alt="">
+
+
+					<p class="introduction"><a href="https://www.vim.org/" target="_blank">Vim</a> is a free and open-source terminal-based text editor, prevalent on UNIX systems such as Linux. I've been using Linux off and on for the past few years, but switched to it full-time on my desktop 18 months ago. Most Linux users have at least a working knowledge of Vi (the core component of Vim), so why don't more people use it on the daily?</p>
+					<p class="introduction">I must have spent 100s of hours in Vim, coding away and writing random stuff. But I've also spent 100s of hours in VS Code, on my Windows system. Not to mention 10s of hours each in editors like Thonny, Arduino, notepad.exe (that counts, right?), Notepad++, Replit, and MakeCode. So, why do I still love Vim?</p>
+					<p class="introduction">This blog is a piece on Vim, a vehicle through which I can share some thoughts and ideas. Also, I have no experience with Emacs so won't refer to it at all. Enjoy!</p>
+					<div class="h2-container" id="my-history">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>My History with Vim</h2>
+					</div>
+					<p>I'm not really sure when the first time I touched Vim was. Whenever I'd experiment with doing something on Linux (usually via CyberStart), the tutorial would probably use Nano and so I would too. And if I wasn't following a tutorial, I'd always resort to a graphical editor like gedit.</p>
+					<p>I'm pretty sure the first time I voluntarily used Vim was when I forced myself to learn it, when I committed to becoming a <i>real</i> Linux user. This was the summer when I also coded this website. So yeah, I had to learn Vim quick if I were to now spend 12 hours a day stuck in it!</p>
+					<p>Did I even force myself to learn Vim? Or was it because I needed an editor to write config files when I first installed Arch Linux and really began to hate Nano (it's ugly and the <code class="inline">Ctrl</code> key hurts my thumb)? I'll let you decide :)</p>
+					<p>Again, I'm fuzzy on the details but I think I used vimtutor to get a feel of how Vim works – I never completed it because that's just too much information for one (small) brain to absorb in one sitting. Then, I went straight into using Vim to code, which was certainly a bold move.</p>
+					<p>I remember being really slow but because I was pretty new to coding a website and writing configs, it didn't really matter. It turned a simple task from taking 30 minutes to taking 35 minutes as I Googled every 5th time I needed to do make an edit.</p>
+					<p>I honestly don't know how I stuck with it.</p>
+					<p>But over time, I became familiar with Vim and learnt plenty of shortcuts. A few weeks in, and I was really efficient. A few months in, and I fell in love.</p>
+					<p>A year and a half later, I still discover some neat new trick every now and then to boost my productivity by that extra 1%. The learning curve to Vim is pretty sus, and probably the main reason it isn't popular among non-nerds. I find it looks something like this (at least, it does for me):</p>
+					<img src="../media/blog/vim-learning-curve.png" alt="">
+					<p class="caption">I drew that graph at 2am using a mouse – it works, okay...</p>
+					<p style="padding-bottom: 2rem">Here's what each bump on the graph means:</p>
+					<ol class="list0">
+						<li>Vim makes literally no sense. You're in this state of shock and confusion, completely unable to use Vim at any reasonable pace. Entering Vim makes you scared, the feeling that you may never be able to exit looms over you. You're like a dumb goldfish, trapped in this tiny bowl.</li>
+						<li>Aha! It clicks and suddenly you can use Vim to do basic things. You learn how to exit and save. Slowly, you get better and more accustomed to this way of writing. Your efficiency picks up and coding feels just as fun as it used to be.</li>
+						<li>Then, you plateau. You don’t really get any better. You kinda just sit there, using Vim and completing the tasks you need to using the small suite of commands you're comfortable with.</li>
+						<li>Every now and then, you'll begin to crave a certain feature or want to make a process more efficient. So you do some Googling and find a solution – perhaps a plugin or new command. Boom, you've learnt that little bit more and are one tiny step closer to becoming the Vim ninja God we all strive to be.</li>
+					</ol>
+					<p>Initially, my Vim config was pretty minimal, I didn't need much else. But at some point, I really wanted to experiment with GitHub Copilot and it wasn't working with vanilla Vim. I also knew that CSS colour previews weren't possible with my setup. So I made the leap to Neovim.</p>
+					<div class="h2-container" id="neovim">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Neovim</h2>
+					</div>
+					<p><a href="https://neovim.io/" target="_blank">Neovim</a> is a fork of Vim that provides a few more features and has a much bigger library of plugins. Practically, it's pretty much the same as Vim. The reason there's so many plugins is because you can use Lua to write them, instead of just Vimscript - something that isn't possible on vanilla Vim. People love Lua and hate Vimscript, so naturally, Neovim got all the community love.</p>
+					<p>I've only ever used Lua and Vimscript when modifying config files, so I can't appreciate the differences. But the general consensus seems to be that Vimscript sucks (a lot), and Lua is a joy to code in.</p>
+					<p>My transition to Neovim was quick - I just copied across my <code class="inline">.vimrc</code> and tied it with a Lua file which existed only to enable GitHub Copilot. Now, my setup was just like before but with some added functionality.</p>
+					<p>I didn't want to jump to something like SpaceVim - I think distros add too much default customisation. Whereas the low-level, fundamental improvements that come with Neovim were just what I wanted, and nothing more (you'll soon figure out why!).</p>
+					<p>From now, I'm going to use "Vim" to refer to both Vim and Neovim. The subtle differences between them are irrelevant in the bigger picture - capturing the concept is what matters most and "Vim" does that just fine.</p>
+					<div class="h2-container" id="why-i-really-like-vim">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Why I Really <i>Really</i> Like Vim</h2>
+					</div>
+					<p>I've used Vim a lot - as a scratch pad, to write content, and to code. I think this best summarises why I like it so much: it minimises the friction between me and the computer.</p>
+					<p>This is the ultimate goal for a lot of things, right? Buying a big monitor, buying a nice mouse, learning to touch type, customising your computer, carrying a portable laptop, and so on. These are all decisions made to help someone use a computer more efficiently. Some of these tools almost become an extension to your body, seamlessly connecting the human and the computer, essentially augmenting the power of the human and knocking a barrier between the two.</p>
+					<p>That is what Vim feels like.</p>
+					<p>Vim has now become an extension to my fingertips, allowing me to focus on what I'm doing and not how to do it. I don't even think about most of the commands I use, they just happen naturally. This is critical, the key that unlocks true productivity. It helps me get ever closer to transforming thoughts to results instantly. And who would say no to a tool like this?</p>
+					<p>Overcoming the initial struggle is the hardest bit of the process, especially if you have real work to do and learning Vim just slows you down. You have to really force yourself to learn it. But it's worth it in the end.</p>
+					<p>"We need an interface to translate our thoughts into the computer, and the keyboard and the mouse are a necessary evil for now. But if you chose a career of software development, you should strive to minimize the friction that interface introduces." - well put by a <a href="https://news.ycombinator.com/user?id=tmarice" target="_blank">forum</a> member. Perhaps the future holds mindreading interfaces, we're already seeing a glimpse of that with the help of AI!</p>
+					<p>Vim seems to never crash or break. Vim's behaviour is consistent and predictable which means I've never had to think about how to fix it or waste time restarting it. I know that when I need Vim, it won't crash and hold me back - like during the intense moments of <a href="https://adventofcode.com/2023/about" target="_blank">Advent of Code</a> (AoC). That reassurance is incredibly valuable.</p>
+					<p>Doing things with Vim is just... faster. Probably because it's a keyboard-oriented editor which means I don't waste time moving my hand between the mouse and keyboard. That may sound like a silly idea at first, but if you add the total amount of time spent doing this, it's probably quite a lot. Also, who wants the cursor taking up valuable pixels on the screen - especially when it covers some text you're trying to read/write/edit?! Much more importantly, however, when I think about doing something, I want to execute that action as close to instantaneously as possible. But the slight delay caused by moving my hand over to the mouse and back works against this. It's subtly infuriating and feels unnecessary (it is).</p>
+					<p>It's like animations. Whilst I appreciate a good animation, I don't want them appearing in my workflow. For example, changing desktops/virtual workspaces doesn't need an animation - once I've decided that I want to switch workspace, I want that to occur quickly and not wait for some pixels to swipe across a screen. It adds a break to my thought process and is potentially a bottleneck if I do it a lot.</p>
+					<p>My speed with using Vim is perhaps a bigger function of my touch typing skills - a keyboard is already like an "extension" to my body, and if I confine my text editor to the keyboard, I achieve the same effect for the text editor.</p>
+					<p>And the obvious point to make here, an increase in speed leads to an increase in productivity. So if I'm spending 10 hours a day in Vim coding 100s of lines of code, that productivity boost is significant. And especially during times where speed is key, like AoC, it becomes a game changer.</p>
+					<p>Oh, and do I need to mention how cool I feel coding in my terminal using Vim? If it makes me happy, that's yet another plus!</p>
+					<p>I love highly-customisable software, and my text editor is no exception. Vim is relatively straightforward to configure, and the fact that it's a bit bare out-of-the-box makes it that much easier. I'm sure you can guess why I like customisation - it increases my efficiency but also makes something simply look a bit nicer :)</p>
+					<p>The software should adapt to suit me, not the other way around. This is the essence of customisation.</p>
+					<p>The plugins available for Vim are vast - and writing my own doesn't seem tooooo difficult. I don't actually use many plugins, and haven't configured my Vim a huge amount. Probably because I'm lazy, but also because I don't have a strong desire for anything to be added (yet).</p>
+					<p>My config file is just 60 lines long, containing basic settings and whatnot. Vanilla Vim is almost good enough anyway, though I do wanna experiment with some sort of file tree plugin...</p>
+					<p>I think it's pretty easy to get stuck in the trap of spending countless hours configuring some software, and end up doing this so frequently that you never have the opportunity to get efficient using it. At this point, customisation is probably just a waste of time but some people do just like the act of customising, and I can see why!</p>
+					<p>I take a different approach - I'd customise something right after I install it, then if I want a specific thing at some point, I'd add that to the configuration. Sometimes I do stumble across a cool plugin or feature which I'll then implement into my workflow, but I never customise purely for the sake of it. This probably does limit my exploration and creativity as I miss out on the element of "randomness" critical to discovery. But it's all about striking a balance between doing work and wandering, trying to do enough of both.</p>
+					<div class="h2-container" id="other-editors">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>What About Other Editors?</h2>
+					</div>
+					<p>Admittedly, you can have most of Vim in any fully-featured IDE. Take VS Code, for instance - there's an extension to implement all of the Vim motions, and the motions are 80% of what makes Vim Vim. But there's still that other 20%.</p>
+					<p>Part of it comes down to the power of Vim. For some, the array of advanced features like macros and registers are an essential tool.</p>
+					<p>Another part of it is that VS Code is super heavy on system resources. It's just clunky software, yuck! It gobbles RAM and you could probably read a book in the time it takes to load. Whilst my computer is sufficiently powered, it's not got enough overhead to comfortably accommodate software like VS Code. It would ramp up my fans, and leave less room in the RAM for other programs.</p>
+					<p>In my experience, doing any action in VS Code comes with a small but noticeable latency, the frustration adds up over time. I recently coded an Electron app and did half of AoC in VS Code. For something like the Electron project, VS Code was quite slow to use. But when it came to coding for AoC, where I'm confined to a single file, VS Code wasn't all that different from Vim.</p>
+					<p>It's also unnecessarily hard to edit settings and configure VS Code - everything is hidden away and works against intuition. It took me a <i>very</i> long time just to add a hotkey to run Python files. When it takes this much effort to customise an editor, using it is simply painful.</p>
+					<p>The array of plugins and support for VS Code is phenomenal, though! It's trivial to find the extension you want and use it - and there are loads of great extensions that cater to a variety of workflows. The integration with GitHub Copilot is helpful, and the <a href="https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/" target="_blank">recent AI feature drops</a> are genuinely amazing!</p>
+					<p>The tab system in editors seems to be quite popular, where you'd have multiple files all open in different tabs - like a browser. I don't like it though. It feels like an inefficient way to deal with larger projects with lots of files. Also, VS Code's tab system works in a way that I really can't get behind, and I don't look forward to digging through its settings to change that!</p>
+					<p>As much as I've bashed VS Code, it's still overall a really nice editor, just that Vim out-does it in almost every regard for me.</p>
+					<p>The other editors I've dabbled in all have their drawbacks too, and none quite match the lightweight-ness, configurability, efficiency, and extensibility of Vim. User-hyper-extensible software is awesome, but it seems to be few and far between.</p>
+					<p>Even as I write this blog, OneNote freezes (and crashes twice) and adds that little bit of friction between my thoughts and my writing. Vim's <i>never</i> frozen on me.</p>
+					<p>I can see an excellent use for other editors though, if it's suited for a very specific (and perhaps niche) workflow. Developing Android apps on anything other than Android Studio would probably be a challenge - unless you're willing to spend hours setting things up and configuring it. But then again, if this is not just a quick one-time project, you probably should be spending hours doing that for the sake of overall productivity.</p>
+					<p>Modern IDEs can be feature packed, and more importantly, ready to go out-of-the box. Some tools are really magical, and modern IDEs are one example - they can do some crazy stuff. So I think they certainly have their place, but they're still just a one-size-fits-all solution.</p>
+					<p>And a one-size-fits-all solution is never the best solution for you.</p>
+					<div class="h2-container" id="conclusion">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Conclusion</h2>
+					</div>
+					<p>It took a while to grasp Vim and really get used to it, but I'm so glad I did. It's changed the way I code and has made me far more productive. Vim is everywhere so being able to use it is a valuable and evergreen skill, enabling me to remotely operate servers and Raspberry Pis effectively. There's still so much more for me to explore and learn about Vim, my journey has really only just begun.</p>
+					<p>VS Code, and others, are still really good editors, but I think Vim pushes itself ahead with its extensibility and speed - both the app itself, and the human using it. It has become an extension of me, dissolving another barrier and enabling me to enter my "flow state" and stay there. Vim kinda just has it all, and does it all.</p>
+					<p><i>PS: If you can, I'd really recommend trying out Vim; stick with it for a month and evaluate whether it's better or worse than what you're currently using. It's a big initial investment, but the returns add up. And if you're already using Vim, awesome! If you've tried Vim and don't like it, I'd genuinely be interested in hearing why so hit me up for a chat :)</i></p>
+
+
+
+
+				</div>
+
+
+			</div>
+
+			<div class="scroll-top">
+				<span class="fas fa-plane-up" onclick="toTop()"></span>
+			</div>
+
+			<div class="copy success"><p>copied!</p></div>
+			<div class="copy error"><p>failed to copy!</p></div>
+
+		</section>
+
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2023 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://github.com/SourishS17/Website/" target="_blank"><h2>Audit the source code</h2></a>
+					<!--<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>-->
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+			<style>
+.loader {
+	display: none;
+}
+			</style>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/blog-template.js"></script>
+
+	</body>
+</html>
