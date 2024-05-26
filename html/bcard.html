@@ -1,0 +1,99 @@
+CTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sourish Sharma - Digital Business Card</title>
+<style>
+    /* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #e0e5ec; /* Light grey background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .card {
+        background: #e0e5ec; /* Neumorphism base color */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff; /* Neumorphism shadow */
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: 200px; /* Adjust as necessary */
+        background: url('profile.jpg') no-repeat center center;
+        background-size: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .info a {
+        color: #0077b5; /* Adjust color for links */
+        text-decoration: none;
+    }
+
+    .info a:hover {
+        text-decoration: underline;
+    }
+
+    .bio {
+        background: #f0f0f3; /* Slightly different background for bio section */
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff; /* Inner shadow for neumorphism */
+    }
+
+    /* Add responsive design for mobile */
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+
+        .card {
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="profile-image"></div>
+    <div class="info"><strong>Name:</strong> Sourish Sharma</div>
+    <div class="info"><strong>Email:</strong> <a href="mailto:email@example.com">email@example.com</a></div>
+    <div class="bio">
+        <strong>Bio:</strong>
+        <p>Short bio goes here. It can span multiple lines and should give a quick overview of your professional background and interests.</p>
+    </div>
+    <div class="info"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></div>
+    <div class="info"><strong>Twitter:</strong> <a href="https://twitter.com/yourprofile" target="_blank">yourprofile</a></div>
+    <div class="info"><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">yourusername</a></div>
+    <div class="info"><strong>Website:</strong> <a href="https://sourishsharma.com/" target="_blank">sourishsharma.com</a></div>
+    <!-- Add any other information you find relevant -->
+</div>
+
+</body>
+</html>
+
+

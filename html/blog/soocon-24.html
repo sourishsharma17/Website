@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-page">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sourish Sharma - Blog: SOOCon24</title>
+		<script>
+			window.addEventListener("load", loaded);
+			function loaded() {
+				document.querySelector(".loader").remove();
+				document.body.classList.remove("loading-page");
+				html.classList.remove("loading-page");
+			}
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="../media/logos/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   	
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/blog-template.css">
+		<link rel="stylesheet" href="../css/code-blocks.css">
+	</head>
+	<style>
+		.loader {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			background: var(--primary);
+			z-index: 50000;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.loader .wrapper {
+			height: auto;
+			margin: auto;
+			display: flex;
+		}
+
+		.loader .wrapper > span {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 15px;
+			box-shadow: var(--box-shadow);
+			animation: spinner 2s linear infinite !important;
+		}
+
+		@keyframes spinner {
+			
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+
+		}
+			
+	</style>
+	<div class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<body class="body loading-page">
+
+		<header class="header">
+
+			<nav class="navbar-simple">
+				<a href="../">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+				</a>
+				<div class="links">
+					<a href="../#about">About Me</a>
+					<a href="../food">Food</a>
+					<a href="../techsnap">TechSnap</a>
+					<a href="../blog">Blog</a>
+					<a href="../assets">Assets</a>
+				</div>
+			</nav>
+
+			<nav class="navbar-mobile">
+
+				<div onclick="mobileMenu()" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="list">
+					<div class="logo">
+						<img class="navlogo" src="../media/logos/logo.png" alt="">
+					</div>
+					<div class="links">
+						<a href="../">Home</a>
+						<a href="../#about">About Me</a>
+						<a href="../food">Food</a>
+						<a href="../techsnap">TechSnap</a>
+						<a href="../blog">Blog</a>
+						<a href="../assets">Assets</a>
+					</div>
+				</div>
+				<div class="cover"></div>
+
+			</nav>
+
+
+		</header>
+
+		<section class="post">
+
+			<div class="container">
+
+				<div class="top">
+					<h1>State Of Open Conference 2024</h1>
+					<div class="info">
+						<div class="read"> <span class="fas fa-hourglass"></span><p>&nbsp;19 min read</p> </div>
+						<div class="dates"> <div class="edit" style="display: none;"><span class="fas fa-pen-to-square"></span><p>&nbsp;Updated: 16/06/2022</p></div> <div class="launch"><span class="fas fa-calendar-day"></span><p>&nbsp;February 25, 2024</p></div> </div>
+					</div>
+				</div>
+				<div class="content">
+
+					<img src="../media/blog/soocon-banner.jpeg" alt="">
+
+					<p class="introduction">A few weeks ago, I went to an AI networking event hosted by my school. One of the speakers was Professor Neil Lawrence, an expert in machine learning, who talked about what it means to be human in the age of AI. He was such a fascinating person to listen to so I followed his socials and one day saw that, sure enough, he was a keynote speaker at <a href="https://stateofopencon.com" target="_blank">SOOCon24</a>. </p>
+					<p class="introduction">So I Googled SOOCon and was immediately hooked on the idea. It's a 2-day conference all about open-source stuff in tech, happening just a week from now in London. I emailed them to request a free ticket and a week later, went on my merry way to what promised to be an exciting day.</p>
+					<p class="introduction">I went for Day 1, and this blog dives into what I did, learnt, and thought. I hope it's inspirational and captures the incredible experiences I had!</p>
+					<div class="h2-container" id="the-start">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>The Start</h2>
+					</div>
+					<p>After a lengthy journey I arrived at The Brewery, the venue of SOOCon24. I grabbed my badge and relished a bit of breakfast. They had some funky food - including a chocolate cherry espresso drink. I wasn't such a fan (I don't think many people were) but the cinnamon pudding and pastries were delicious.</p>
+					<p>I also met someone (or more accurately, someone met me) who was a software engineer at Mastercard and <a href="https://openuk.uk/" target="_blank">OpenUK</a> (the charity which runs SOOCon) ambassador. He told me more about OpenUK and also recommended I check out Devoxx, another developer conference (remember this!).</p>
+					<p>This was my first interaction with someone there, and I realised that he really did just come up to me cheerily and start talking. Networking is that simple. This sort of information sharing, talking about different opportunities and experiences, is what I came for. I needed to try doing that myself.</p>
+					<p>As the guy I met continued to rigorously meet new people, I took my seat in the main keynote hall.</p>
+					<p>Everything was set up so nicely - the ambience defined by majestic lights searing through the fog, upbeat music, and projections against the backboard.</p>
+					<img src="../media/blog/soocon-stage.jpg" alt="">
+					<p class="caption">Fancy!</p>
+					<p>As more people shuffled in, the plenaries began. There were a range of talks and discussions, featuring the CEO of OpenUK (Amanda Brock), an MP, the founder of Open Source(!), and some panels with great minds, including an advisor from CISA and the founder of Homebrew. Despite only having used a Mac for 3 months of my life, Homebrew is a tool which has helped me so much!</p>
+					<p>I've never experienced a panel in real life – but it was cool to see ideas bounce between the panellists as they reflected on their unique experiences and were probed by questions from the host.</p>
+					<p>A couple of ideas stuck with me from the plenaries, and planted the seeds of thought in my head which grew as the day continued. First, tech is an industry that anyone can get into – Amanda herself grew up in a community home and became a lawyer, specialising in tech. And another speaker, Jono Bacon, also grew up in a struggling home and yet has achieved immense success. Open Source software unlocks this possibility, and that's something to celebrate.</p>
+					<p>Open Source enables you the control to create your own future in tech.</p>
+					<p>Next, this is all one big community. A global community where none of this junk matters, like race, gender, sexuality, whatever. It's also a (largely) self-governing community with relatively few disputes and issues. Give as much as you can, and things will eventually come your way.</p>
+					<p>Regulation on Open Source also featured, an idea that I've never truly considered. Naturally, Amanda ensured the topic was discussed extensively and it opened my eyes to it. Open Source is such a weird thing – it powers the world, and yet it's barely discussed at a national level. Licences need to be rethought and the idea of "Post Open (Source)" is fascinating. It's an economy where devs are paid for their contributions, and unfair lawsuits against them are harder to pursue. It's an evolution of the Open Source culture to make it more practical and less finicky to be a prominent figure in the space.</p>
+					<p>But anyway, the inspirational, hype-generating plenaries were now done and they did a damn good job at empowering me to make the most of the day!</p>
+					<div class="h2-container" id="the-talks">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>The Talks</h2>
+					</div>
+					<p>There were 8 'tracks' across the venue, and I'll share my thoughts for each talk I went to.</p>
+					<p>The first track I visited was "Open Data" (totally didn't just happen to stumble into the room whilst trying to find the talk I actually wanted to go to...). The speaker was discussing the flaw in sustainability reporting and carbon credits (it's very interesting, I recommend checking out <a href="https://www.youtube.com/watch?v=AW3gaelBypY" target="_blank">this</a> video to see why). The talk seemed to be a business-oriented one showcasing his company's, Perseus, solution.</p>
+					<p>The man was clearly experienced, and even gave us some tips at the end on starting a new company.</p>
+					<p>He advised us to find a problem first, instead of having a solution and inventing a problem to fit it to (a common theme, he says). The presentation started off talking about the business side - his company's model and the current system of corporate sustainability reporting. Then he went into the tech side. The way his presentation was designed and delivered really taught me a lot, knowledge that will hopefully come in handy in a few years ;)</p>
+					<p>But surely, his product is not better for any individual entity, only for society as a collective? And so there's nothing we can really do about this issue - unless of course, government regulation catches up. Now I saw why the law and open source go hand-in-hand. You need one to fully realise the other.</p>
+					<p>The next talk was "Harvest Now, Decrypt Later". It discussed the state of quantum computing and its potential impact on cryptography. The focus was on creating better cryptographic standards and strategies to prevent this phenomenon from occurring.</p>
+					<p>The cat-and-mouse nature of cybersecurity shone through, highlighting the fragility of cyberspace. Cryptography rarely needed updates over the years, but in the race to quantum, innovation has been re-ignited here. In fact, the open source community created a <a href="https://github.com/open-quantum-safe/liboqs" target="_blank">tool</a> to help implement the latest technology into any app. Something so integral should definitely be freely available, and I'm glad it is!</p>
+					<p>But it's one of those sectors that's incredibly unpredictable and fast moving - all we can do is wait and see what happens...</p>
+					<p>A few hours later and I found myself at a talk looking at how being involved in a community can boost my career. This was the highlight presentation for me, a young person passionate about tech. The speaker emphasised the value and importance of a community, and how we should jump at (almost) every opportunity we find, with a focus on delivering talks at conferences (and recycling content heh) - perhaps I'm a tad too young for this but it's still worth a shot. <i>UPDATE: I'll be speaking at a <a href="https://sourishsharma.com/blog/camjam-april-2023" target="_blank">CamJam</a> sometime soon :D</i></p>
+					<p>The bigger message was centred on contributing to open source and the community. Another recurring theme. The talk served as inspiration more than anything, but I'll reflect more about this at the end :)</p>
+					<p>One fascinating idea was how to be more 'successful' in a job. It's not really about your work - sure, doing exceptionally at your job would help, and you definitely shouldn't be doing badly either, but what matters more is a personal brand, your name and the things associated with it. The speaker mused on her own experience of being given a promotion and how it's all about someone relevant saying "aha! I know that name!".</p>
+					<p>And being involved in the community, being in the public eye, is a sure-fire way to achieve this.</p>
+					<p>Next up was a talk on the 'hidden' security risks in AI models. The first half covered a load of ways that LLMs are being exploited and the biases in computer vision. The second half was way more interesting, looking into a variety of ways to secure AI and make the future safer.</p>
+					<p>Out of all the guidelines and products covered, <a href="https://github.com/protectai/llm-guard" target="_blank">LLM Guard</a> stood out to me. It's a FOSS project sitting between the frontend and AI model, designed to filter and moderate messages going into and out of the LLM. The company behind it, Protect AI, has some more nifty tools.</p>
+					<p>It's crazy - in the age of AI, we need to keep upping our cybersecurity and stay on top of the latest models to ensure safety and compliance are met. If Big Tech and Governments can't do it, start-ups and the Open Source community can. That's the power of this community. With every new technology, the cybersecurity industry expands.</p>
+					<p>And finally, I saw a lightning talk on "Developer Empathy". It covered how SWE teams (and to an extent, Open Source projects) should promote certain values among their members. The talk fed into a lot of wider ideas I pondered over the day, but it was especially useful to perhaps discuss what makes a "good" leader.</p>
+					<p>Being receptive to everyone, including inexperienced interns, is a must. Disqualifying someone solely based off experience is never productive and even archaic – the speaker reminisced a time when he objected to a feature and was shuffled aside, but ended up being correct. A leader should encourage a fair and open culture, where information flows freely among the team and self-bias is recognised to help overcome it. Being aware of my own biases is something I've been trying to improve on recently. Cos when I know what influences my decisions, I can take a more objective look at something and understand where other people are coming from. That's empathy. The skill that makes <i>all</i> communication better.</p>
+					<p>The talks were just one part of the conference though, so let's jump over to the stalls. Or to use the right terminology, the "Delegate Experience"...</p>
+					<div class="h2-container" id="the-stalls">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>The Stalls</h2>
+					</div>
+					<img src="../media/blog/delegate-experience.jpg" alt="">
+					<p class="caption">No, that's not me. Yes, I chose this photo because it has lots of orange :)</p>
+					<p>I didn't think this would be a particularly significant aspect of SOOCon but I sure was wrong! There were 50 tables, mostly taken up by organisations behind popular projects and the odd event sponsor like Arm or Boeing. Throughout the day, I took a few rounds and had some really epic chats.</p>
+					<p>I started off at Mautic, a project I've never ever heard of before. But that's the beauty of SOOCon – I could learn about new things and explore. I got pretty lucky because the guy manning the stall was incredibly enthusiastic and super stoked to chat with me – the best start I could've hoped for!</p>
+					<p>We had quite a deep discussion about the project and how it fits into the world. During that conversation, I had one insight that would prove to be perhaps the most important takeaway from the entire event – how to <i>properly</i> talk to someone better than me.</p>
+					<p style="padding-bottom: 2rem">Well then, what do I actually want from a conversation?</p>
+					<ol class="list0">
+						<li>Learn stuff – I want to simply know more; squeeze as much information out of the other person as I can.</li>
+						<li>Develop conversational skills – well, the longer the conversation, the more I can do this!</li>
+						<li>Thoughtfulness – I want to think, <i>hard</i>. I want to be intellectually stimulated and challenged. I want to develop a deep understanding of something, not just know a fact or two. I want to piggy-back off their experience, save myself some time and accelerate my thoughts.</li>
+						<li>Insights – if there's any life/career advice or helpful insights the person can offer, even better!</li>
+						<li>Enjoy it – a good interaction is perfectly summarised by Chris Hadnagy. "Leave them better having met you." Granted, that's his mantra when he needs to socially engineer someone BUT I think it applies everywhere. I want to leave the conversation happy, satisfied, and content. I can't pin down exactly how to enjoy it, but it's a human instinct, a feeling that I need to try and evoke both in the other person, and within myself.</li>
+					</ol>
+					<p>My solution; to essentially just argue with them.</p>
+					<p>This way, I can always get any questions answered. If I'm unconvinced about something, I can probe them for more information. And, well, that's point 1 and 3 already covered! By trying to argue against whatever they believe in, I force myself to really think about the topic and get them to tap into their immense expertise and say what they believe to be the most important points.</p>
+					<p>And the conversation lasts a good 10 minutes because both sides are invested into the discussion. I think challenging someone is a great way to facilitate an intellectual exchange.</p>
+					<p>Every now and then, I'd summarise their answer and agree/acknowledge it – otherwise they think I'm just there to object to everything and not actually discuss something. Remember, I want to leave them feeling better having met me. And I feel better having met them, learnt a lot, and understood just 1 more perspective in the world.</p>
+					<p>Sometimes, I'd also just agree with everything they're saying cos it can be too difficult to disagree. And in these conversations, I'd channel my energy towards trying to get advice and insights – there's no benefit in fuelling an echo-chamber. This model worked very well for me at SOOCon, and I refined it with every person I met.</p>
+					<p>Back to Mautic – we talked about big tech, EU regulation, and tracking. I was particularly interested in the intersection between their FOSS project, marketing tracking tools, and the common opinion in the Open Source community that privacy needs to be respected more. But Mautic merely provide a tool, and it's up to a user as to what they do with the tool and the data they collect. Anyway, crazily enough, the person I spoke to was just a community member – not even a paid employee. Yet the passion he had was indescribable.</p>
+					<p>I also spoke to a Rust advocate, again essentially arguing why anyone should use Rust. He was super helpful in explaining the memory benefits Rust offers, framing it as an evolution to the ancient C++ which was designed for a different era of computing devices. I can't lie, he's convinced me to learn Rust this summer!</p>
+					<p>As fake AI images and videos are sora-ing out of control, the BBC seeks to minimise the impact they have on their own articles. They've developed a UI which makes checking the integrity of images much more seamless. I had a chat with the spokesperson there, but I'm not sure I'm entirely convinced by AI image watermarking as a measure against misinformation...</p>
+					<p>I discovered the Yocto Project, which is essentially a tool to help create custom Linux distributions for embedded devices and IoT systems – exactly what I need for my part-time job. It was cool to learn more about this first-hand from engineers who use the project themselves. I hope to have a play-around with it soon!</p>
+					<p>OpenUK also conveniently gave themselves the biggest table. After being lured in by the array of stickers, I engaged in conversation with one of their ambassadors about the organisation before discussing the wider concept of career paths. He never went to university, instead just taking risks and jumping on whatever the latest trend happened to be. I guess this works because no one is 'better' at something new, so it's a level playing field. He mused about his experience, suggesting it's the better path to industry.</p>
+					<p>BUT, he cautioned me saying that it's certainly risky and he must have an element of survivor bias as he and all his friends succeeded by taking risks. And this is a fact for me to remember – as much as I'd like to take risks and experiment with projects, I'm fortunate enough to have access to top education (unlike many of the people I spoke to – they were underprivileged and worked their way up). So I should <i>probably</i> complete a degree before diving head-on into a risky endeavour. That way, I'll always have a solid backup.</p>
+					<p>I think keeping in mind everyone's bias as I talk to them is integral to prevent a skewed perspective from influencing my decisions too much. So I've got huge respect for the OpenUK guy for making that clear!</p>
+					<img src="../media/blog/suse-plushie.jpg" alt="">
+					<p class="caption">Isn't this just soooo adorable??</p>
+					<p>I'll quickfire the rest of the organisations I spoke to. Suse had a really cute chameleon plush thing, and had some 'friendly' rivalry with RedHat, which was fun to watch! Public Code had some interesting guidelines for FOSS projects – kinda like how programmers generally adhere to PEP8 when coding Python; people may now adhere to Public Code's guidelines when managing projects. I think it's especially great for new project-owners who may not know how to run a project effectively.</p>
+					<p>Collabora was a new one for me – it's a real-time collaborative upgrade to LibreOffice. I'll be trying that out soon. The Eclipse Foundation is an awesome professional services firm for Open Source projects. Flox work on a pretty new concept of highly portable dev environments. They build on Nix, adding more features that devs would actually want. This movement towards containerisation and the cloud is widespread and now unavoidable. I'm not so convinced by containerisation, it's inherently inefficient. But I guess that can change on a hardware level?</p>
+					<p>Either way, I'm still excited to see how end-user solutions will evolve. Chromebooks are essentially hinged on the ideas of containerisation and the cloud, but we're clearly not there just yet.</p>
+					<p>Finally, I learnt a bit about joining IET, got some tips on how to contribute to FOSS from GNOME (really just contribute to projects you use and have issues with), talked about the state of EV chargers with the Open Charge Alliance (thankfully Tesla is being friendly! (or just trying to avoid potential EU regulation)), and kept a tab on the new <a href="https://thealliance.ai/" target="_blank">AI Alliance</a>.</p>
+					<p>Those were only half the stalls though – I didn't have time to visit 'em all!</p>
+					<img style="width: 50%; display: block; margin-left: auto; margin-right: auto" src="../media/blog/soocon-stickers.jpg" alt="">
+					<p style="text-align: center" class="caption">My sticker haul (much smaller than Infosec23). Favourites - the tofu with a Tux shirt, and the shiny Rust crab.</p>
+					<div class="h2-container" id="the-floor-experience">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>The Floor Experience</h2>
+					</div>
+					<p>So this section will really just be a mish-mash of anything that doesn't fit in the other 2. Like the venue itself – The Brewery is quite a historic site and seemed to be a good fit for an event with lots of tracks. They managed to make it  majestic and maintain an exciting buzz throughout. There was lots of walking up and down stairs, but otherwise, it was a lovely venue!</p>
+					<p>I sometimes wonder to what extent the venue determines what occurs at an event. For example, if there happens to be a mini-theatre, will the event then seek to incorporate a mini-movie to play in it? Because sometimes if the event seems to fit to the venue then it's hard not to consider perhaps the event <i>was</i> fit to the venue, and not vice versa.</p>
+					<p>One other thing they did superbly was food. I already talked about breakfast, but lunch was just as exceptional. The soup was velvety and dynamic whilst the lunch bags nestled a delicious cauliflower wrap and less adventurous salad. The coffee was solid, but I was too busy in conversation to pick up any supper. Ah, and the food was <i>all</i> vegan. It was creative and delightful, so no complaints from me about the lack of dairy (even in my cappuccino – almond milk is nice). They also catered to all dietary requirements... the DEI standard was mind boggling. That's how I got a free student ticket, after all :)</p>
+					<p>In the plenaries, Amanda cast her mind back to FOSSDEM (think the European SOOCon) 4 years ago, where OpenUK first began. They served 1000 cups of tea and 1000 biscuits, an idea she weaved into the event this year. So we all got a free gift of utterly tasty gingerbread cookies! They were really, really nice.</p>
+					<img src="../media/blog/soocon-cookies.jpg" alt="">
+					<p class="caption">This gift honestly helped raise the morale and bring together the community. It felt like the organisers cared about us, not money or exposure. (Big Ben was my favourite)</p>
+					<p>Courtesy of Arm, there was also a photographer doing headshots in the style of Arm. What do I mean by that? Well, as the headline sponsor (£500k), they plastered <i>massive</i> black & white portraits of special employees across the main hall, each with their own plaque. And yes, I wanted one.</p>
+					<img src="../media/blog/monochrome-headshots.png" alt="">
+					<p class="caption">My B&W headshots, courtesy <a href="https://tnlphotos.com/" target="_blank">Tiana Lea</a>. Recognise the shirt? It's the reward from <a href="https://github.com/helium/explorer/commit/5b9b5f3b3d35c12cb14525ffe517a569fd24caa5" target="_blank">my first ever</a> FOSS contribution - Helium Explorer! Made for a great conversation prompt.</p>
+					<p>The venue had a few special areas too, including a sticker table where I bagged a couple cool ones, and a whole underground area designated to AI. Yes, it was of course named the "AI Cafe". But they had a stall from GitHub Copilot and the dude there was awesome! There was the AI showcase theatre, and some demos from AI startups. It was generally a pretty cool area with lots of chatter.</p>
+					<p>They had an AI consultation with the Home Office and Department for Science, Innovation and Technology (DSIT) for 2 hours both days. Amanda really pushed it in the plenaries, encouraging as many people to go as possible. It isn't an everyday opportunity to chat with policymakers on what we want from AI regulation, so I enthusiastically spent an hour discussing the matter with other techies and government officials from DSIT.</p>
+					<p>I shared my concerns about the stringent age restrictions imposed by AI companies to shift liability for potentially unsafe encounters with LLMs, and how this is extremely detrimental for the education sector and limits the promotion of these ground-breaking tools to children, the next generation. But I learnt so much by listening to more experienced devs reflect on their positions surrounding AI regulation, and DSIT discussing the specific challenges they face.</p>
+					<p>It was a banging hour and I wish I could've had more of it!</p>
+					<p>Amanda said that students should make the most of the event, that most attendees would be delighted to have a chat with us. And I'm glad to report that was true – everyone was so welcoming to me despite my relative lack of experience and knowledge.</p>
+					<p>I spent that morning's train journey to London talking with ChatGPT to try and figure out how to network successfully. I think it's important, at least until I'm good at it, to always prepare prompts and actions in advance of a networking opportunity. And I definitely think I improved my networking skills! It's all about trying to help other people and have interesting conversations, whilst also being ultra confident and perhaps even a bit shameless.</p>
+					<p>I've racked my head for any feedback I can give about the event... but I'm not sure I can. Maybe there could be a couple of extra interactive things, like workshops or speed-networking sessions? The atmosphere, the food, the organisation (actually, this was done REALLY well), the WiFi, and the content were all great and varied. Not much else I can think of!</p>
+					<div class="h2-container" id="final-thoughts">
+						<span class="fas fa-link" onclick="copyHeading()"></span>
+						<h2>Final Thoughts</h2>
+					</div>
+					<p>As the day wrapped up and the after party started, I grabbed my stuff and headed off, waving bye-bye to some of the amazing people I met. SOOCon24 was an incredible, vibrant, and enriching experience full of excitement, energy, ideas, hope, and love. At the centre of it all, the community; so open to helping and collaborating and talking about anything. The beating heart of technology all gathered in one space. Walking from The Brewery, I reflected on the day and smiled as I relived the memories and friends I made.</p>
+					<p>I felt so inspired, a strong emotion which enables change and endeavour. I couldn't hope for much more :)</p>
+					<p style="padding-bottom: 2rem">In the plenaries, Amanda encouraged students to maximise the opportunity and said that <i>anyone</i> would happily talk to us. At SOOCon, everyone was willing to do just that - even with me, a 17 year old kid. This sense of community was strong and I'm really glad to have attended. Communities are king. But reflection is just as important as acting, so here's a list of "big idea" takeaways for me:</p>
+					<ol class="list0">
+						<li>Contribute to FOSS more! It's a great thing to do for the world, and it'll develop my skills. A good GitHub profile is the most powerful CV I can have. I need to identify issues/features in software I currently use, and then get coding!</li>
+						<li>Create a bigger social media presence. A personal brand is ultra influential, so from now on, I need to post more on social media. It'll also improve my writing ability (perhaps the most useful skill to have). I think I'll continue working on YouTube tutorials, post a few Tweets (Xs?) every day, and try write 3 good LinkedIn posts a week. Oh, and answer questions on Stack Overflow!</li>
+						<li>I need a note taking strategy! There was SO much information to take in at SOOCon, and I need to remember the key concepts. I do loads of cool things, but don't write down my thoughts anywhere (except the odd blog). I've pondered note taking strategies for a few months now - so I'll get started with <a href="https://obsidian.md/" target="_blank">Obsidian</a> <i>asap</i>.</li>
+						<li>Take photos. Looking back, I kinda regret all the photo opportunities I missed. I usually take a fair amount of photos, but now, I'll ramp it up and ensure to capture my thoughts and experiences more often. I don't care about sharing Instagrammable snaps, but I want to look back and remember moments.</li>
+						<li>Networking skills. I actually can just walk up to someone and begin talking. I should create a business card-type thing too - I'm thinking an NFC card that opens a page linking to my socials?</li>
+						<li>When making a product, or doing anything for other people, you need to be <i>on the ground with them</i>. You need to spend time with them, looking at them interact with your thing, talking to them, and asking difficult questions. So many people don't do this, but it's something that can be applied to many walks of life.</li>
+					</ol>
+					<p>I'm so grateful to have attended and to the team that made it possible, I send my heartfelt thanks. Looking forward, I've been accepted to volunteer at Devoxx UK and hope to meet yet more inspiring people there. But for now, I'll treasure the memories and lessons from SOOCon24. Thanks!!!</p>
+					<img style="width: 60%; display: block; margin-left: auto; margin-right: auto" src="../media/blog/soocon-badge.jpg" alt="">
+					<p style="text-align: center" class="caption">I'll be keeping this :)</p>
+
+
+				</div>
+
+
+			</div>
+
+			<div class="scroll-top">
+				<span class="fas fa-plane-up" onclick="toTop()"></span>
+			</div>
+
+			<div class="copy success"><p>copied!</p></div>
+			<div class="copy error"><p>failed to copy!</p></div>
+
+		</section>
+
+
+
+		<footer class="footer">
+
+			<div class="left">
+
+				<div class="far fa-copyright"></div>
+				<p class="sign-off">2024 SOURISH</p>
+
+			</div>
+
+
+			<div class="middle">
+
+				<img class="logo" src="../media/logos/logo.png" alt="">
+
+			</div>
+
+
+			<div class="right">
+
+				<div class="socials">
+
+					<a class="far fa-envelope" href="mailto:contact@sourishsharma.com" target="_blank"></a>
+					<a class="fab fa-instagram" href="https://www.instagram.com/sourish_s17/" target="_blank"></a>
+					<a class="fab fa-twitter" href="https://twitter.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-github" href="https://github.com/SourishS17" target="_blank"></a>
+					<a class="fab fa-linkedin" href="https://www.linkedin.com/in/sourish-sharma-26b919237/" target="_blank"></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+
+
+		<div id="toggle-themes" onclick="themeToggle()"><div class="fas fa-moon"></div></div>
+
+
+		<noscript>
+			<div class="container"></div>
+			<div class="box">
+				<div class="message">
+					<h1><span class="fas fa-triangle-exclamation"></span> JAVASCRIPT IS DISABLED <span class="fas fa-triangle-exclamation"></span></h1>
+					<p>JavaScript is critical for this website to function. Please try one of the following:</p>
+				</div>
+				<div class="solutions">
+					<a class="disable" href="https://www.enable-javascript.com/" target="_blank"><h2>Allow JavaScript to run on this website</h2></a>
+					<a class="github" href="https://github.com/SourishS17/Website/" target="_blank"><h2>Audit the source code</h2></a>
+					<!--<a class="idc" href="https://sourishsharma.com/?nojs"><h2>Meh, I'll continue anyway!</h2></a>-->
+				</div>
+			</div>
+			<a class="email" href="mailto:contact@sourishsharma.com">contact@sourishsharma.com</a>
+			<style>
+.loader {
+	display: none;
+}
+			</style>
+		</noscript>
+
+		<script src="../js/common.js"></script>
+		<script src="../js/blog-template.js"></script>
+		<script src="../js/code-blocks.js"></script>
+
+	</body>
+</html>
